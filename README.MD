@@ -31,7 +31,6 @@ Il gruppo sta raccogliendo, pulendo e analizzando una serie di dataset geolocali
 - **Jupyter Notebook** per l’esplorazione e la documentazione dell’analisi
 - **Git/GitHub** per la collaborazione e il versionamento
 - **Kepler** per la visualizzazione dei dati geospaziali
----
 
 ---
 
