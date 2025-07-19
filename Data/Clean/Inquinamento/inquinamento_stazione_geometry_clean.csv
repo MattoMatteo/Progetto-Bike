@@ -1,0 +1,5 @@
+1,"{'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [9.16794489, 45.44386047]}, 'properties': {'nome': "Viale Liguria"}}"
+2,"{'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [9.19093444, 45.49631883]}, 'properties': {'nome': "Viale Marche"}}"
+3,"{'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [9.231667, 45.478347]}, 'properties': {'nome': "Via Pascal"}}"
+4,"{'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [9.19746075, 45.470501]}, 'properties': {'nome': "Via Senato"}}"
+5,"{'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [9.19532511, 45.46334886]}, 'properties': {'nome': "Verziere"}}"
