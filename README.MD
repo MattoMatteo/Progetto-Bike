@@ -1,3 +1,39 @@
+# Sezione addetti ai lavori
+
+## Struttura repository
+```
+📦 Progetto  
+├──── 📁 Data  
+│      ├──── 📁 Clean  
+│      │     ├──── 📁 Incidenti  
+│      │     ├──── 📁 Info_bici  
+│      │     ├──── 📁 Inquinamento  
+│      │     └──── 📁 Punti_di_interesse  
+│      │  
+│      ├──── 📁 Raw  
+│      │     ├──── 📁 Incidenti  
+│      │     ├──── 📁 Info_bici  
+│      │     ├──── 📁 Inquinamento  
+│      │     └──── 📁 Punti_di_interesse  
+│      │           ├──── 📁 Municipi  
+│      │           └──── 📁 Parchi  
+│      │  
+│      └──── 📁 Staging  
+│            └──── 📁 Inquinamento  
+│  
+└──── 📁 Scripts  
+```
+### Consiglio di utilizzare questo schema per i nomi dei file:
+**{**<span style="color:yellow">categoria</span>**}`_`{**<span style="color:yellow">nome_file</span>}`_`{<span style="color:yellow">cartella destinazione</span>}`.`{<span style="color:yellow">estensione</span>}  
+esempio:    **inquinamento_stazioni_raw.json**
+
+### Raw, Staging, Clean
+**Raw**     →   File senza nessuna modifica. Scaricati così come sono oppure ottenuti da scraping (cambiamo solo il nome)  
+**Staging** →   File Raw che hanno subito delle modifiche ETL ma che non sono ancora pronti (fase intermedia se serve)  
+**Clean**   →   File pronti all'uso su kepler  
+
+---
+
 # 🚴‍♂️ Progetto Bike – Analisi per la Pianificazione di Piste Ciclabili a Milano
 
 > Progetto del corso **Big Data Processing and Data Engineering**  
