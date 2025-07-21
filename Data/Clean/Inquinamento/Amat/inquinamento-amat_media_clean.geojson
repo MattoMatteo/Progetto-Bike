@@ -1,0 +1,80 @@
+{
+    "type": "FeatureCollection",
+    "name": "inquinamento-amat",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::6707"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "valore_pm10": 24.247899159663866,
+                "valore_pm25": null,
+                "nome_stazione": "Verziere",
+                "latitude": 45.46334886,
+                "longitute": 9.19532511
+            },
+            "geometry": {
+                "type": "",
+                "coordinates": [
+                    9.19532511,
+                    45.46334886
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "valore_pm10": 27.451063829787234,
+                "valore_pm25": 16.625531914893617,
+                "nome_stazione": "Via Pascal",
+                "latitude": 45.47834699999999,
+                "longitute": 9.231667
+            },
+            "geometry": {
+                "type": "",
+                "coordinates": [
+                    9.231667,
+                    45.47834699999999
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "valore_pm10": 32.955357142857146,
+                "valore_pm25": 22.16591928251121,
+                "nome_stazione": "Via Senato",
+                "latitude": 45.470501,
+                "longitute": 9.19746075
+            },
+            "geometry": {
+                "type": "",
+                "coordinates": [
+                    9.19746075,
+                    45.470501
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "valore_pm10": 30.897872340425533,
+                "valore_pm25": 19.017094017094017,
+                "nome_stazione": "Viale Marche",
+                "latitude": 45.49631883,
+                "longitute": 9.19093444
+            },
+            "geometry": {
+                "type": "",
+                "coordinates": [
+                    9.19093444,
+                    45.49631883
+                ]
+            }
+        }
+    ]
+}
