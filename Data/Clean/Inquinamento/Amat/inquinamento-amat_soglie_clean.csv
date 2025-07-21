@@ -1,6 +1,6 @@
 id_inquinante,tipo_soglia,valore,unita_di_misura,periodo_di_riferimento,max_superamenti_anno
 1,Valore Limite,125,µg/m³,Giornaliero,3
-1,Valore Limite,350,µg/m³,Orario,24
+1,Valore Limite,350,µg/m³,Orario,24   
 1,Soglia di Allarme,500,µg/m³,Orario,3
 2,Valore Limite,50,µg/m³,Giornaliero,35
 2,Valore Limite,40,µg/m³,Annuale,0

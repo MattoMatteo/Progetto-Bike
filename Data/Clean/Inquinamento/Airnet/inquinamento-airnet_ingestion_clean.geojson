@@ -11,54 +11,18 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 21373,
-                "longitudine": 9.172453,
-                "latitudine": 45.475697,
-                "name": "Piazza Sempione, Milan, Italy",
-                "pm10": 28.63846575342466,
-                "pm25": 24.6513698630137
+                "id": 246697,
+                "longitudine": 9.212,
+                "latitudine": 45.442,
+                "name": "Via Franco Albini, Milan, Italy",
+                "pm10": 17.834849315068492,
+                "pm25": 9.395561643835617
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.172453,
-                    45.475697
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 196504,
-                "longitudine": 9.178,
-                "latitudine": 45.44,
-                "name": "Via Cristoforo Gandino, Milan, Italy",
-                "pm10": 18.4186798679868,
-                "pm25": 11.721287128712872
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.178,
-                    45.44
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 522430,
-                "longitudine": 9.200316,
-                "latitudine": 45.501736,
-                "name": "Milano Arbe, Italy",
-                "pm10": null,
-                "pm25": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.200316,
-                    45.501736
+                    9.212,
+                    45.442
                 ]
             }
         },
@@ -77,6 +41,150 @@
                 "coordinates": [
                     9.146,
                     45.502
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 161398,
+                "longitudine": 9.152946,
+                "latitudine": 45.460613,
+                "name": "Washington, Milan, Italy",
+                "pm10": null,
+                "pm25": null
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.152946,
+                    45.460613
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 512008,
+                "longitudine": 9.208740684011786,
+                "latitudine": 45.47819223410367,
+                "name": "Porta Venezia, Milan, Italy",
+                "pm10": null,
+                "pm25": null
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.208740684011786,
+                    45.47819223410367
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 521980,
+                "longitudine": 9.211517,
+                "latitudine": 45.5132,
+                "name": "U1 - Atmospheric Chemistry - AE9B, Milan, Italy",
+                "pm10": null,
+                "pm25": null
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.211517,
+                    45.5132
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 514987,
+                "longitudine": 9.1859243,
+                "latitudine": 45.4654219,
+                "name": "Milano, Italy",
+                "pm10": null,
+                "pm25": null
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.1859243,
+                    45.4654219
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 74863,
+                "longitudine": 9.206,
+                "latitudine": 45.426,
+                "name": "Via Federico Chopin, Milan, Italy",
+                "pm10": 20.355397260273975,
+                "pm25": 13.339945205479452
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.206,
+                    45.426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 197593,
+                "longitudine": 9.116,
+                "latitudine": 45.434,
+                "name": "Via Dei Lavoratori, Corsico, Italy",
+                "pm10": 18.528452722063037,
+                "pm25": 11.63134670487106
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.116,
+                    45.434
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 521977,
+                "longitudine": 9.210742,
+                "latitudine": 45.513435,
+                "name": "U2 - Atmospheric Chemistry - 2DB0, Milan, Italy",
+                "pm10": null,
+                "pm25": null
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.210742,
+                    45.513435
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 521986,
+                "longitudine": 9.211131,
+                "latitudine": 45.51409,
+                "name": "U4 - Atmospheric Chemistry - B377, Milan, Italy",
+                "pm10": null,
+                "pm25": null
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.211131,
+                    45.51409
                 ]
             }
         },
@@ -119,108 +227,36 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 161398,
-                "longitudine": 9.152946,
-                "latitudine": 45.460613,
-                "name": "Washington, Milan, Italy",
-                "pm10": null,
-                "pm25": null
+                "id": 21373,
+                "longitudine": 9.172453,
+                "latitudine": 45.475697,
+                "name": "Piazza Sempione, Milan, Italy",
+                "pm10": 28.63846575342466,
+                "pm25": 24.6513698630137
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.152946,
-                    45.460613
+                    9.172453,
+                    45.475697
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": 156526,
-                "longitudine": 9.224,
-                "latitudine": 45.478,
-                "name": "Lambrate, Milan, Italy",
-                "pm10": 16.24593837535014,
-                "pm25": 9.432128851540616
+                "id": 196504,
+                "longitudine": 9.178,
+                "latitudine": 45.44,
+                "name": "Via Cristoforo Gandino, Milan, Italy",
+                "pm10": 18.4186798679868,
+                "pm25": 11.721287128712872
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.224,
-                    45.478
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 521986,
-                "longitudine": 9.211131,
-                "latitudine": 45.51409,
-                "name": "U4 - Atmospheric Chemistry - B377, Milan, Italy",
-                "pm10": null,
-                "pm25": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.211131,
-                    45.51409
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 521983,
-                "longitudine": 9.211895,
-                "latitudine": 45.5139,
-                "name": "U3 - Atmospheric Chemistry - B6CC, Milan, Italy",
-                "pm10": null,
-                "pm25": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.211895,
-                    45.5139
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 514987,
-                "longitudine": 9.1859243,
-                "latitudine": 45.4654219,
-                "name": "Milano, Italy",
-                "pm10": null,
-                "pm25": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.1859243,
-                    45.4654219
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 512008,
-                "longitudine": 9.208740684011786,
-                "latitudine": 45.47819223410367,
-                "name": "Porta Venezia, Milan, Italy",
-                "pm10": null,
-                "pm25": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.208740684011786,
-                    45.47819223410367
+                    9.178,
+                    45.44
                 ]
             }
         },
@@ -245,54 +281,18 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 246697,
-                "longitudine": 9.212,
-                "latitudine": 45.442,
-                "name": "Via Franco Albini, Milan, Italy",
-                "pm10": 17.834849315068492,
-                "pm25": 9.395561643835617
+                "id": 156526,
+                "longitudine": 9.224,
+                "latitudine": 45.478,
+                "name": "Lambrate, Milan, Italy",
+                "pm10": 16.24593837535014,
+                "pm25": 9.432128851540616
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.212,
-                    45.442
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 197593,
-                "longitudine": 9.116,
-                "latitudine": 45.434,
-                "name": "Via Dei Lavoratori, Corsico, Italy",
-                "pm10": 18.528452722063037,
-                "pm25": 11.63134670487106
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.116,
-                    45.434
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": 74863,
-                "longitudine": 9.206,
-                "latitudine": 45.426,
-                "name": "Via Federico Chopin, Milan, Italy",
-                "pm10": 20.355397260273975,
-                "pm25": 13.339945205479452
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.206,
-                    45.426
+                    9.224,
+                    45.478
                 ]
             }
         },
@@ -317,36 +317,36 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 521980,
-                "longitudine": 9.211517,
-                "latitudine": 45.5132,
-                "name": "U1 - Atmospheric Chemistry - AE9B, Milan, Italy",
+                "id": 522430,
+                "longitudine": 9.200316,
+                "latitudine": 45.501736,
+                "name": "Milano Arbe, Italy",
                 "pm10": null,
                 "pm25": null
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.211517,
-                    45.5132
+                    9.200316,
+                    45.501736
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": 521977,
-                "longitudine": 9.210742,
-                "latitudine": 45.513435,
-                "name": "U2 - Atmospheric Chemistry - 2DB0, Milan, Italy",
+                "id": 521983,
+                "longitudine": 9.211895,
+                "latitudine": 45.5139,
+                "name": "U3 - Atmospheric Chemistry - B6CC, Milan, Italy",
                 "pm10": null,
                 "pm25": null
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.210742,
-                    45.513435
+                    9.211895,
+                    45.5139
                 ]
             }
         }

@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+"name": "inquinamento_media_clean",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6707" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Via Franco Albini, Milan, Italy", "pm10": 17.834849315068492, "pm25": 9.3955616438356166, "longitudine": 9.212, "latitudine": 45.442 }, "geometry": { "type": "Point", "coordinates": [ 9.212, 45.442 ] } },
+{ "type": "Feature", "properties": { "name": "Via Privata Cardinale Branda Castiglioni, Milan, Italy", "pm10": 23.340739726027401, "pm25": 11.342630136986299, "longitudine": 9.146, "latitudine": 45.502 }, "geometry": { "type": "Point", "coordinates": [ 9.146, 45.502 ] } },
+{ "type": "Feature", "properties": { "name": "Washington, Milan, Italy", "pm10": null, "pm25": null, "longitudine": 9.152946, "latitudine": 45.460613 }, "geometry": { "type": "Point", "coordinates": [ 9.152946, 45.460613 ] } },
+{ "type": "Feature", "properties": { "name": "Porta Venezia, Milan, Italy", "pm10": null, "pm25": null, "longitudine": 9.2087406840117865, "latitudine": 45.478192234103673 }, "geometry": { "type": "Point", "coordinates": [ 9.208740684011786, 45.478192234103673 ] } },
+{ "type": "Feature", "properties": { "name": "U1 - Atmospheric Chemistry - AE9B, Milan, Italy", "pm10": null, "pm25": null, "longitudine": 9.211517, "latitudine": 45.5132 }, "geometry": { "type": "Point", "coordinates": [ 9.211517, 45.5132 ] } },
+{ "type": "Feature", "properties": { "name": "Milano, Italy", "pm10": null, "pm25": null, "longitudine": 9.1859243, "latitudine": 45.4654219 }, "geometry": { "type": "Point", "coordinates": [ 9.1859243, 45.4654219 ] } },
+{ "type": "Feature", "properties": { "name": "Via Federico Chopin, Milan, Italy", "pm10": 20.355397260273975, "pm25": 13.339945205479452, "longitudine": 9.206, "latitudine": 45.426 }, "geometry": { "type": "Point", "coordinates": [ 9.206, 45.426 ] } },
+{ "type": "Feature", "properties": { "name": "Via Dei Lavoratori, Corsico, Italy", "pm10": 18.528452722063037, "pm25": 11.63134670487106, "longitudine": 9.116, "latitudine": 45.434 }, "geometry": { "type": "Point", "coordinates": [ 9.116, 45.434 ] } },
+{ "type": "Feature", "properties": { "name": "U2 - Atmospheric Chemistry - 2DB0, Milan, Italy", "pm10": null, "pm25": null, "longitudine": 9.210742, "latitudine": 45.513435 }, "geometry": { "type": "Point", "coordinates": [ 9.210742, 45.513435 ] } },
+{ "type": "Feature", "properties": { "name": "U4 - Atmospheric Chemistry - B377, Milan, Italy", "pm10": null, "pm25": null, "longitudine": 9.211131, "latitudine": 45.51409 }, "geometry": { "type": "Point", "coordinates": [ 9.211131, 45.51409 ] } },
+{ "type": "Feature", "properties": { "name": "Via Giacomo Matteotti, Cesano Boscone, Italy", "pm10": 16.854368131868132, "pm25": 9.7682692307692331, "longitudine": 9.1069775818400007, "latitudine": 45.434336916269999 }, "geometry": { "type": "Point", "coordinates": [ 9.106977581840001, 45.434336916269999 ] } },
+{ "type": "Feature", "properties": { "name": "Via Santa Marta, Milan, Italy", "pm10": 17.532411764705884, "pm25": 12.581882352941177, "longitudine": 9.1821027221199998, "latitudine": 45.461683407659997 }, "geometry": { "type": "Point", "coordinates": [ 9.18210272212, 45.461683407659997 ] } },
+{ "type": "Feature", "properties": { "name": "Piazza Sempione, Milan, Italy", "pm10": 28.638465753424661, "pm25": 24.651369863013699, "longitudine": 9.172453, "latitudine": 45.475697 }, "geometry": { "type": "Point", "coordinates": [ 9.172453, 45.475697 ] } },
+{ "type": "Feature", "properties": { "name": "Via Cristoforo Gandino, Milan, Italy", "pm10": 18.4186798679868, "pm25": 11.721287128712872, "longitudine": 9.178, "latitudine": 45.44 }, "geometry": { "type": "Point", "coordinates": [ 9.178, 45.44 ] } },
+{ "type": "Feature", "properties": { "name": "Oggiaro, Milan, Italy", "pm10": null, "pm25": null, "longitudine": 9.19, "latitudine": 45.486 }, "geometry": { "type": "Point", "coordinates": [ 9.19, 45.486 ] } },
+{ "type": "Feature", "properties": { "name": "Lambrate, Milan, Italy", "pm10": 16.245938375350139, "pm25": 9.4321288515406163, "longitudine": 9.224, "latitudine": 45.478 }, "geometry": { "type": "Point", "coordinates": [ 9.224, 45.478 ] } },
+{ "type": "Feature", "properties": { "name": "Via Maria Montessori, Milan, Italy", "pm10": 17.414450549450549, "pm25": 9.0623901098901101, "longitudine": 9.24, "latitudine": 45.46 }, "geometry": { "type": "Point", "coordinates": [ 9.24, 45.46 ] } },
+{ "type": "Feature", "properties": { "name": "Milano Arbe, Italy", "pm10": null, "pm25": null, "longitudine": 9.200316, "latitudine": 45.501736 }, "geometry": { "type": "Point", "coordinates": [ 9.200316, 45.501736 ] } },
+{ "type": "Feature", "properties": { "name": "U3 - Atmospheric Chemistry - B6CC, Milan, Italy", "pm10": null, "pm25": null, "longitudine": 9.211895, "latitudine": 45.5139 }, "geometry": { "type": "Point", "coordinates": [ 9.211895, 45.5139 ] } },
+{ "type": "Feature", "properties": { "name": "Verziere", "pm10": 24.247899159663866, "pm25": null, "longitudine": 9.19532511, "latitudine": 45.46334886 }, "geometry": { "type": "Point", "coordinates": [ 9.19532511, 45.46334886 ] } },
+{ "type": "Feature", "properties": { "name": "Via Pascal", "pm10": 27.451063829787234, "pm25": 16.625531914893617, "longitudine": 9.231667, "latitudine": 45.478347 }, "geometry": { "type": "Point", "coordinates": [ 9.231667, 45.478347 ] } },
+{ "type": "Feature", "properties": { "name": "Via Senato", "pm10": 32.955357142857146, "pm25": 22.165919282511211, "longitudine": 9.19746075, "latitudine": 45.470501 }, "geometry": { "type": "Point", "coordinates": [ 9.19746075, 45.470501 ] } },
+{ "type": "Feature", "properties": { "name": "Viale Marche", "pm10": 30.897872340425533, "pm25": 19.017094017094017, "longitudine": 9.19093444, "latitudine": 45.49631883 }, "geometry": { "type": "Point", "coordinates": [ 9.19093444, 45.49631883 ] } }
+]
+}
