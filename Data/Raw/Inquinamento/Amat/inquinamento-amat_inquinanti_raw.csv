@@ -1,0 +1,8 @@
+id_inquinante,nome,simbolo,unita_di_misura,media_temporale
+1,Biossido di Zolfo,SO2,μg/m3,M.m.h.
+2,Polveri < 10,PM10,μg/m3,m.g.
+3,Polveri < 2.5,PM2.5,μg/m3,m.g.
+4,Biossido di Azoto,NO2,μg/m3,M.m.h.
+5,Monossido di carbonio,CO,mg/m3,M.m.8h.
+6,Ozono,O3,μg/m3,M.m.h.
+7,Benzene,C6H6,μg/m3,m.g.
