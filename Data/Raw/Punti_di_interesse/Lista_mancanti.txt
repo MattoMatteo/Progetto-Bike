@@ -1,0 +1,14 @@
+Dataset presenti su https://dati.comune.milano.it/:
+
+Localizzazione orti urbani
+Localizzazione aree gioco
+Localizzazione tavoli da picnic
+Localizzazione parcheggi pubblici
+Localizzazione biblioteche
+Istruzione (tutte le tipologie di scuole + università milanesi)
+Localizzazione sport centri balneari/piscine
+Localizzazione farmacie
+
+Dataset presenti su https://geoportale.comune.milano.it/sit/open-data/:
+
+Localizzazione servizi igienici pubblici
