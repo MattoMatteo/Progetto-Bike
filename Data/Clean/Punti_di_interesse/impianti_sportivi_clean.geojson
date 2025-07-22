@@ -30559,16 +30559,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id_area": "7_244",
         "municipio": 7,
-        "area": "244",
         "località": "parco Aldo Aniasi",
-        "obj_id": 16755,
-        "codice": "S208010",
-        "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento",
+        "id_impianto": 16755,
         "data_ini": "2003-10-01",
         "area_mq": 490.4164000030685,
-        "perim_m": 149.78923873884582
+        "perim_m": 149.78923873884582,
+        "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
       },
       "geometry": {
         "type": "MultiPolygon",
