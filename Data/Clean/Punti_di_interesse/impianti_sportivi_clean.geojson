@@ -14,7 +14,7 @@
                 "municipio": 1,
                 "località": "via Marsala",
                 "id_impianto": 1562,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 113.05760000788848,
                 "perim_m": 50.58319326925413,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -87,7 +87,7 @@
                 "municipio": 1,
                 "località": "via Giusti n. 15",
                 "id_impianto": 9447,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 370.01545000439785,
                 "perim_m": 80.62596325035739,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -136,7 +136,7 @@
                 "municipio": 1,
                 "località": "giardino Roberto Bazlen",
                 "id_impianto": 25467,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 298.576388928624,
                 "perim_m": 70.43676131722329,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -205,7 +205,7 @@
                 "municipio": 1,
                 "località": "giardino Roberto Bazlen",
                 "id_impianto": 25465,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 352.00254628828554,
                 "perim_m": 76.27729415466273,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -254,7 +254,7 @@
                 "municipio": 1,
                 "località": "via Vivaio n. 11",
                 "id_impianto": 696,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 195.2859500013522,
                 "perim_m": 69.44409627504415,
                 "descrizione_codice": "Impianti sportivi - campo bocce Non specificato"
@@ -319,7 +319,7 @@
                 "municipio": 1,
                 "località": "viale D'annunzio n. 15-17",
                 "id_impianto": 41112,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 168.35671124170022,
                 "perim_m": 57.21822501870761,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -368,7 +368,7 @@
                 "municipio": 1,
                 "località": "via San Barnaba - Commenda",
                 "id_impianto": 2014,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 342.0540499280419,
                 "perim_m": 77.77856089075313,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -409,7 +409,7 @@
                 "municipio": 1,
                 "località": "via San Barnaba - Commenda",
                 "id_impianto": 5018,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 358.8587998717688,
                 "perim_m": 79.3649188490197,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -474,7 +474,7 @@
                 "municipio": 1,
                 "località": "via San Barnaba - Commenda",
                 "id_impianto": 3502,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 358.7156883208863,
                 "perim_m": 79.36495446647017,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -623,7 +623,7 @@
                 "municipio": 1,
                 "località": "giardino Fallaci Oriana",
                 "id_impianto": 16092,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 224.61871632799267,
                 "perim_m": 62.06251952209949,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -664,7 +664,7 @@
                 "municipio": 1,
                 "località": "giardino Fallaci Oriana",
                 "id_impianto": 31095,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 413.5268111868543,
                 "perim_m": 87.58581293034189,
                 "descrizione_codice": "Impianti sportivi - calcetto in asfalto"
@@ -705,7 +705,7 @@
                 "municipio": 1,
                 "località": "via della Commenda n. 22a",
                 "id_impianto": 2253,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 229.9709500006048,
                 "perim_m": 63.44628230804411,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -746,7 +746,7 @@
                 "municipio": 1,
                 "località": "parco Sempione",
                 "id_impianto": 13181,
-                "data_ini": 2004,
+                "anno_inizio": 2004,
                 "area_mq": 196.56140000171848,
                 "perim_m": 49.72441881006794,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -1003,7 +1003,7 @@
                 "municipio": 1,
                 "località": "parco Sempione",
                 "id_impianto": 13180,
-                "data_ini": 2004,
+                "anno_inizio": 2004,
                 "area_mq": 304.7880500013794,
                 "perim_m": 68.68486514507913,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -1648,7 +1648,7 @@
                 "municipio": 1,
                 "località": "parco Sempione",
                 "id_impianto": 13179,
-                "data_ini": 2004,
+                "anno_inizio": 2004,
                 "area_mq": 620.5989999879957,
                 "perim_m": 103.09369914690708,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -1689,7 +1689,7 @@
                 "municipio": 1,
                 "località": "giardini Montanelli Indro",
                 "id_impianto": 28492,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 134.88822564703483,
                 "perim_m": 65.97746393091982,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -1730,7 +1730,7 @@
                 "municipio": 2,
                 "località": "via Sammartini",
                 "id_impianto": 30738,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 361.44656717762354,
                 "perim_m": 79.70179622783252,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -1771,7 +1771,7 @@
                 "municipio": 2,
                 "località": "via Russo n. 27",
                 "id_impianto": 31947,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 292.49799471228636,
                 "perim_m": 70.64331639175985,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -1836,7 +1836,7 @@
                 "municipio": 2,
                 "località": "piazzale Farina",
                 "id_impianto": 771,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 270.7828499992661,
                 "perim_m": 66.13800161761998,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -1877,7 +1877,7 @@
                 "municipio": 2,
                 "località": "piazzale Farina",
                 "id_impianto": 6813,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 551.3278500069961,
                 "perim_m": 96.97037184078904,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -1922,7 +1922,7 @@
                 "municipio": 2,
                 "località": "vie Giacometti - Gilardi - Breda",
                 "id_impianto": 20998,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 552.7833499926907,
                 "perim_m": 97.08740041659844,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -1963,7 +1963,7 @@
                 "municipio": 2,
                 "località": "vie Giacometti - Gilardi - Breda",
                 "id_impianto": 20999,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 255.2639999976326,
                 "perim_m": 63.90856991864527,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -2004,7 +2004,7 @@
                 "municipio": 2,
                 "località": "vie Giacometti - Gilardi - Breda",
                 "id_impianto": 21000,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 371.99639999212366,
                 "perim_m": 79.20982827910909,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -2045,7 +2045,7 @@
                 "municipio": 2,
                 "località": "piazza Carbonari",
                 "id_impianto": 8488,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 290.0207499988885,
                 "perim_m": 70.87067014022789,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -2122,7 +2122,7 @@
                 "municipio": 2,
                 "località": "viale Zara n. 100",
                 "id_impianto": 33285,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 124.7402167788097,
                 "perim_m": 44.783840930835424,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -2163,7 +2163,7 @@
                 "municipio": 2,
                 "località": "viale Zara n. 100",
                 "id_impianto": 26332,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 175.43934267418487,
                 "perim_m": 53.88351050080216,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -2212,7 +2212,7 @@
                 "municipio": 2,
                 "località": "via Giacosa",
                 "id_impianto": 29417,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 98.79691469591717,
                 "perim_m": 57.3642665390386,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -2253,7 +2253,7 @@
                 "municipio": 2,
                 "località": "via Giacosa",
                 "id_impianto": 29418,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 99.08570559555787,
                 "perim_m": 57.3620909281053,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -2294,7 +2294,7 @@
                 "municipio": 2,
                 "località": "via San Mamete",
                 "id_impianto": 33298,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 664.0576241505345,
                 "perim_m": 106.94546222181762,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -2335,7 +2335,7 @@
                 "municipio": 2,
                 "località": "giardino Cassina de' Pomm",
                 "id_impianto": 38371,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 235.31155000127012,
                 "perim_m": 71.52796931674035,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -2376,7 +2376,7 @@
                 "municipio": 2,
                 "località": "giardino Franca Rame",
                 "id_impianto": 34257,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 206.67984920335155,
                 "perim_m": 70.12917990054534,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -2433,7 +2433,7 @@
                 "municipio": 2,
                 "località": "via Amalfi",
                 "id_impianto": 15247,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 109.71839999901913,
                 "perim_m": 61.28960409224874,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -2474,7 +2474,7 @@
                 "municipio": 2,
                 "località": "via Cislaghi",
                 "id_impianto": 40410,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 364.3254490120042,
                 "perim_m": 78.47028552519951,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -2515,7 +2515,7 @@
                 "municipio": 2,
                 "località": "parco Panza",
                 "id_impianto": 15260,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 330.95925000476115,
                 "perim_m": 74.1707846759443,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -2556,7 +2556,7 @@
                 "municipio": 2,
                 "località": "via Rucellai",
                 "id_impianto": 35620,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 477.0494999952144,
                 "perim_m": 91.70244994570706,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in granulato sferoidale di quarzo"
@@ -2597,7 +2597,7 @@
                 "municipio": 2,
                 "località": "via Ponte Nuovo",
                 "id_impianto": 10904,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 200.59429999399165,
                 "perim_m": 59.93676778188974,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -2638,7 +2638,7 @@
                 "municipio": 2,
                 "località": "via Ponte Nuovo",
                 "id_impianto": 9407,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 80.06725000155483,
                 "perim_m": 35.306834717878274,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -2855,7 +2855,7 @@
                 "municipio": 2,
                 "località": "via Rucellai",
                 "id_impianto": 35621,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 535.4436999956972,
                 "perim_m": 95.61193550113046,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -2896,7 +2896,7 @@
                 "municipio": 2,
                 "località": "vie Mariani Pompeo - Padre Semeria",
                 "id_impianto": 15831,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 329.7626000058399,
                 "perim_m": 76.57048641908473,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -2937,7 +2937,7 @@
                 "municipio": 2,
                 "località": "via Rancati",
                 "id_impianto": 8797,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 206.52820000164044,
                 "perim_m": 60.65235875233212,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -2978,7 +2978,7 @@
                 "municipio": 2,
                 "località": "vie Padova - Anacreonte - Tarabella",
                 "id_impianto": 38526,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 7119.0833814089465,
                 "perim_m": 387.26817711777943,
                 "descrizione_codice": "Impianti sportivi - rugby in erba normale"
@@ -3167,7 +3167,7 @@
                 "municipio": 2,
                 "località": "parco Adriano",
                 "id_impianto": 13155,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 909.7002000120074,
                 "perim_m": 120.89882648024317,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -3208,7 +3208,7 @@
                 "municipio": 2,
                 "località": "parco Martiri delle Libertà Iracheni Vittime del Terrorismo",
                 "id_impianto": 38124,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 169.08759994711625,
                 "perim_m": 55.03999999433488,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba sintetica"
@@ -3249,7 +3249,7 @@
                 "municipio": 2,
                 "località": "giardino Sandra Mondaini e Raimondo Vianello",
                 "id_impianto": 38574,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 624.1207196214242,
                 "perim_m": 103.25392974255648,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -3290,7 +3290,7 @@
                 "municipio": 2,
                 "località": "vie Petrocchi - Bertelli",
                 "id_impianto": 32054,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 296.5301000020397,
                 "perim_m": 69.00890204027434,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -3331,7 +3331,7 @@
                 "municipio": 3,
                 "località": "giardino Polotti Giulio",
                 "id_impianto": 36903,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 456.4029296929283,
                 "perim_m": 88.60035950481708,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -3376,7 +3376,7 @@
                 "municipio": 3,
                 "località": "giardino Polotti Giulio",
                 "id_impianto": 28316,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 129.36067674003036,
                 "perim_m": 65.50908127159576,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -3425,7 +3425,7 @@
                 "municipio": 3,
                 "località": "giardini Giovanni Falcone e Paolo Borsellino",
                 "id_impianto": 34068,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 89.08202904762986,
                 "perim_m": 33.50056930620543,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -3594,7 +3594,7 @@
                 "municipio": 3,
                 "località": "giardino Lucarelli Ezio",
                 "id_impianto": 40356,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 310.10296674591035,
                 "perim_m": 74.74494115635753,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -3635,7 +3635,7 @@
                 "municipio": 3,
                 "località": "giardino Lucarelli Ezio",
                 "id_impianto": 40340,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 84.38689999842903,
                 "perim_m": 36.75692562289887,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio Non specificato"
@@ -3676,7 +3676,7 @@
                 "municipio": 3,
                 "località": "via Pitteri",
                 "id_impianto": 19047,
-                "data_ini": 2002,
+                "anno_inizio": 2002,
                 "area_mq": 326.93380000295474,
                 "perim_m": 73.48264186014437,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -3737,7 +3737,7 @@
                 "municipio": 3,
                 "località": "via Rizzoli",
                 "id_impianto": 30442,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 89.01427135064526,
                 "perim_m": 60.244503138057894,
                 "descrizione_codice": "Impianti sportivi - campo bocce in gomma"
@@ -3806,7 +3806,7 @@
                 "municipio": 3,
                 "località": "via Feltre n. 68/1",
                 "id_impianto": 28726,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 293.2507594692988,
                 "perim_m": 69.71639732320199,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -3855,7 +3855,7 @@
                 "municipio": 3,
                 "località": "via Feltre n. 68/1",
                 "id_impianto": 28727,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 423.0602061137786,
                 "perim_m": 88.0184670665165,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -3904,7 +3904,7 @@
                 "municipio": 3,
                 "località": "via Pitteri",
                 "id_impianto": 37094,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 114.96715095275972,
                 "perim_m": 62.25807740637284,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -3957,7 +3957,7 @@
                 "municipio": 3,
                 "località": "viale Argonne",
                 "id_impianto": 40699,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 179.8986420609596,
                 "perim_m": 54.75078219586599,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket Non specificato"
@@ -4010,7 +4010,7 @@
                 "municipio": 3,
                 "località": "viale Argonne",
                 "id_impianto": 38096,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 196.33140589296818,
                 "perim_m": 66.3904157629198,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -4059,7 +4059,7 @@
                 "municipio": 3,
                 "località": "viale Argonne",
                 "id_impianto": 40722,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 536.8913445845371,
                 "perim_m": 95.13669321611334,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -4112,7 +4112,7 @@
                 "municipio": 3,
                 "località": "viale Argonne",
                 "id_impianto": 40758,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 141.82376040296552,
                 "perim_m": 51.25457994154819,
                 "descrizione_codice": "Impianti sportivi - calcetto Non specificato"
@@ -4161,7 +4161,7 @@
                 "municipio": 3,
                 "località": "viale Argonne",
                 "id_impianto": 40772,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 465.3485013004129,
                 "perim_m": 89.54853742433917,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket Non specificato"
@@ -4202,7 +4202,7 @@
                 "municipio": 3,
                 "località": "giardino Italo Pietra",
                 "id_impianto": 39285,
-                "data_ini": 2020,
+                "anno_inizio": 2020,
                 "area_mq": 168.81250003442622,
                 "perim_m": 55.00000000415738,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba sintetica"
@@ -4243,7 +4243,7 @@
                 "municipio": 3,
                 "località": "giardino Italo Pietra",
                 "id_impianto": 19099,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 241.9337999889034,
                 "perim_m": 65.42337366701986,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -4292,7 +4292,7 @@
                 "municipio": 3,
                 "località": "via Pascal n. 35",
                 "id_impianto": 6123,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 435.2204499983978,
                 "perim_m": 90.03734673583108,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -4353,7 +4353,7 @@
                 "municipio": 3,
                 "località": "via Boves",
                 "id_impianto": 4582,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 265.91480000423485,
                 "perim_m": 68.9193019176353,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -4402,7 +4402,7 @@
                 "municipio": 3,
                 "località": "parco della Lambretta",
                 "id_impianto": 32113,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 440.3040532140778,
                 "perim_m": 86.76137113456016,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -4443,7 +4443,7 @@
                 "municipio": 3,
                 "località": "parco della Lambretta",
                 "id_impianto": 32112,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 440.3040532144419,
                 "perim_m": 86.7613711346103,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -4484,7 +4484,7 @@
                 "municipio": 3,
                 "località": "parco della Lambretta",
                 "id_impianto": 40643,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 435.5265506986296,
                 "perim_m": 86.43390948254383,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -4549,7 +4549,7 @@
                 "municipio": 3,
                 "località": "via Don Calabria n. 6",
                 "id_impianto": 28358,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 392.7694668900581,
                 "perim_m": 82.33561295300956,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -4614,7 +4614,7 @@
                 "municipio": 3,
                 "località": "via Don Calabria n. 6",
                 "id_impianto": 93,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 287.15650000550926,
                 "perim_m": 68.39239430568672,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in granulato sferoidale di quarzo"
@@ -4655,7 +4655,7 @@
                 "municipio": 3,
                 "località": "piazzale Rimembranze di Lambrate",
                 "id_impianto": 37977,
-                "data_ini": 2017,
+                "anno_inizio": 2017,
                 "area_mq": 36.48857063272381,
                 "perim_m": 30.011145029169327,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -4696,7 +4696,7 @@
                 "municipio": 3,
                 "località": "via Morgagni G.B.",
                 "id_impianto": 32259,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 211.19329999718076,
                 "perim_m": 67.03019650261797,
                 "descrizione_codice": "Impianti sportivi - campo bocce in asfalto"
@@ -4737,7 +4737,7 @@
                 "municipio": 3,
                 "località": "piazza Leonardo da Vinci",
                 "id_impianto": 40233,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 247.03159013816105,
                 "perim_m": 68.97706710463076,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -4790,7 +4790,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 34061,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 2592.9711355287486,
                 "perim_m": 220.35752932098336,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -4831,7 +4831,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 34062,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 2592.9711355287486,
                 "perim_m": 220.35752932098336,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -4872,7 +4872,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 34060,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 2385.547445672347,
                 "perim_m": 205.14635201908183,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -4913,7 +4913,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 20053,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 842.1380000016694,
                 "perim_m": 111.231005250496,
                 "descrizione_codice": "impianti sportivi - piattaforma skateboard in cemento"
@@ -4990,7 +4990,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 41288,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 615.3301817237469,
                 "perim_m": 102.68247990947931,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in sabbia"
@@ -5031,7 +5031,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 41289,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 592.9117402744421,
                 "perim_m": 101.03037548887448,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -5072,7 +5072,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 41290,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 611.4784875755485,
                 "perim_m": 102.24008854132862,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -5113,7 +5113,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 34059,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 1515.0655118251093,
                 "perim_m": 160.42423316551915,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -5154,7 +5154,7 @@
                 "municipio": 3,
                 "località": "parco Lambro",
                 "id_impianto": 34051,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 7267.277600016444,
                 "perim_m": 357.67927393715416,
                 "descrizione_codice": "Impianti sportivi - rugby in erba normale"
@@ -5215,7 +5215,7 @@
                 "municipio": 4,
                 "località": "parco Alessandrini",
                 "id_impianto": 8205,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 111.7747999997994,
                 "perim_m": 59.74067314818393,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -5256,7 +5256,7 @@
                 "municipio": 4,
                 "località": "parco Alessandrini",
                 "id_impianto": 6658,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 111.80070000058573,
                 "perim_m": 59.752651792845995,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -5297,7 +5297,7 @@
                 "municipio": 4,
                 "località": "parco Alessandrini",
                 "id_impianto": 3603,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 111.7747999997994,
                 "perim_m": 59.74067314818393,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -5338,7 +5338,7 @@
                 "municipio": 4,
                 "località": "piazza Bologna - via Sceiwiller - Bacchiglione",
                 "id_impianto": 25195,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 146.8600999999792,
                 "perim_m": 54.494047589797674,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -5387,7 +5387,7 @@
                 "municipio": 4,
                 "località": "piazza Bologna - via Sceiwiller - Bacchiglione",
                 "id_impianto": 10982,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 199.79187248627358,
                 "perim_m": 68.82790069604845,
                 "descrizione_codice": "Impianti sportivi - campo bocce in asfalto"
@@ -5460,7 +5460,7 @@
                 "municipio": 4,
                 "località": "parco Formentano",
                 "id_impianto": 33241,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 168.37268371991684,
                 "perim_m": 59.74860682452594,
                 "descrizione_codice": "Impianti sportivi - campo bocce in gomma"
@@ -5501,7 +5501,7 @@
                 "municipio": 4,
                 "località": "parco Formentano",
                 "id_impianto": 26790,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 251.13703485232057,
                 "perim_m": 67.08136211292552,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -5542,7 +5542,7 @@
                 "municipio": 4,
                 "località": "via Monte Popera",
                 "id_impianto": 8367,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 457.57029999834424,
                 "perim_m": 88.60513258231333,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -5595,7 +5595,7 @@
                 "municipio": 4,
                 "località": "giardino Oreste Del Buono",
                 "id_impianto": 28233,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 609.3199624456464,
                 "perim_m": 100.7503725776029,
                 "descrizione_codice": "impianti sportivi - piattaforma skateboard in cemento"
@@ -6348,7 +6348,7 @@
                 "municipio": 4,
                 "località": "parco Trapezio",
                 "id_impianto": 35036,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 133.86203027661657,
                 "perim_m": 63.16632112733228,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -6397,7 +6397,7 @@
                 "municipio": 4,
                 "località": "parco dell' Alberello",
                 "id_impianto": 35525,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 621.6927538227668,
                 "perim_m": 102.9934142292978,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -6438,7 +6438,7 @@
                 "municipio": 4,
                 "località": "via Medea",
                 "id_impianto": 25622,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 889.4842008809309,
                 "perim_m": 124.7082491054242,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -6511,7 +6511,7 @@
                 "municipio": 4,
                 "località": "vie Salomone - Quintiliano",
                 "id_impianto": 34844,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 559.9604978405747,
                 "perim_m": 96.91736479679996,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -6560,7 +6560,7 @@
                 "municipio": 4,
                 "località": "via Sulmona",
                 "id_impianto": 28778,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 252.87655206683422,
                 "perim_m": 63.6083738706415,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in lastre cls"
@@ -6605,7 +6605,7 @@
                 "municipio": 4,
                 "località": "via Sordello",
                 "id_impianto": 20717,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 270.1677198077469,
                 "perim_m": 70.79776918186053,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -6666,7 +6666,7 @@
                 "municipio": 4,
                 "località": "via Montemartini",
                 "id_impianto": 37421,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 602.4151331681668,
                 "perim_m": 101.39522266246144,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -6707,7 +6707,7 @@
                 "municipio": 4,
                 "località": "piazza Insubria",
                 "id_impianto": 25708,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 174.5915677911654,
                 "perim_m": 106.73361395193103,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in asfalto"
@@ -7974,7 +7974,7 @@
                 "municipio": 4,
                 "località": "via Terenzio",
                 "id_impianto": 29107,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 489.92988244709494,
                 "perim_m": 91.15584103425803,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -8027,7 +8027,7 @@
                 "municipio": 4,
                 "località": "vie Cadibona - Monte Velino",
                 "id_impianto": 29621,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 82.02901162002237,
                 "perim_m": 50.4415595320817,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -8068,7 +8068,7 @@
                 "municipio": 4,
                 "località": "vie Cadibona - Monte Velino",
                 "id_impianto": 29622,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 96.94919126429363,
                 "perim_m": 58.22093667982495,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -8109,7 +8109,7 @@
                 "municipio": 4,
                 "località": "via Serrati",
                 "id_impianto": 34831,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 620.4963025421648,
                 "perim_m": 102.97790519614175,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -8158,7 +8158,7 @@
                 "municipio": 4,
                 "località": "via Serrati",
                 "id_impianto": 34832,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 796.4339398075809,
                 "perim_m": 115.81532373137424,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -8207,7 +8207,7 @@
                 "municipio": 4,
                 "località": "parco Galli",
                 "id_impianto": 6837,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 486.59730000542106,
                 "perim_m": 91.98858836505603,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -8248,7 +8248,7 @@
                 "municipio": 4,
                 "località": "via Ravenna",
                 "id_impianto": 34834,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 789.0767852941311,
                 "perim_m": 119.19133042081154,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -8289,7 +8289,7 @@
                 "municipio": 4,
                 "località": "via Medici del Vascello",
                 "id_impianto": 40331,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 425.959478076644,
                 "perim_m": 85.18129219405263,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -8330,7 +8330,7 @@
                 "municipio": 4,
                 "località": "vie Longanesi - Nervesa",
                 "id_impianto": 12792,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 731.7642000034061,
                 "perim_m": 114.40083915267259,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -8379,7 +8379,7 @@
                 "municipio": 4,
                 "località": "via Dalmazia",
                 "id_impianto": 1301,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 388.73734999663645,
                 "perim_m": 81.7376573443174,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -8428,7 +8428,7 @@
                 "municipio": 4,
                 "località": "via Rogoredo",
                 "id_impianto": 38026,
-                "data_ini": 2017,
+                "anno_inizio": 2017,
                 "area_mq": 169.0870222302128,
                 "perim_m": 55.03994267594781,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba sintetica"
@@ -8469,7 +8469,7 @@
                 "municipio": 4,
                 "località": "vie Marignano - Busseto - Fidenza",
                 "id_impianto": 6376,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 797.4565499826336,
                 "perim_m": 119.81205316788939,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -8510,7 +8510,7 @@
                 "municipio": 4,
                 "località": "viale Lazio",
                 "id_impianto": 16376,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 497.48584998672436,
                 "perim_m": 95.07886010515158,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -8559,7 +8559,7 @@
                 "municipio": 4,
                 "località": "viale Lazio",
                 "id_impianto": 16378,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 171.24319999796433,
                 "perim_m": 60.110521395402984,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -8600,7 +8600,7 @@
                 "municipio": 4,
                 "località": "parco Forlanini",
                 "id_impianto": 33727,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1287.5469701706909,
                 "perim_m": 187.61818341171673,
                 "descrizione_codice": "Impianti sportivi - softball in erba normale"
@@ -9015,7 +9015,7 @@
                 "municipio": 4,
                 "località": "parco Forlanini",
                 "id_impianto": 12560,
-                "data_ini": 2004,
+                "anno_inizio": 2004,
                 "area_mq": 67.37465000020308,
                 "perim_m": 48.36362876259761,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -9060,7 +9060,7 @@
                 "municipio": 5,
                 "località": "via dei Missaglia",
                 "id_impianto": 15203,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 132.72669999868185,
                 "perim_m": 65.29707458567515,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -9101,7 +9101,7 @@
                 "municipio": 5,
                 "località": "via Costantino Baroni",
                 "id_impianto": 38228,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 752.1376079132324,
                 "perim_m": 111.2000066781672,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -9142,7 +9142,7 @@
                 "municipio": 5,
                 "località": "vie Banfi G. - Calzolari - Largo Muzio",
                 "id_impianto": 19000,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 374.2379500061394,
                 "perim_m": 80.9977479237665,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -9187,7 +9187,7 @@
                 "municipio": 5,
                 "località": "via Baroni Costantino",
                 "id_impianto": 38496,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 370.9175500010798,
                 "perim_m": 79.63323268026622,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -9232,7 +9232,7 @@
                 "municipio": 5,
                 "località": "viale Ortles n. 73",
                 "id_impianto": 18988,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 227.13965000432768,
                 "perim_m": 69.6488021800501,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -9273,7 +9273,7 @@
                 "municipio": 5,
                 "località": "via Comisso",
                 "id_impianto": 33304,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 535.8045650770565,
                 "perim_m": 93.57576320295385,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -9314,7 +9314,7 @@
                 "municipio": 5,
                 "località": "vie Bocconi - Vittadini - Salasco",
                 "id_impianto": 31782,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 196.77275390080243,
                 "perim_m": 57.47434514636328,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -9355,7 +9355,7 @@
                 "municipio": 5,
                 "località": "vie Bocconi - Vittadini - Salasco",
                 "id_impianto": 31781,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 278.87555370721964,
                 "perim_m": 69.27777745182061,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -9396,7 +9396,7 @@
                 "municipio": 5,
                 "località": "vie Bocconi - Vittadini - Salasco",
                 "id_impianto": 31780,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 278.8755536970482,
                 "perim_m": 69.2777774508922,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -9437,7 +9437,7 @@
                 "municipio": 5,
                 "località": "vie Bocconi - Vittadini - Salasco",
                 "id_impianto": 10873,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 281.41464740562856,
                 "perim_m": 74.11235646237799,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -9494,7 +9494,7 @@
                 "municipio": 5,
                 "località": "vie Orlando - Feraboli",
                 "id_impianto": 39177,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 166.7601188122633,
                 "perim_m": 54.60954304253093,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba normale"
@@ -9559,7 +9559,7 @@
                 "municipio": 5,
                 "località": "via Don Rodrigo",
                 "id_impianto": 19188,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 478.4121285331401,
                 "perim_m": 90.3607080002724,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -9616,7 +9616,7 @@
                 "municipio": 5,
                 "località": "via Don Rodrigo",
                 "id_impianto": 19187,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 3293.9097499937034,
                 "perim_m": 242.9916838577421,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -9657,7 +9657,7 @@
                 "municipio": 5,
                 "località": "vie Balduccio da Pisa - Calabiana",
                 "id_impianto": 28366,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 405.7445533958093,
                 "perim_m": 84.8280136921685,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -9926,7 +9926,7 @@
                 "municipio": 5,
                 "località": "vie Balduccio da Pisa - Calabiana",
                 "id_impianto": 28368,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 107.07249551274593,
                 "perim_m": 58.76077980235117,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -9975,7 +9975,7 @@
                 "municipio": 5,
                 "località": "vie Pismonte - San Dionigi",
                 "id_impianto": 19215,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 2644.3827999870928,
                 "perim_m": 212.4380935741164,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -10016,7 +10016,7 @@
                 "municipio": 5,
                 "località": "vie Pismonte - San Dionigi",
                 "id_impianto": 19196,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 549.5459500036584,
                 "perim_m": 96.78431828294468,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -10073,7 +10073,7 @@
                 "municipio": 5,
                 "località": "vie Pismonte - San Dionigi",
                 "id_impianto": 19205,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 158.31684394764142,
                 "perim_m": 47.37283447309686,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in granulato sferoidale di quarzo"
@@ -11018,7 +11018,7 @@
                 "municipio": 5,
                 "località": "via dei Missaglia",
                 "id_impianto": 33306,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1980.9910420201454,
                 "perim_m": 187.68379587483662,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -11059,7 +11059,7 @@
                 "municipio": 5,
                 "località": "via dei Missaglia",
                 "id_impianto": 16672,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 692.7293999964706,
                 "perim_m": 123.39937962491382,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -11100,7 +11100,7 @@
                 "municipio": 5,
                 "località": "vie Verro - Coari",
                 "id_impianto": 33305,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1224.578757452826,
                 "perim_m": 141.71701768518906,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -11141,7 +11141,7 @@
                 "municipio": 5,
                 "località": "vie Verro - Coari",
                 "id_impianto": 2390,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 115.055628833571,
                 "perim_m": 41.27066582642884,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in asfalto"
@@ -11934,7 +11934,7 @@
                 "municipio": 5,
                 "località": "vie Verro - Coari",
                 "id_impianto": 5438,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 545.7191500051102,
                 "perim_m": 96.28865892657957,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -11991,7 +11991,7 @@
                 "municipio": 5,
                 "località": "vie Garelli - Stucchi - Selvanesco - Romeo",
                 "id_impianto": 15234,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 539.9159999928263,
                 "perim_m": 95.99317886905233,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -12032,7 +12032,7 @@
                 "municipio": 5,
                 "località": "vie Garelli - Stucchi - Selvanesco - Romeo",
                 "id_impianto": 15235,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 540.4895999867698,
                 "perim_m": 95.99176646391722,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -12073,7 +12073,7 @@
                 "municipio": 5,
                 "località": "via Dini",
                 "id_impianto": 19604,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 2255.6909500014376,
                 "perim_m": 196.86669418793193,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -12182,7 +12182,7 @@
                 "municipio": 5,
                 "località": "via Medeghino",
                 "id_impianto": 28472,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 92.69298666569806,
                 "perim_m": 38.96371757409645,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in lastre cls"
@@ -12231,7 +12231,7 @@
                 "municipio": 5,
                 "località": "via Costantino Baroni",
                 "id_impianto": 38389,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 134.30760032260298,
                 "perim_m": 49.04000002964722,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -12272,7 +12272,7 @@
                 "municipio": 5,
                 "località": "via Costantino Baroni",
                 "id_impianto": 36015,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 356.6886332550213,
                 "perim_m": 76.5734594887344,
                 "descrizione_codice": "impianti sportivi - piattaforma skateboard in cemento"
@@ -12321,7 +12321,7 @@
                 "municipio": 5,
                 "località": "via San Giacomo n. 1",
                 "id_impianto": 40664,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 119.754913031289,
                 "perim_m": 45.95154809640832,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -12374,7 +12374,7 @@
                 "municipio": 5,
                 "località": "vie Bugatto Zanetto - Erice",
                 "id_impianto": 36768,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 231.47360834303078,
                 "perim_m": 71.02777535937501,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -12415,7 +12415,7 @@
                 "municipio": 5,
                 "località": "vie Bugatto Zanetto - Erice",
                 "id_impianto": 36767,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 491.85058235378796,
                 "perim_m": 91.2963357122866,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -12456,7 +12456,7 @@
                 "municipio": 5,
                 "località": "vie Bugatto Zanetto - Erice",
                 "id_impianto": 36764,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 628.1648691547553,
                 "perim_m": 103.20694324054523,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -12505,7 +12505,7 @@
                 "municipio": 5,
                 "località": "via Boeri",
                 "id_impianto": 11894,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 225.34308796207497,
                 "perim_m": 69.99088976883245,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -12546,7 +12546,7 @@
                 "municipio": 5,
                 "località": "parco Chiesa Rossa",
                 "id_impianto": 30259,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 246.65727356736275,
                 "perim_m": 66.57051782981691,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -12591,7 +12591,7 @@
                 "municipio": 5,
                 "località": "vie Donna Prassede, Boffalora, Jan Palach",
                 "id_impianto": 30780,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 478.1098013871731,
                 "perim_m": 91.25372158627616,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -12632,7 +12632,7 @@
                 "municipio": 5,
                 "località": "vie Donna Prassede, Boffalora, Jan Palach",
                 "id_impianto": 30795,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 1013.6717859342093,
                 "perim_m": 133.4468263132077,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -12673,7 +12673,7 @@
                 "municipio": 5,
                 "località": "vie Donna Prassede, Boffalora, Jan Palach",
                 "id_impianto": 15804,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 801.6032583381027,
                 "perim_m": 120.23949597774273,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -12730,7 +12730,7 @@
                 "municipio": 5,
                 "località": "viale Giovanni da Cermenate",
                 "id_impianto": 18913,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 249.07754998701398,
                 "perim_m": 66.80651584348819,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -12771,7 +12771,7 @@
                 "municipio": 5,
                 "località": "via Baroni",
                 "id_impianto": 8220,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 96.66189999774743,
                 "perim_m": 59.84270654972681,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -12812,7 +12812,7 @@
                 "municipio": 5,
                 "località": "via Baroni",
                 "id_impianto": 3622,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 96.59594999953958,
                 "perim_m": 59.82971449142502,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -12853,7 +12853,7 @@
                 "municipio": 5,
                 "località": "via dell' Assunta",
                 "id_impianto": 33303,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 341.57891103575946,
                 "perim_m": 75.31537235702693,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -12894,7 +12894,7 @@
                 "municipio": 5,
                 "località": "via Basso Lelio - via Saponaro",
                 "id_impianto": 20686,
-                "data_ini": 2004,
+                "anno_inizio": 2004,
                 "area_mq": 96.47920000192168,
                 "perim_m": 57.799765037075375,
                 "descrizione_codice": "Impianti sportivi - campo bocce Non specificato"
@@ -12935,7 +12935,7 @@
                 "municipio": 5,
                 "località": "via Bottoni",
                 "id_impianto": 30484,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 371.78344577875623,
                 "perim_m": 79.42022012694717,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -12980,7 +12980,7 @@
                 "municipio": 5,
                 "località": "via dell' Arcadia",
                 "id_impianto": 11056,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 554.4118500047707,
                 "perim_m": 95.52749865266097,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba normale"
@@ -13037,7 +13037,7 @@
                 "municipio": 5,
                 "località": "via dell' Arcadia",
                 "id_impianto": 11055,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 549.872900002194,
                 "perim_m": 95.02003596756873,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba normale"
@@ -13094,7 +13094,7 @@
                 "municipio": 5,
                 "località": "via dell' Arcadia",
                 "id_impianto": 9562,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 513.1744000029465,
                 "perim_m": 93.43823599001571,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -13135,7 +13135,7 @@
                 "municipio": 5,
                 "località": "vie Aicardo - Boeri - Giovanni da Cermenate - piazza caduti del Lavoro",
                 "id_impianto": 34212,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 424.0445000067547,
                 "perim_m": 84.74041646924401,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -13176,7 +13176,7 @@
                 "municipio": 5,
                 "località": "via Pescarenico n. 2",
                 "id_impianto": 6007,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 434.4734500039913,
                 "perim_m": 86.8194701857736,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -13241,7 +13241,7 @@
                 "municipio": 5,
                 "località": "via Fra Pampuri Riccardo",
                 "id_impianto": 4835,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 278.2508500051914,
                 "perim_m": 68.58835153917423,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -13338,7 +13338,7 @@
                 "municipio": 5,
                 "località": "parco della Resistenza",
                 "id_impianto": 24801,
-                "data_ini": 2004,
+                "anno_inizio": 2004,
                 "area_mq": 474.9504306120748,
                 "perim_m": 89.95410392044629,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -13387,7 +13387,7 @@
                 "municipio": 5,
                 "località": "parco della Resistenza",
                 "id_impianto": 24800,
-                "data_ini": 2004,
+                "anno_inizio": 2004,
                 "area_mq": 483.48645748979516,
                 "perim_m": 90.74425124713204,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -13436,7 +13436,7 @@
                 "municipio": 5,
                 "località": "parco Autieri d'Italia",
                 "id_impianto": 17190,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 1309.5636500151418,
                 "perim_m": 152.35849576307194,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba normale"
@@ -13477,7 +13477,7 @@
                 "municipio": 5,
                 "località": "parco Autieri d'Italia",
                 "id_impianto": 17185,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 550.8715000006944,
                 "perim_m": 96.86929407556858,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -13518,7 +13518,7 @@
                 "municipio": 5,
                 "località": "via Wolf Ferrari civ 6",
                 "id_impianto": 40931,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 321.6796314019267,
                 "perim_m": 80.30502674387125,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -13563,7 +13563,7 @@
                 "municipio": 5,
                 "località": "via Wolf Ferrari civ 6",
                 "id_impianto": 40926,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 115.17961170030094,
                 "perim_m": 42.96349383421968,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -13608,7 +13608,7 @@
                 "municipio": 5,
                 "località": "via Wolf Ferrari civ 6",
                 "id_impianto": 40925,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 237.87188504549476,
                 "perim_m": 100.08399178882811,
                 "descrizione_codice": "Impianti sportivi - altro Non specificato"
@@ -13661,7 +13661,7 @@
                 "municipio": 5,
                 "località": "via dei Missaglia - De Ruggero",
                 "id_impianto": 7958,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 693.5397500000695,
                 "perim_m": 167.31598690937142,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -13762,7 +13762,7 @@
                 "municipio": 6,
                 "località": "giardino delle Crocerossine",
                 "id_impianto": 6282,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 112.1678500085304,
                 "perim_m": 62.05224116734871,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -13803,7 +13803,7 @@
                 "municipio": 6,
                 "località": "giardino delle Crocerossine",
                 "id_impianto": 1749,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 112.26069999877197,
                 "perim_m": 62.096767472680554,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -13844,7 +13844,7 @@
                 "municipio": 6,
                 "località": "via Zuara - Tobruk",
                 "id_impianto": 3798,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 549.98675001159,
                 "perim_m": 96.80053786508816,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -13949,7 +13949,7 @@
                 "municipio": 6,
                 "località": "via dei Narcisi n. 3",
                 "id_impianto": 8585,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 124.77975494321348,
                 "perim_m": 51.33467227994391,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -13994,7 +13994,7 @@
                 "municipio": 6,
                 "località": "via Martinelli",
                 "id_impianto": 6476,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 197.77159999779457,
                 "perim_m": 58.09869277345727,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -14043,7 +14043,7 @@
                 "municipio": 6,
                 "località": "vie Malaga - Tosi",
                 "id_impianto": 34160,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 544.9979637404313,
                 "perim_m": 96.55801480203573,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in sabbia"
@@ -14104,7 +14104,7 @@
                 "municipio": 6,
                 "località": "vie Malaga - Tosi",
                 "id_impianto": 34161,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 424.67360406598334,
                 "perim_m": 86.37509720982058,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -14145,7 +14145,7 @@
                 "municipio": 6,
                 "località": "vie Savona - Brunelleschi",
                 "id_impianto": 29120,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 621.0160130888148,
                 "perim_m": 101.45916586459973,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -14186,7 +14186,7 @@
                 "municipio": 6,
                 "località": "vie Savona - Brunelleschi",
                 "id_impianto": 29116,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 117.23528354707159,
                 "perim_m": 51.07022886098541,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -14227,7 +14227,7 @@
                 "municipio": 6,
                 "località": "via Giambellino",
                 "id_impianto": 29161,
-                "data_ini": 2000,
+                "anno_inizio": 2000,
                 "area_mq": 437.42042382262434,
                 "perim_m": 87.92907113482597,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -14272,7 +14272,7 @@
                 "municipio": 6,
                 "località": "piazza Tirana",
                 "id_impianto": 10160,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 538.622649993786,
                 "perim_m": 95.90181769962,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -14321,7 +14321,7 @@
                 "municipio": 6,
                 "località": "giardino Alberto Moravia",
                 "id_impianto": 16683,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 933.7128000016669,
                 "perim_m": 143.8978525628604,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -16022,7 +16022,7 @@
                 "municipio": 6,
                 "località": "giardino Alberto Moravia",
                 "id_impianto": 16687,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 1406.6180854725878,
                 "perim_m": 187.28149195095978,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -16119,7 +16119,7 @@
                 "municipio": 6,
                 "località": "vie Ovada - San Vigilio",
                 "id_impianto": 38552,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 169.0875999731403,
                 "perim_m": 55.04000000068052,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba sintetica"
@@ -16168,7 +16168,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni n. 10",
                 "id_impianto": 7148,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 477.52460000325885,
                 "perim_m": 91.17999278400394,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -16225,7 +16225,7 @@
                 "municipio": 6,
                 "località": "via De Nicola n. 40",
                 "id_impianto": 6689,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 547.2320000002134,
                 "perim_m": 96.68020687226361,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -16266,7 +16266,7 @@
                 "municipio": 6,
                 "località": "vie Filippo da Liscate - Russoli",
                 "id_impianto": 39391,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 601.1310329197833,
                 "perim_m": 102.37110911905354,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -16315,7 +16315,7 @@
                 "municipio": 6,
                 "località": "via Salerno n. 1",
                 "id_impianto": 5447,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 393.22609999654446,
                 "perim_m": 81.4036130589809,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -16364,7 +16364,7 @@
                 "municipio": 6,
                 "località": "via Argelati",
                 "id_impianto": 30558,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 291.89215767137415,
                 "perim_m": 72.9164101492743,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -16405,7 +16405,7 @@
                 "municipio": 6,
                 "località": "via Argelati",
                 "id_impianto": 33311,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 2076.8777999891176,
                 "perim_m": 193.79390373976153,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -16466,7 +16466,7 @@
                 "municipio": 6,
                 "località": "largo Giambellino",
                 "id_impianto": 39894,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 176.2887867878757,
                 "perim_m": 53.159635806468174,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -16507,7 +16507,7 @@
                 "municipio": 6,
                 "località": "vie Rimini - La Spezia - Famagosta",
                 "id_impianto": 37345,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 520.2000000067628,
                 "perim_m": 95.20000000039778,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -16548,7 +16548,7 @@
                 "municipio": 6,
                 "località": "vie Rimini - La Spezia - Famagosta",
                 "id_impianto": 37342,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 783.2377218660279,
                 "perim_m": 114.73622291825478,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -16589,7 +16589,7 @@
                 "municipio": 6,
                 "località": "via Carriera n. 12",
                 "id_impianto": 35945,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 791.9996114522219,
                 "perim_m": 119.19998255394032,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -16638,7 +16638,7 @@
                 "municipio": 6,
                 "località": "via Odazio",
                 "id_impianto": 27545,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 130.08291595882125,
                 "perim_m": 65.98282096737148,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -16679,7 +16679,7 @@
                 "municipio": 6,
                 "località": "vie Don Primo Mazzolari - Barona",
                 "id_impianto": 24860,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 840.8508755295675,
                 "perim_m": 121.5456810249917,
                 "descrizione_codice": "Impianti sportivi - calcetto in asfalto"
@@ -16724,7 +16724,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni n. 8",
                 "id_impianto": 31026,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 284.16260739047743,
                 "perim_m": 69.74115220547439,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -16765,7 +16765,7 @@
                 "municipio": 6,
                 "località": "vie Strozzi - Caterina da Forlì",
                 "id_impianto": 16027,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 303.4820000023134,
                 "perim_m": 72.0315358629752,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -16806,7 +16806,7 @@
                 "municipio": 6,
                 "località": "vie Strozzi - Caterina da Forlì",
                 "id_impianto": 16024,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 189.24132212860331,
                 "perim_m": 52.9983024369016,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in lastre cls"
@@ -17327,7 +17327,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni",
                 "id_impianto": 33310,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1547.7329443112694,
                 "perim_m": 163.37007292562717,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -17368,7 +17368,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni",
                 "id_impianto": 27416,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 258.06191308677626,
                 "perim_m": 65.59878755271481,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -17413,7 +17413,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni",
                 "id_impianto": 27415,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 539.9940968658186,
                 "perim_m": 96.00067497277712,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -17458,7 +17458,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni n. 8",
                 "id_impianto": 31027,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 255.0250860495628,
                 "perim_m": 65.66731896231289,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -17499,7 +17499,7 @@
                 "municipio": 6,
                 "località": "vie Lodovico il Moro - Santi F.",
                 "id_impianto": 33307,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1621.174599998095,
                 "perim_m": 164.9687200455772,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -17540,7 +17540,7 @@
                 "municipio": 6,
                 "località": "giardino Giuseppe Pippo Saporito ",
                 "id_impianto": 15399,
-                "data_ini": 2002,
+                "anno_inizio": 2002,
                 "area_mq": 293.4356999940641,
                 "perim_m": 70.86957737835056,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -17593,7 +17593,7 @@
                 "municipio": 6,
                 "località": "giardino Giuseppe Pippo Saporito ",
                 "id_impianto": 28519,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 424.15233467027434,
                 "perim_m": 86.33980446701051,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -17634,7 +17634,7 @@
                 "municipio": 6,
                 "località": "vie Lorenteggio - Bisceglie - Giordani",
                 "id_impianto": 226,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 1065.1617500089974,
                 "perim_m": 135.45021996257495,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba normale"
@@ -17675,7 +17675,7 @@
                 "municipio": 6,
                 "località": "vie Lorenteggio - Bisceglie - Giordani",
                 "id_impianto": 9326,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 364.0112500031328,
                 "perim_m": 80.08464259078545,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -17716,7 +17716,7 @@
                 "municipio": 6,
                 "località": "vie Lorenteggio - Bisceglie - Giordani",
                 "id_impianto": 7856,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 1127.9428999873721,
                 "perim_m": 138.34174991587992,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba normale"
@@ -17757,7 +17757,7 @@
                 "municipio": 6,
                 "località": "vie Lorenteggio - Bisceglie - Giordani",
                 "id_impianto": 4735,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 363.7705000035073,
                 "perim_m": 80.06618742192174,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -17798,7 +17798,7 @@
                 "municipio": 6,
                 "località": "giardino Anna Del Bo Boffino",
                 "id_impianto": 30981,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 463.99128251451737,
                 "perim_m": 111.2792069523941,
                 "descrizione_codice": "impianti sportivi - piattaforma skateboard in cemento"
@@ -17967,7 +17967,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni - Gigli - dei Giacinti - Primaticcio",
                 "id_impianto": 26651,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 213.01449800285081,
                 "perim_m": 60.724273504765264,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -18008,7 +18008,7 @@
                 "municipio": 6,
                 "località": "via degli Anemoni - Gigli - dei Giacinti - Primaticcio",
                 "id_impianto": 26653,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 233.02059488991893,
                 "perim_m": 62.79138413398998,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -18049,7 +18049,7 @@
                 "municipio": 6,
                 "località": "parco Giussani Don Luigi",
                 "id_impianto": 34847,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 206.79319999735634,
                 "perim_m": 59.19178784589971,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -18090,7 +18090,7 @@
                 "municipio": 6,
                 "località": "vie Donati - D'Alviano",
                 "id_impianto": 33309,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 1020.9498636759819,
                 "perim_m": 130.2332344151126,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -18131,7 +18131,7 @@
                 "municipio": 6,
                 "località": "vie Donati - D'Alviano",
                 "id_impianto": 26111,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 336.94429596907105,
                 "perim_m": 81.88492571051519,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -18212,7 +18212,7 @@
                 "municipio": 6,
                 "località": "vie Donati - D'Alviano",
                 "id_impianto": 26103,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 203.3890808130377,
                 "perim_m": 65.16912835617215,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -18261,7 +18261,7 @@
                 "municipio": 6,
                 "località": "giardino Vincenzo Muccioli",
                 "id_impianto": 14375,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 298.1762500000186,
                 "perim_m": 73.30485758422125,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -18302,7 +18302,7 @@
                 "municipio": 6,
                 "località": "parco Andrea Campagna",
                 "id_impianto": 36877,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 814.8366148809566,
                 "perim_m": 117.55661316413159,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in sabbia"
@@ -18351,7 +18351,7 @@
                 "municipio": 6,
                 "località": "parco Andrea Campagna",
                 "id_impianto": 37446,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 607.5300383683534,
                 "perim_m": 101.94043541790157,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -18392,7 +18392,7 @@
                 "municipio": 6,
                 "località": "parco Andrea Campagna",
                 "id_impianto": 36891,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 3268.352306001966,
                 "perim_m": 241.71286438852295,
                 "descrizione_codice": "Impianti sportivi - rugby in erba normale"
@@ -18437,7 +18437,7 @@
                 "municipio": 6,
                 "località": "vie Cascina Bianca - De Pretis - Danusso - Finetti",
                 "id_impianto": 35699,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 1152.7917086407147,
                 "perim_m": 144.16038155832177,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba normale"
@@ -18478,7 +18478,7 @@
                 "municipio": 6,
                 "località": "via San Paolino - San Vigilio",
                 "id_impianto": 35021,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 480.52760466690376,
                 "perim_m": 92.05220997987595,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -18519,7 +18519,7 @@
                 "municipio": 6,
                 "località": "via San Paolino - San Vigilio",
                 "id_impianto": 33287,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 468.86146257842586,
                 "perim_m": 94.2263980033212,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -18560,7 +18560,7 @@
                 "municipio": 6,
                 "località": "parco dei Fontanili",
                 "id_impianto": 36470,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 611.6759876849104,
                 "perim_m": 101.08644831343011,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -18601,7 +18601,7 @@
                 "municipio": 6,
                 "località": "parco dei Fontanili",
                 "id_impianto": 36471,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 611.9712666355065,
                 "perim_m": 101.10909679915798,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -18642,7 +18642,7 @@
                 "municipio": 6,
                 "località": "parco dei Fontanili",
                 "id_impianto": 36527,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 219.38150838933475,
                 "perim_m": 70.94138206986052,
                 "descrizione_codice": "Impianti sportivi campo bocce - granulato sferoidale di quarzo - d.c."
@@ -18683,7 +18683,7 @@
                 "municipio": 7,
                 "località": "vie Marchesi - Taggia - Paone",
                 "id_impianto": 5486,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 487.01309999437126,
                 "perim_m": 90.93218344581898,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -18724,7 +18724,7 @@
                 "municipio": 7,
                 "località": "vie Domokos - Gabetti - Cenni",
                 "id_impianto": 37393,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 291.9649572787918,
                 "perim_m": 68.37658421169415,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -18765,7 +18765,7 @@
                 "municipio": 7,
                 "località": "parco della Cava di Muggiano",
                 "id_impianto": 28751,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 187.10758488830768,
                 "perim_m": 69.37377218071761,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -18822,7 +18822,7 @@
                 "municipio": 7,
                 "località": "via Caio Mario n. 18",
                 "id_impianto": 31600,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 61.51711709503302,
                 "perim_m": 37.212612598543544,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -18863,7 +18863,7 @@
                 "municipio": 7,
                 "località": "via Caio Mario n. 18",
                 "id_impianto": 31598,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 61.89288293985744,
                 "perim_m": 37.38738740490062,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -18904,7 +18904,7 @@
                 "municipio": 7,
                 "località": "via Zoia fratelli",
                 "id_impianto": 20913,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 431.922299247959,
                 "perim_m": 85.2802372469302,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -19077,7 +19077,7 @@
                 "municipio": 7,
                 "località": "via Mauri n. 10",
                 "id_impianto": 40853,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 93.18713918617561,
                 "perim_m": 91.86838358142901,
                 "descrizione_codice": "Impianti sportivi - altro Non specificato"
@@ -19130,7 +19130,7 @@
                 "municipio": 7,
                 "località": "vie Harar - San Giusto - Novara",
                 "id_impianto": 14424,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 531.3528499850169,
                 "perim_m": 94.51103818955468,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -19171,7 +19171,7 @@
                 "municipio": 7,
                 "località": "via Zoia Fratelli",
                 "id_impianto": 17219,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 641.5037000006902,
                 "perim_m": 106.59064174560515,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -19220,7 +19220,7 @@
                 "municipio": 7,
                 "località": "vie Amantea - Budrio",
                 "id_impianto": 7465,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 73.21015000709812,
                 "perim_m": 59.599546508839914,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -19261,7 +19261,7 @@
                 "municipio": 7,
                 "località": "vie Amantea - Budrio",
                 "id_impianto": 5935,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 73.34079999201076,
                 "perim_m": 59.60752307640147,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -19302,7 +19302,7 @@
                 "municipio": 7,
                 "località": "via Lamennais n. 20",
                 "id_impianto": 463,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 652.6295500041366,
                 "perim_m": 108.50201530075167,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -19359,7 +19359,7 @@
                 "municipio": 7,
                 "località": "giardino Sant’Annibale Maria di Francia",
                 "id_impianto": 15855,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 527.4708000142227,
                 "perim_m": 95.15886761732506,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -19400,7 +19400,7 @@
                 "municipio": 7,
                 "località": "quartiere Muggiano",
                 "id_impianto": 38125,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 169.0875999852739,
                 "perim_m": 55.03999999825894,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba sintetica"
@@ -19441,7 +19441,7 @@
                 "municipio": 7,
                 "località": "quartiere Muggiano",
                 "id_impianto": 15718,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 321.4553999933872,
                 "perim_m": 77.54637661016869,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -19830,7 +19830,7 @@
                 "municipio": 7,
                 "località": "vie Amantea - Budrio",
                 "id_impianto": 33343,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 2974.5276039786727,
                 "perim_m": 229.0221431518627,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -19871,7 +19871,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 39275,
-                "data_ini": 2020,
+                "anno_inizio": 2020,
                 "area_mq": 352.23282379776344,
                 "perim_m": 78.1786259017483,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in sabbia"
@@ -19912,7 +19912,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 39276,
-                "data_ini": 2020,
+                "anno_inizio": 2020,
                 "area_mq": 347.76717614370756,
                 "perim_m": 77.82137409029131,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in sabbia"
@@ -19953,7 +19953,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 26320,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 283.90816228392407,
                 "perim_m": 70.50422476045279,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in sabbia"
@@ -20002,7 +20002,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 26319,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 281.53183770102976,
                 "perim_m": 70.29577523894922,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in sabbia"
@@ -20051,7 +20051,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 30559,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 588.1380430730353,
                 "perim_m": 99.03400805219228,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -20124,7 +20124,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 16806,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 366.9460000083745,
                 "perim_m": 79.19144481590803,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -20165,7 +20165,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 16794,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 546.9263500011434,
                 "perim_m": 95.74206650018226,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -20210,7 +20210,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 33321,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 251.11511410729807,
                 "perim_m": 69.10948630465167,
                 "descrizione_codice": "Impianti sportivi - tennis in cemento"
@@ -20251,7 +20251,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 33324,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 234.25809644737154,
                 "perim_m": 66.93558182307393,
                 "descrizione_codice": "Impianti sportivi - tennis in cemento"
@@ -20292,7 +20292,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 33323,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 247.73843923002607,
                 "perim_m": 68.3149708708502,
                 "descrizione_codice": "Impianti sportivi - tennis in cemento"
@@ -20333,7 +20333,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 33322,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 265.65016984264423,
                 "perim_m": 70.43402009967446,
                 "descrizione_codice": "Impianti sportivi - tennis in cemento"
@@ -20374,7 +20374,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 30963,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 242.7316000001,
                 "perim_m": 73.65439897678328,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -20415,7 +20415,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 30962,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 243.1694999985494,
                 "perim_m": 73.74926034173238,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -20456,7 +20456,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 33185,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 4996.760474867413,
                 "perim_m": 300.2435149240525,
                 "descrizione_codice": "Impianti sportivi - rugby in erba normale"
@@ -20497,7 +20497,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 16765,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 172.39839999895275,
                 "perim_m": 64.8435104370629,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -20538,7 +20538,7 @@
                 "municipio": 7,
                 "località": "parco Aldo Aniasi",
                 "id_impianto": 16755,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 490.4164000030685,
                 "perim_m": 149.78923873884582,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -21697,7 +21697,7 @@
                 "municipio": 7,
                 "località": "parco di Baggio",
                 "id_impianto": 15897,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 530.6661000001534,
                 "perim_m": 95.23881884803822,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -21738,7 +21738,7 @@
                 "municipio": 7,
                 "località": "via Noale",
                 "id_impianto": 28269,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 390.3129675238025,
                 "perim_m": 81.44795412880661,
                 "descrizione_codice": "Impianti sportivi - tennis in cemento"
@@ -21779,7 +21779,7 @@
                 "municipio": 7,
                 "località": "via Tofano",
                 "id_impianto": 4743,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 616.8078290164724,
                 "perim_m": 101.30031029601427,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -21820,7 +21820,7 @@
                 "municipio": 7,
                 "località": "via Noale",
                 "id_impianto": 28268,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 717.3493688105082,
                 "perim_m": 114.50912024439215,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -21861,7 +21861,7 @@
                 "municipio": 7,
                 "località": "via Noale",
                 "id_impianto": 28270,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 276.9933073098624,
                 "perim_m": 69.79120737449006,
                 "descrizione_codice": "Impianti sportivi - calcetto in asfalto"
@@ -21902,7 +21902,7 @@
                 "municipio": 7,
                 "località": "via Osteno n. 2/a",
                 "id_impianto": 2350,
-                "data_ini": 2002,
+                "anno_inizio": 2002,
                 "area_mq": 59.54449999866842,
                 "perim_m": 42.03227410422683,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -21971,7 +21971,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 33312,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1302.785983793768,
                 "perim_m": 157.59275749374103,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -22012,7 +22012,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29869,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 91.90020197030425,
                 "perim_m": 52.73519735806818,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -22057,7 +22057,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29870,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 92.56307087756583,
                 "perim_m": 52.82934158032729,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -22098,7 +22098,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29865,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 433.8402939931713,
                 "perim_m": 87.83316847335462,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -22139,7 +22139,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29866,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 417.18175812549197,
                 "perim_m": 85.694363525942,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -22180,7 +22180,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29871,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 1588.0015710988173,
                 "perim_m": 163.24984813764928,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -22221,7 +22221,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29872,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 1648.7012597416842,
                 "perim_m": 170.14603107456347,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -22262,7 +22262,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29873,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 1648.700961858346,
                 "perim_m": 170.14590167977212,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -22303,7 +22303,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29914,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 320.08933490160956,
                 "perim_m": 75.0765354362759,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -22352,7 +22352,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29867,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 105.4400113191493,
                 "perim_m": 59.89047335132573,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -22401,7 +22401,7 @@
                 "municipio": 7,
                 "località": "parco delle Cave",
                 "id_impianto": 29868,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 111.5333156496825,
                 "perim_m": 61.438159964129404,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -22450,7 +22450,7 @@
                 "municipio": 7,
                 "località": "via Dezza",
                 "id_impianto": 28267,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 469.45272569950555,
                 "perim_m": 90.7303567443014,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -22515,7 +22515,7 @@
                 "municipio": 7,
                 "località": "via Dezza",
                 "id_impianto": 33344,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 416.71679999907644,
                 "perim_m": 83.9713900742544,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -22560,7 +22560,7 @@
                 "municipio": 7,
                 "località": "vie Paravia n. 83 - Stratico n. 5-7",
                 "id_impianto": 40603,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 92.06626876481958,
                 "perim_m": 39.3820034342588,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket Non specificato"
@@ -22601,7 +22601,7 @@
                 "municipio": 7,
                 "località": "vie Paravia n. 83 - Stratico n. 5-7",
                 "id_impianto": 40604,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 178.46415154835768,
                 "perim_m": 55.81646661548793,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket Non specificato"
@@ -22646,7 +22646,7 @@
                 "municipio": 7,
                 "località": "giardino Marangoni Luigi",
                 "id_impianto": 16156,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 549.2080097110854,
                 "perim_m": 96.97857350642091,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in asfalto"
@@ -23255,7 +23255,7 @@
                 "municipio": 7,
                 "località": "via Fleming",
                 "id_impianto": 16080,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 114.49245001579862,
                 "perim_m": 62.206902566507566,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -23296,7 +23296,7 @@
                 "municipio": 7,
                 "località": "via Anselmo da Baggio n. 60",
                 "id_impianto": 31551,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 216.651059267572,
                 "perim_m": 60.83530544467341,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -23337,7 +23337,7 @@
                 "municipio": 7,
                 "località": "via Anselmo da Baggio n. 60",
                 "id_impianto": 27078,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 164.90900913872537,
                 "perim_m": 52.62084091984286,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -23378,7 +23378,7 @@
                 "municipio": 7,
                 "località": "vie Fleming - San Giusto",
                 "id_impianto": 3411,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 117.67460000046374,
                 "perim_m": 38.461142148289994,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in granulato sferoidale di quarzo"
@@ -23883,7 +23883,7 @@
                 "municipio": 7,
                 "località": "parco in Memoria delle vittime Italiane nei Gulag",
                 "id_impianto": 27796,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 308.45792923015597,
                 "perim_m": 73.72791278259571,
                 "descrizione_codice": "Impianti sportivi - tennis in cemento"
@@ -23932,7 +23932,7 @@
                 "municipio": 7,
                 "località": "parco in Memoria delle vittime Italiane nei Gulag",
                 "id_impianto": 27797,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 306.2716178171926,
                 "perim_m": 73.4445031139122,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -23981,7 +23981,7 @@
                 "municipio": 7,
                 "località": "parco in Memoria delle vittime Italiane nei Gulag",
                 "id_impianto": 27773,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 546.2691278284656,
                 "perim_m": 98.4638896312872,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -24046,7 +24046,7 @@
                 "municipio": 7,
                 "località": "parco in Memoria delle vittime Italiane nei Gulag",
                 "id_impianto": 27790,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 260.02341596457387,
                 "perim_m": 65.86588626554193,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -24115,7 +24115,7 @@
                 "municipio": 7,
                 "località": "parco Fanciullo",
                 "id_impianto": 16168,
-                "data_ini": 2002,
+                "anno_inizio": 2002,
                 "area_mq": 210.17739999440374,
                 "perim_m": 60.79865546841494,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -24172,7 +24172,7 @@
                 "municipio": 7,
                 "località": "vie Rasario - Silla",
                 "id_impianto": 39735,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 638.121280352614,
                 "perim_m": 104.1850146904966,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -24217,7 +24217,7 @@
                 "municipio": 7,
                 "località": "giardino A.I.D.O.",
                 "id_impianto": 40366,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 624.2053624528495,
                 "perim_m": 103.68973534512563,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -24258,7 +24258,7 @@
                 "municipio": 7,
                 "località": "piazza Selinunte",
                 "id_impianto": 28239,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 215.94503667200024,
                 "perim_m": 82.97243505194665,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in granulato sferoidale di quarzo"
@@ -25217,7 +25217,7 @@
                 "municipio": 7,
                 "località": "piazza Selinunte",
                 "id_impianto": 28242,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 238.56369027106726,
                 "perim_m": 73.47274215769647,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -25274,7 +25274,7 @@
                 "municipio": 7,
                 "località": "piazza Selinunte",
                 "id_impianto": 28245,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 479.7793215170197,
                 "perim_m": 90.42404007033481,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -25315,7 +25315,7 @@
                 "municipio": 7,
                 "località": "via delle Forze Armate n. 59",
                 "id_impianto": 41390,
-                "data_ini": 2023,
+                "anno_inizio": 2023,
                 "area_mq": 609.0110801385148,
                 "perim_m": 102.63480878982239,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -25364,7 +25364,7 @@
                 "municipio": 8,
                 "località": "via Lampugnano n. 145",
                 "id_impianto": 3650,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 230.91614999452008,
                 "perim_m": 68.68494368474451,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -25405,7 +25405,7 @@
                 "municipio": 8,
                 "località": "via Quarenghi n. 14",
                 "id_impianto": 854,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 365.45770000590846,
                 "perim_m": 80.1419531621803,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -25446,7 +25446,7 @@
                 "municipio": 8,
                 "località": "via Laigueglia",
                 "id_impianto": 33313,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1057.2490667353113,
                 "perim_m": 141.45046622443977,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -25487,7 +25487,7 @@
                 "municipio": 8,
                 "località": "via Triboniano",
                 "id_impianto": 32007,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 87.85168252648081,
                 "perim_m": 49.21051678497557,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -25528,7 +25528,7 @@
                 "municipio": 8,
                 "località": "via Triboniano",
                 "id_impianto": 33894,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 283.18060871213675,
                 "perim_m": 378.1089144351633,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in granulato sferoidale di quarzo"
@@ -26003,7 +26003,7 @@
                 "municipio": 8,
                 "località": "via Falk - Cilea",
                 "id_impianto": 15588,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 367.6526999888152,
                 "perim_m": 80.45774787350416,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -26044,7 +26044,7 @@
                 "municipio": 8,
                 "località": "via Falk - Cilea",
                 "id_impianto": 15584,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 338.0136000014503,
                 "perim_m": 78.50348856384444,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -26085,7 +26085,7 @@
                 "municipio": 8,
                 "località": "giardino Carmelo Bene",
                 "id_impianto": 36151,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 373.3067499965627,
                 "perim_m": 78.20620393365267,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -26654,7 +26654,7 @@
                 "municipio": 8,
                 "località": "giardino Carmelo Bene",
                 "id_impianto": 36145,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 556.2277500208735,
                 "perim_m": 97.2665310343498,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -26695,7 +26695,7 @@
                 "municipio": 8,
                 "località": "via Val Trompia n. 45a",
                 "id_impianto": 35975,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 479.9593494042252,
                 "perim_m": 90.53814228886321,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -26768,7 +26768,7 @@
                 "municipio": 8,
                 "località": "parco Monte Stella",
                 "id_impianto": 28281,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 95.58872925405805,
                 "perim_m": 53.40551411847349,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -26817,7 +26817,7 @@
                 "municipio": 8,
                 "località": "parco Monte Stella",
                 "id_impianto": 28277,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 840.0137762954554,
                 "perim_m": 120.47462176714691,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -26858,7 +26858,7 @@
                 "municipio": 8,
                 "località": "giardino Poletti Angelo",
                 "id_impianto": 28909,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 655.8381107473213,
                 "perim_m": 108.69795711461882,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -26899,7 +26899,7 @@
                 "municipio": 8,
                 "località": "giardino Poletti Angelo",
                 "id_impianto": 28910,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 656.5186313672424,
                 "perim_m": 108.68773111190986,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -26940,7 +26940,7 @@
                 "municipio": 8,
                 "località": "via Quarenghi n. 10",
                 "id_impianto": 27824,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 124.58742312949802,
                 "perim_m": 44.79860317083892,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -26985,7 +26985,7 @@
                 "municipio": 8,
                 "località": "via Cenisio",
                 "id_impianto": 5772,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 120.36855000946187,
                 "perim_m": 61.86492951273531,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -27030,7 +27030,7 @@
                 "municipio": 8,
                 "località": "vie Borsa - Visconti",
                 "id_impianto": 30497,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 247.84215557570224,
                 "perim_m": 66.65716744532122,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -27075,7 +27075,7 @@
                 "municipio": 8,
                 "località": "parco Valentino Bompiani",
                 "id_impianto": 38123,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 169.08759999663167,
                 "perim_m": 55.03999999789848,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba sintetica"
@@ -27116,7 +27116,7 @@
                 "municipio": 8,
                 "località": "via Terzaghi",
                 "id_impianto": 18845,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 861.9544516034931,
                 "perim_m": 118.9799175090736,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -27181,7 +27181,7 @@
                 "municipio": 8,
                 "località": "via Castellino da Castello n. 10",
                 "id_impianto": 21550,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 871.9576000116383,
                 "perim_m": 132.46306467959369,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -27222,7 +27222,7 @@
                 "municipio": 8,
                 "località": "vie Boine - Collecchio",
                 "id_impianto": 16489,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 622.0763499999756,
                 "perim_m": 105.69381998147963,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -27263,7 +27263,7 @@
                 "municipio": 8,
                 "località": "vie Boine - Collecchio",
                 "id_impianto": 16478,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 214.9007500100975,
                 "perim_m": 61.89824152560037,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -27312,7 +27312,7 @@
                 "municipio": 8,
                 "località": "vie Boine - Collecchio",
                 "id_impianto": 16481,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 248.92460000121815,
                 "perim_m": 69.10389700394022,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -27393,7 +27393,7 @@
                 "municipio": 8,
                 "località": "via della Pecetta",
                 "id_impianto": 25365,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 126.8163628440975,
                 "perim_m": 65.11376070547591,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -27434,7 +27434,7 @@
                 "municipio": 8,
                 "località": "via della Pecetta",
                 "id_impianto": 8817,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 696.8545528191025,
                 "perim_m": 111.06126385409117,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -27475,7 +27475,7 @@
                 "municipio": 8,
                 "località": "via della Pecetta",
                 "id_impianto": 30536,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 617.265974303163,
                 "perim_m": 105.91681317964546,
                 "descrizione_codice": "Impianti sportivi - calcetto in asfalto"
@@ -27516,7 +27516,7 @@
                 "municipio": 8,
                 "località": "via Cittadini n. 9",
                 "id_impianto": 36605,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 675.0000000037312,
                 "perim_m": 111.00000000098683,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -27565,7 +27565,7 @@
                 "municipio": 8,
                 "località": "parco Cascina Merlata",
                 "id_impianto": 38908,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 214.2197365469963,
                 "perim_m": 70.28962239156243,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -27610,7 +27610,7 @@
                 "municipio": 8,
                 "località": "via Mambretti - Stephenson",
                 "id_impianto": 10332,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 115.98530000090162,
                 "perim_m": 61.40143143580976,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -27651,7 +27651,7 @@
                 "municipio": 8,
                 "località": "vie Graf - Traversi",
                 "id_impianto": 40456,
-                "data_ini": 2022,
+                "anno_inizio": 2022,
                 "area_mq": 458.6506000047159,
                 "perim_m": 90.67052705095836,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -27692,7 +27692,7 @@
                 "municipio": 8,
                 "località": "vie Messina - Calvino",
                 "id_impianto": 15545,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 225.71494999888813,
                 "perim_m": 62.71525761194922,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -27749,7 +27749,7 @@
                 "municipio": 8,
                 "località": "via Lessona n. 20",
                 "id_impianto": 16647,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 609.8612000091408,
                 "perim_m": 102.17235331023119,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -27790,7 +27790,7 @@
                 "municipio": 8,
                 "località": "via Sapri",
                 "id_impianto": 20228,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 528.7165534349434,
                 "perim_m": 96.34031419501748,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -27831,7 +27831,7 @@
                 "municipio": 8,
                 "località": "via Natta",
                 "id_impianto": 16898,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 429.7366499956765,
                 "perim_m": 84.49958147847597,
                 "descrizione_codice": "impianti sportivi - piattaforma skateboard in cemento"
@@ -27872,7 +27872,7 @@
                 "municipio": 8,
                 "località": "vie Teodorico - Gattamelata",
                 "id_impianto": 26032,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 365.2803185327929,
                 "perim_m": 80.12514497401278,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -27913,7 +27913,7 @@
                 "municipio": 8,
                 "località": "giardino Sergio Vieira De Mello",
                 "id_impianto": 15486,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 597.7697499987538,
                 "perim_m": 100.65923990415232,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -27954,7 +27954,7 @@
                 "municipio": 8,
                 "località": "giardino Sergio Vieira De Mello",
                 "id_impianto": 15473,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 227.94389999535298,
                 "perim_m": 70.69398116315058,
                 "descrizione_codice": "Impianti sportivi - campo bocce Non specificato"
@@ -27995,7 +27995,7 @@
                 "municipio": 8,
                 "località": "vie Trenno - Osma",
                 "id_impianto": 30083,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 287.90930526657536,
                 "perim_m": 70.10961649907304,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -28036,7 +28036,7 @@
                 "municipio": 8,
                 "località": "vie Trenno - Osma",
                 "id_impianto": 30084,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 358.32952530835945,
                 "perim_m": 79.50067578956408,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -28077,7 +28077,7 @@
                 "municipio": 8,
                 "località": "vie Trenno - Osma",
                 "id_impianto": 30082,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 279.4396209628025,
                 "perim_m": 71.14290699849607,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in granulato sferoidale di quarzo"
@@ -28118,7 +28118,7 @@
                 "municipio": 8,
                 "località": "vie Villapizzone - Cretese",
                 "id_impianto": 9025,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 273.80815000217916,
                 "perim_m": 67.95892765763173,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -28399,7 +28399,7 @@
                 "municipio": 8,
                 "località": "vie Villapizzone - Cretese",
                 "id_impianto": 9024,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 387.7107499955218,
                 "perim_m": 81.79847247831218,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -28692,7 +28692,7 @@
                 "municipio": 8,
                 "località": "vie Villapizzone - Cretese",
                 "id_impianto": 2947,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 297.45415000402375,
                 "perim_m": 67.87188849267861,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in asfalto"
@@ -28993,7 +28993,7 @@
                 "municipio": 8,
                 "località": "vie Cinque Maggio - Fabrizi",
                 "id_impianto": 7299,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 375.0388000073599,
                 "perim_m": 81.10672361491999,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -29034,7 +29034,7 @@
                 "municipio": 8,
                 "località": "vie Castellammare - Chiasserini",
                 "id_impianto": 39773,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 152.47883317890432,
                 "perim_m": 51.23027477104033,
                 "descrizione_codice": "Impianti sportivi - altro Non specificato"
@@ -29075,7 +29075,7 @@
                 "municipio": 8,
                 "località": "vie Castellammare - Chiasserini",
                 "id_impianto": 39789,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 552.4838804448681,
                 "perim_m": 95.62815830564966,
                 "descrizione_codice": "impianti sportivi - piattaforma skateboard in cemento"
@@ -29140,7 +29140,7 @@
                 "municipio": 8,
                 "località": "vie Castellammare - Chiasserini",
                 "id_impianto": 39790,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 508.44896778260625,
                 "perim_m": 91.19854032481918,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -29185,7 +29185,7 @@
                 "municipio": 8,
                 "località": "via Quarenghi n. 12",
                 "id_impianto": 11426,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 218.73569999901994,
                 "perim_m": 62.061809526675574,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket Non specificato"
@@ -29226,7 +29226,7 @@
                 "municipio": 8,
                 "località": "parco Testori",
                 "id_impianto": 16918,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 203.0357423569946,
                 "perim_m": 60.30377487576874,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -29267,7 +29267,7 @@
                 "municipio": 8,
                 "località": "parco Testori",
                 "id_impianto": 16906,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 369.6719999995381,
                 "perim_m": 79.3470255737872,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -29328,7 +29328,7 @@
                 "municipio": 8,
                 "località": "vie Simoni - Lopez",
                 "id_impianto": 33314,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1212.830046622061,
                 "perim_m": 146.83868040238582,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba normale"
@@ -29369,7 +29369,7 @@
                 "municipio": 8,
                 "località": "vie Simoni - Lopez",
                 "id_impianto": 16246,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 408.9588999991295,
                 "perim_m": 84.32186632943076,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -29410,7 +29410,7 @@
                 "municipio": 8,
                 "località": "vie Castelli - Fusinato - Riccione",
                 "id_impianto": 4431,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 411.92890000800503,
                 "perim_m": 84.04594222502853,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -29459,7 +29459,7 @@
                 "municipio": 8,
                 "località": "parco Franco Verga",
                 "id_impianto": 25770,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 616.044264864582,
                 "perim_m": 102.63784978699938,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -29500,7 +29500,7 @@
                 "municipio": 8,
                 "località": "parco Franco Verga",
                 "id_impianto": 25769,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 926.6997758245371,
                 "perim_m": 128.20461767336266,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -29545,7 +29545,7 @@
                 "municipio": 8,
                 "località": "piazzale Accursio",
                 "id_impianto": 30914,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 351.785284087205,
                 "perim_m": 79.75646281041955,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -29586,7 +29586,7 @@
                 "municipio": 8,
                 "località": "parco Industria Alfa Romeo - Portello",
                 "id_impianto": 37670,
-                "data_ini": 2017,
+                "anno_inizio": 2017,
                 "area_mq": 228.06229991790548,
                 "perim_m": 70.03135555147752,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -29627,7 +29627,7 @@
                 "municipio": 9,
                 "località": "via Hermada n. 18",
                 "id_impianto": 38999,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 70.1894656062272,
                 "perim_m": 103.32385117480516,
                 "descrizione_codice": "Impianti sportivi - altro in gomma"
@@ -29676,7 +29676,7 @@
                 "municipio": 9,
                 "località": "via Hermada n. 18",
                 "id_impianto": 38997,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 628.5755684687474,
                 "perim_m": 103.58107257389631,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -29717,7 +29717,7 @@
                 "municipio": 9,
                 "località": "via Hermada n. 18",
                 "id_impianto": 38995,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 19.548935892200703,
                 "perim_m": 15.69074211552173,
                 "descrizione_codice": "Impianti sportivi - altro in gomma"
@@ -29918,7 +29918,7 @@
                 "municipio": 9,
                 "località": "vie Oroboni - Dora Baltea",
                 "id_impianto": 38025,
-                "data_ini": 2017,
+                "anno_inizio": 2017,
                 "area_mq": 163.07688147015054,
                 "perim_m": 54.17941236474181,
                 "descrizione_codice": "Impianti sportivi - mini calcio in erba sintetica"
@@ -29959,7 +29959,7 @@
                 "municipio": 9,
                 "località": "vie Oroboni - Dora Baltea",
                 "id_impianto": 26209,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 453.69452415412707,
                 "perim_m": 90.53145837560328,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -30000,7 +30000,7 @@
                 "municipio": 9,
                 "località": "via Santagostino Paolo",
                 "id_impianto": 6427,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 71.20974999888892,
                 "perim_m": 50.37338909161481,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -30049,7 +30049,7 @@
                 "municipio": 9,
                 "località": "viali Sarca - Silvestri - Fulvio Testi",
                 "id_impianto": 33318,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 991.9209972201884,
                 "perim_m": 131.43992703457366,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -30090,7 +30090,7 @@
                 "municipio": 9,
                 "località": "viali Sarca - Silvestri - Fulvio Testi",
                 "id_impianto": 15499,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 384.63400000295746,
                 "perim_m": 88.37859334102157,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -30171,7 +30171,7 @@
                 "municipio": 9,
                 "località": "vie Giolli - Testi",
                 "id_impianto": 16191,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 294.07239999306114,
                 "perim_m": 68.6921391438007,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -30228,7 +30228,7 @@
                 "municipio": 9,
                 "località": "vie Giolli - Testi",
                 "id_impianto": 16175,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 374.82650000188056,
                 "perim_m": 80.87303833727361,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -30277,7 +30277,7 @@
                 "municipio": 9,
                 "località": "via Baldacci",
                 "id_impianto": 2693,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 168.5445499990868,
                 "perim_m": 54.744302199092395,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -30334,7 +30334,7 @@
                 "municipio": 9,
                 "località": "via Lanfranco della Pila",
                 "id_impianto": 735,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 223.41659999987988,
                 "perim_m": 53.122592871408685,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -30467,7 +30467,7 @@
                 "municipio": 9,
                 "località": "via Mann Thomas n. 8",
                 "id_impianto": 31839,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 318.04943339926166,
                 "perim_m": 72.91162131387847,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -30508,7 +30508,7 @@
                 "municipio": 9,
                 "località": "via Mann Thomas n. 8",
                 "id_impianto": 31840,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 307.39841401751875,
                 "perim_m": 72.20954646382935,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -30557,7 +30557,7 @@
                 "municipio": 9,
                 "località": "viale Ca' Granda - De Angelis",
                 "id_impianto": 33319,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 568.7020547733614,
                 "perim_m": 104.77114032747124,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -30598,7 +30598,7 @@
                 "municipio": 9,
                 "località": "viale Ca' Granda - De Angelis",
                 "id_impianto": 11416,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 265.544899995746,
                 "perim_m": 68.74859003907204,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -30663,7 +30663,7 @@
                 "municipio": 9,
                 "località": "giardino Maria Peron e suor Giovanna Mosna",
                 "id_impianto": 33167,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 246.9026999656051,
                 "perim_m": 73.86241908765676,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -30736,7 +30736,7 @@
                 "municipio": 9,
                 "località": "giardino Maria Peron e suor Giovanna Mosna",
                 "id_impianto": 26285,
-                "data_ini": 2008,
+                "anno_inizio": 2008,
                 "area_mq": 383.6455571500789,
                 "perim_m": 80.68347400370912,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -30777,7 +30777,7 @@
                 "municipio": 9,
                 "località": "giardino Maria Peron e suor Giovanna Mosna",
                 "id_impianto": 33177,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 123.54777961718312,
                 "perim_m": 65.10900597527298,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -30834,7 +30834,7 @@
                 "municipio": 9,
                 "località": "parco di Bruzzano",
                 "id_impianto": 10369,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 230.81844999056975,
                 "perim_m": 70.93350457592507,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -30875,7 +30875,7 @@
                 "municipio": 9,
                 "località": "vie Forni - Comasina - Modignani",
                 "id_impianto": 16235,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 232.43069999214794,
                 "perim_m": 63.47374743924203,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -30916,7 +30916,7 @@
                 "municipio": 9,
                 "località": "parco Villa Litta",
                 "id_impianto": 33317,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1439.1748970824394,
                 "perim_m": 162.46036924729782,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -30957,7 +30957,7 @@
                 "municipio": 9,
                 "località": "parco Villa Litta",
                 "id_impianto": 25842,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 366.32965332212126,
                 "perim_m": 78.16067614433096,
                 "descrizione_codice": "Impianti sportivi - calcetto in asfalto"
@@ -30998,7 +30998,7 @@
                 "municipio": 9,
                 "località": "parco Villa Litta",
                 "id_impianto": 25835,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 549.1680490628577,
                 "perim_m": 96.56853362035541,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -31039,7 +31039,7 @@
                 "municipio": 9,
                 "località": "parco Villa Litta",
                 "id_impianto": 25841,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 231.50399935978982,
                 "perim_m": 60.9946014550007,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -31080,7 +31080,7 @@
                 "municipio": 9,
                 "località": "parco Villa Litta",
                 "id_impianto": 40584,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 93.83675472170503,
                 "perim_m": 44.282217046613056,
                 "descrizione_codice": "Impianti sportivi - altro in gomma"
@@ -31317,7 +31317,7 @@
                 "municipio": 9,
                 "località": "parco Villa Litta",
                 "id_impianto": 40585,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 109.879677007397,
                 "perim_m": 50.995392054601,
                 "descrizione_codice": "Impianti sportivi - altro in gomma"
@@ -31542,7 +31542,7 @@
                 "municipio": 9,
                 "località": "parco Villa Litta",
                 "id_impianto": 40587,
-                "data_ini": 2021,
+                "anno_inizio": 2021,
                 "area_mq": 124.29115674083039,
                 "perim_m": 45.6192170077395,
                 "descrizione_codice": "Impianti sportivi - altro in gomma"
@@ -31727,7 +31727,7 @@
                 "municipio": 9,
                 "località": "via Gabbro n. 6a",
                 "id_impianto": 25094,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 588.6415499984475,
                 "perim_m": 99.11979086229967,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -31768,7 +31768,7 @@
                 "municipio": 9,
                 "località": "via Gabbro n. 6a",
                 "id_impianto": 1333,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 876.2247999931649,
                 "perim_m": 120.22777808491745,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -31809,7 +31809,7 @@
                 "municipio": 9,
                 "località": "via Guicciardi n. 1-3",
                 "id_impianto": 27955,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 406.1733675725572,
                 "perim_m": 101.70052029716878,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -31926,7 +31926,7 @@
                 "municipio": 9,
                 "località": "via Guicciardi n. 1-3",
                 "id_impianto": 27953,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 195.20409759332864,
                 "perim_m": 56.425600714809434,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -31971,7 +31971,7 @@
                 "municipio": 9,
                 "località": "via Ciriè n. 9",
                 "id_impianto": 26605,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 44.22810000152499,
                 "perim_m": 38.35253852269708,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -32012,7 +32012,7 @@
                 "municipio": 9,
                 "località": "via Sand George n. 32",
                 "id_impianto": 4255,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 527.9657999956091,
                 "perim_m": 95.64507217217158,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -32053,7 +32053,7 @@
                 "municipio": 9,
                 "località": "via Grivola 10",
                 "id_impianto": 5252,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 52.123500004679435,
                 "perim_m": 37.859823433536334,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -32094,7 +32094,7 @@
                 "municipio": 9,
                 "località": "giardino Catella",
                 "id_impianto": 38613,
-                "data_ini": 2017,
+                "anno_inizio": 2017,
                 "area_mq": 108.35790682260645,
                 "perim_m": 63.541921006885886,
                 "descrizione_codice": "Impianti sportivi - campo bocce Non specificato"
@@ -32135,7 +32135,7 @@
                 "municipio": 9,
                 "località": "giardino Catella",
                 "id_impianto": 38612,
-                "data_ini": 2017,
+                "anno_inizio": 2017,
                 "area_mq": 108.35792673291223,
                 "perim_m": 63.54193437733733,
                 "descrizione_codice": "Impianti sportivi - campo bocce Non specificato"
@@ -32176,7 +32176,7 @@
                 "municipio": 9,
                 "località": "viale Sarca n. 24",
                 "id_impianto": 19608,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 155.40059999485558,
                 "perim_m": 56.93870246965568,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -32461,7 +32461,7 @@
                 "municipio": 9,
                 "località": "vie Stelvio - Bassi",
                 "id_impianto": 10210,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 387.91810000196153,
                 "perim_m": 84.48868217264969,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -32502,7 +32502,7 @@
                 "municipio": 9,
                 "località": "via Braschi n. 12",
                 "id_impianto": 8833,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 490.16640000318773,
                 "perim_m": 91.86295985523891,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -32551,7 +32551,7 @@
                 "municipio": 9,
                 "località": "vie Bovisasca - Cosenz",
                 "id_impianto": 37397,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 653.1952702984394,
                 "perim_m": 106.63805676870649,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -32592,7 +32592,7 @@
                 "municipio": 9,
                 "località": "vie Grazioli Don Bartolomeo - Zambelli Giovanni",
                 "id_impianto": 28665,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 460.3197052837613,
                 "perim_m": 90.79184541830202,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -32633,7 +32633,7 @@
                 "municipio": 9,
                 "località": "vie Grazioli Don Bartolomeo - Zambelli Giovanni",
                 "id_impianto": 28666,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 461.47275287004527,
                 "perim_m": 90.94266909929546,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -32674,7 +32674,7 @@
                 "municipio": 9,
                 "località": "parco Walter Chiari",
                 "id_impianto": 17251,
-                "data_ini": 2006,
+                "anno_inizio": 2006,
                 "area_mq": 609.6707000077499,
                 "perim_m": 100.83555914304063,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -32715,7 +32715,7 @@
                 "municipio": 9,
                 "località": "parco Walter Chiari",
                 "id_impianto": 29236,
-                "data_ini": 2010,
+                "anno_inizio": 2010,
                 "area_mq": 126.17768005494005,
                 "perim_m": 65.22199828994043,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -32756,7 +32756,7 @@
                 "municipio": 9,
                 "località": "parco della Torre",
                 "id_impianto": 38399,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 721.8128045951618,
                 "perim_m": 111.62219509386406,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -32817,7 +32817,7 @@
                 "municipio": 9,
                 "località": "parco della Torre",
                 "id_impianto": 38396,
-                "data_ini": 2018,
+                "anno_inizio": 2018,
                 "area_mq": 1051.8828534700647,
                 "perim_m": 138.89136980266983,
                 "descrizione_codice": "impianti sportivi - piattaforma skateboard in cemento"
@@ -32982,7 +32982,7 @@
                 "municipio": 9,
                 "località": "viale Suzzani n. 264",
                 "id_impianto": 35687,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 377.81414998933764,
                 "perim_m": 81.26309641593377,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -33023,7 +33023,7 @@
                 "municipio": 9,
                 "località": "vie Tartini - Candiani",
                 "id_impianto": 33294,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 813.9842999971131,
                 "perim_m": 121.11403744913753,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -33064,7 +33064,7 @@
                 "municipio": 9,
                 "località": "vie Tartini - Candiani",
                 "id_impianto": 4968,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 418.89955000144045,
                 "perim_m": 85.76587409983287,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in gomma"
@@ -33105,7 +33105,7 @@
                 "municipio": 9,
                 "località": "vie Tartini - Candiani",
                 "id_impianto": 33293,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 161.8754999982428,
                 "perim_m": 52.48102431735693,
                 "descrizione_codice": "Impianti sportivi - calcetto in erba sintetica"
@@ -33146,7 +33146,7 @@
                 "municipio": 9,
                 "località": "via Rossi Pellegrino",
                 "id_impianto": 16879,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 210.20949999805842,
                 "perim_m": 60.10600375896156,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -33191,7 +33191,7 @@
                 "municipio": 9,
                 "località": "vie Vincenzo da Seregno - Bisnati",
                 "id_impianto": 16264,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 593.8676499999898,
                 "perim_m": 100.40958638069128,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -33232,7 +33232,7 @@
                 "municipio": 9,
                 "località": "via Hermada",
                 "id_impianto": 23375,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 362.01059951983456,
                 "perim_m": 79.62885630263077,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -33273,7 +33273,7 @@
                 "municipio": 9,
                 "località": "vie Don Grioli - Cialdini - Pellegrino Rossi",
                 "id_impianto": 31459,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 348.2481600589653,
                 "perim_m": 176.04780502241587,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in lastre cls"
@@ -33624,7 +33624,7 @@
                 "municipio": 9,
                 "località": "vie Don Grioli - Cialdini - Pellegrino Rossi",
                 "id_impianto": 35863,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 492.31181198858155,
                 "perim_m": 90.29319604970127,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -33665,7 +33665,7 @@
                 "municipio": 9,
                 "località": "vie Don Grioli - Cialdini - Pellegrino Rossi",
                 "id_impianto": 35930,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 364.5830270931037,
                 "perim_m": 78.20560497418292,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -33706,7 +33706,7 @@
                 "municipio": 9,
                 "località": "via Sant'Arnaldo",
                 "id_impianto": 2754,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 217.4050999994251,
                 "perim_m": 67.0309835808248,
                 "descrizione_codice": "Impianti sportivi - campo bocce in cemento"
@@ -33747,7 +33747,7 @@
                 "municipio": 9,
                 "località": "giardino don Gian Paolo Gastaldi",
                 "id_impianto": 38963,
-                "data_ini": 2019,
+                "anno_inizio": 2019,
                 "area_mq": 36.00000002071792,
                 "perim_m": 30.00000000514588,
                 "descrizione_codice": "Impianti sportivi - campo bocce in calcestre"
@@ -33788,7 +33788,7 @@
                 "municipio": 9,
                 "località": "vie Ciriè - Demonte",
                 "id_impianto": 20775,
-                "data_ini": 2007,
+                "anno_inizio": 2007,
                 "area_mq": 98.96255856592488,
                 "perim_m": 37.9372616337192,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -33857,7 +33857,7 @@
                 "municipio": 9,
                 "località": "vie Comasina - Forni",
                 "id_impianto": 19862,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 249.12630000570448,
                 "perim_m": 66.79859217249509,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -33898,7 +33898,7 @@
                 "municipio": 9,
                 "località": "giardino Bruno Munari",
                 "id_impianto": 261,
-                "data_ini": 2005,
+                "anno_inizio": 2005,
                 "area_mq": 543.2380500053864,
                 "perim_m": 96.22950258889803,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -33943,7 +33943,7 @@
                 "municipio": 9,
                 "località": "piazzale Maciachini - Marche - Valassina",
                 "id_impianto": 27317,
-                "data_ini": 2009,
+                "anno_inizio": 2009,
                 "area_mq": 537.0116818005827,
                 "perim_m": 113.21735249333219,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -34020,7 +34020,7 @@
                 "municipio": 9,
                 "località": "vie Pesaro - Urbino",
                 "id_impianto": 33258,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 632.0652410641828,
                 "perim_m": 104.13039238627161,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -34061,7 +34061,7 @@
                 "municipio": 9,
                 "località": "giardino Pagani Cesare",
                 "id_impianto": 31594,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 381.17729842247,
                 "perim_m": 81.77242823276526,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -34102,7 +34102,7 @@
                 "municipio": 9,
                 "località": "vie Fermi - Valeggio",
                 "id_impianto": 33297,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 1409.4867297435405,
                 "perim_m": 159.37667005317797,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -34147,7 +34147,7 @@
                 "municipio": 9,
                 "località": "vie Fermi - Valeggio",
                 "id_impianto": 33296,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 437.4778485348885,
                 "perim_m": 87.02248992814985,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in asfalto"
@@ -34192,7 +34192,7 @@
                 "municipio": 9,
                 "località": "vie Fermi - Valeggio",
                 "id_impianto": 33295,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 434.8078590866728,
                 "perim_m": 86.50509240616157,
                 "descrizione_codice": "Impianti sportivi - calcetto in asfalto"
@@ -34237,7 +34237,7 @@
                 "municipio": 9,
                 "località": "vie Fermi - Valeggio",
                 "id_impianto": 8780,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 340.2165993104293,
                 "perim_m": 73.78198176216515,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in lastre cls"
@@ -34278,7 +34278,7 @@
                 "municipio": 9,
                 "località": "via Passerini n. 4",
                 "id_impianto": 39434,
-                "data_ini": 2020,
+                "anno_inizio": 2020,
                 "area_mq": 175.41235085272535,
                 "perim_m": 54.79985547095422,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -34319,7 +34319,7 @@
                 "municipio": 9,
                 "località": "via Passerini n. 4",
                 "id_impianto": 39435,
-                "data_ini": 2020,
+                "anno_inizio": 2020,
                 "area_mq": 141.52444246820824,
                 "perim_m": 48.871017570415376,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -34360,7 +34360,7 @@
                 "municipio": 9,
                 "località": "vie Assietta - Cervi",
                 "id_impianto": 31789,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 659.1315908667996,
                 "perim_m": 105.6405607784172,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -34401,7 +34401,7 @@
                 "municipio": 9,
                 "località": "via Gregorovius",
                 "id_impianto": 33320,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 527.0794474613903,
                 "perim_m": 100.07222225430212,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -34442,7 +34442,7 @@
                 "municipio": 9,
                 "località": "giardino Pierluigi Torregiani",
                 "id_impianto": 31318,
-                "data_ini": 2012,
+                "anno_inizio": 2012,
                 "area_mq": 396.32363765473076,
                 "perim_m": 81.65974979419477,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in granulato sferoidale di quarzo"
@@ -34483,7 +34483,7 @@
                 "municipio": 9,
                 "località": "via Imbonati Carlo",
                 "id_impianto": 30292,
-                "data_ini": 2011,
+                "anno_inizio": 2011,
                 "area_mq": 91.28003360513716,
                 "perim_m": 62.24901524808993,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -34524,7 +34524,7 @@
                 "municipio": 9,
                 "località": "vie Siderno - Padre Luigi Monti - Gatti",
                 "id_impianto": 5903,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 316.94135000269284,
                 "perim_m": 73.07407470754113,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -34565,7 +34565,7 @@
                 "municipio": 9,
                 "località": "vie Comasina - Novate",
                 "id_impianto": 37151,
-                "data_ini": 2016,
+                "anno_inizio": 2016,
                 "area_mq": 4535.469657486358,
                 "perim_m": 301.0486411120877,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -34686,7 +34686,7 @@
                 "municipio": 9,
                 "località": "via del Volga n. 4",
                 "id_impianto": 2735,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 275.1102500021157,
                 "perim_m": 67.46733339980999,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
@@ -34739,7 +34739,7 @@
                 "municipio": 9,
                 "località": "viale Sarca - Silvestri",
                 "id_impianto": 34113,
-                "data_ini": 2014,
+                "anno_inizio": 2014,
                 "area_mq": 93.809157700682,
                 "perim_m": 34.4953576758154,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -34844,7 +34844,7 @@
                 "municipio": 9,
                 "località": "via Val di Bondo n. 11-13",
                 "id_impianto": 7430,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 97.53919999742456,
                 "perim_m": 53.167088801011595,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -34897,7 +34897,7 @@
                 "municipio": 9,
                 "località": "parco Nicolò Savarino",
                 "id_impianto": 24741,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 137.4042501238984,
                 "perim_m": 41.57866826571873,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -35834,7 +35834,7 @@
                 "municipio": 9,
                 "località": "via Val di Bondo n. 11-13",
                 "id_impianto": 1344,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 190.41559999660873,
                 "perim_m": 61.75322508767232,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -35883,7 +35883,7 @@
                 "municipio": 9,
                 "località": "giardino Wanda Osiris",
                 "id_impianto": 35417,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 78.62287184286266,
                 "perim_m": 51.92735633034198,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -35932,7 +35932,7 @@
                 "municipio": 9,
                 "località": "giardino Wanda Osiris",
                 "id_impianto": 35418,
-                "data_ini": 2015,
+                "anno_inizio": 2015,
                 "area_mq": 78.62287185496962,
                 "perim_m": 51.92735633283497,
                 "descrizione_codice": "Impianti sportivi - campo bocce in erba sintetica"
@@ -35981,7 +35981,7 @@
                 "municipio": 9,
                 "località": "giardino Wanda Osiris",
                 "id_impianto": 16461,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 992.8479999962087,
                 "perim_m": 131.81084942335534,
                 "descrizione_codice": "Impianti sportivi - calcetto in asfalto"
@@ -36022,7 +36022,7 @@
                 "municipio": 9,
                 "località": "giardino Wanda Osiris",
                 "id_impianto": 16454,
-                "data_ini": 2003,
+                "anno_inizio": 2003,
                 "area_mq": 181.1078500022859,
                 "perim_m": 47.813823928074875,
                 "descrizione_codice": "Impianti sportivi - pista schettinaggio in cemento"
@@ -36423,7 +36423,7 @@
                 "municipio": 9,
                 "località": "giardino Franco Basaglia",
                 "id_impianto": 33316,
-                "data_ini": 2013,
+                "anno_inizio": 2013,
                 "area_mq": 937.728689985452,
                 "perim_m": 129.0613493469065,
                 "descrizione_codice": "Impianti sportivi - calcio in erba normale"
@@ -36464,7 +36464,7 @@
                 "municipio": 9,
                 "località": "vie Della Senna - Fontanelli",
                 "id_impianto": 41449,
-                "data_ini": 2024,
+                "anno_inizio": 2024,
                 "area_mq": 587.7706749145316,
                 "perim_m": 103.46672464274859,
                 "descrizione_codice": "Impianti sportivi - pallavolo/basket in cemento"
