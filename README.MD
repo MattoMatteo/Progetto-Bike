@@ -34,6 +34,25 @@ esempio:    **inquinamento_stazioni_raw.json**
 
 ---
 
+### Ho creato il file my_path.py
+Inseriremo tutti i percorsi dei vari notebbok (raw, staging e clean) e importeremo direttamente il file  
+in modo che questi percorsi risultino "centralizzati" all'interno del progetto e quindi si possano usare  
+da più file contemporanemente (esempio i file di ingestion/etl e da quelli di analisi).  
+Esempio di utilizzo:
+
+```python
+
+import geopandas as gpd
+
+from my_paths import *
+
+gpd.read_file(PATH_FILE_RAW)
+
+```
+"PATH_FILE_RAW" verrà automaticamente trovato all'interno del file my_paths e importato in quello attuale  
+consentendo l'utilizzo di tutti gli oggetti presenti al suo interno.  
+N.b. usando **"import *"** si sta dicendo di importare tutto il suo contenuto
+
 # 🚴‍♂️ Progetto Bike – Analisi per la Pianificazione di Piste Ciclabili a Milano
 
 > Progetto del corso **Big Data Processing and Data Engineering**  
