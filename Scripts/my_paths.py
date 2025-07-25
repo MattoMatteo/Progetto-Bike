@@ -18,6 +18,8 @@ PATH_PARCHI_RAW = "../Data/Raw/Punti_di_interesse/Parchi/Parchi_WGS84_Milano_1.s
 PATH_FONTANE_RAW = "../Data/Raw/Punti_di_interesse/fontane_raw.csv"
 PATH_BIBLIOTECHE_RAW = "../Data/Raw/Punti_di_interesse/biblioteche_raw.geojson"
 PATH_IMPIANTI_SPORTIVI_RAW = "../Data/Raw/Punti_di_interesse/impianti_sportivi_raw.geojson"
+PATH_FARMACIE_RAW = "../Data/Raw/Punti_di_interesse/farmacie_raw.geojson"
+
 #   Scuole
 PATH_SCUOLE_PRIMARIE_RAW = "../Data/Raw/Istruzione/Scuole/scuole-primarie_raw.geojson"
 PATH_SCUOLE_SECONDARIE_PRIMO_RAW = "../Data/Raw/Istruzione/Scuole/scuole-secondarie-primo-grado_raw.geojson"
@@ -31,6 +33,7 @@ PATH_FONTANE_CLEAN = "../Data/Clean/Punti_di_interesse/fontane_clean.geojson"
 PATH_BIBLIOTECHE_CLEAN = "../Data/Clean/Punti_di_interesse/biblioteche_clean.geojson"
 PATH_IMPIANTI_SPORTIVI_CLEAN = "../Data/Clean/Punti_di_interesse/impianti_sportivi_clean.geojson"
 PATH_SCUOLE_CLEAN = "../Data/Clean/Istruzione/Scuole/scuole_clean.geojson"
+PATH_FARMACIE_CLEAN = "../Data/Clean/Punti_di_interesse/farmacie_clean.geojson"
 
 #-----------------------------------------------------------------------------------------------#
 
