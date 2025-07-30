@@ -20,7 +20,7 @@ PATH_BIBLIOTECHE_RAW = "../Data/Raw/Punti_di_interesse/biblioteche_raw.geojson"
 PATH_IMPIANTI_SPORTIVI_RAW = "../Data/Raw/Punti_di_interesse/impianti_sportivi_raw.geojson"
 PATH_FARMACIE_RAW = "../Data/Raw/Punti_di_interesse/farmacie_raw.geojson"
 PATH_AREE_GIOCO_RAW = "../Data/Raw/Punti_di_interesse/aree_gioco_raw.geojson"
-
+PATH_TEATRI_RAW = "../Data/Raw/Punti_di_interesse/teatri_raw.json"
 #   Scuole
 PATH_SCUOLE_PRIMARIE_RAW = "../Data/Raw/Istruzione/Scuole/scuole-primarie_raw.geojson"
 PATH_SCUOLE_SECONDARIE_PRIMO_RAW = "../Data/Raw/Istruzione/Scuole/scuole-secondarie-primo-grado_raw.geojson"
@@ -36,6 +36,7 @@ PATH_IMPIANTI_SPORTIVI_CLEAN = "../Data/Clean/Punti_di_interesse/impianti_sporti
 PATH_SCUOLE_CLEAN = "../Data/Clean/Istruzione/Scuole/scuole_clean.geojson"
 PATH_FARMACIE_CLEAN = "../Data/Clean/Punti_di_interesse/farmacie_clean.geojson"
 PATH_AREE_GIOCO_CLEAN = "../Data/Clean/Punti_di_interesse/aree_gioco_clean.geojson"
+PATH_TEATRI_CLEAN = "../Data/Clean/Punti_di_interesse/teatri_clean.geojson"
 
 #-----------------------------------------------------------------------------------------------#
 
