@@ -5,8 +5,7 @@ import osmnx as ox
 from scipy.spatial import cKDTree
 import numpy as np
 
-CRS_GRAD = "EPSG:4326"  # Lat-Long
-CRS_METR = "EPSG:32632" # Metri
+from my_paths import CRS_GRAD, CRS_METR
 
 def geojson_to_graph(gdf: gpd.GeoDataFrame) -> nx.MultiDiGraph:
     """

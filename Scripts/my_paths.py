@@ -23,6 +23,8 @@ PATH_AREE_GIOCO_RAW = "../Data/Raw/Punti_di_interesse/aree_gioco_raw.geojson"
 PATH_TEATRI_RAW = "../Data/Raw/Punti_di_interesse/teatri_raw.json"
 PATH_CINEMA_RAW = "../Data/Raw/Punti_di_interesse/cinema_raw.json"
 PATH_MUSEI_RAW = "../Data/Raw/Punti_di_interesse/musei_raw.json"
+PATH_OSPEDALI_RAW = '../Data/Raw/Punti_di_interesse/ospedali_raw.geojson'
+PATH_CASE_ACQUA_RAW = "../Data/Raw/Punti_di_interesse/case_acqua_raw.geojson"
 #   Scuole
 PATH_SCUOLE_PRIMARIE_RAW = "../Data/Raw/Istruzione/Scuole/scuole-primarie_raw.geojson"
 PATH_SCUOLE_SECONDARIE_PRIMO_RAW = "../Data/Raw/Istruzione/Scuole/scuole-secondarie-primo-grado_raw.geojson"
@@ -40,7 +42,9 @@ PATH_FARMACIE_CLEAN = "../Data/Clean/Punti_di_interesse/farmacie_clean.geojson"
 PATH_AREE_GIOCO_CLEAN = "../Data/Clean/Punti_di_interesse/aree_gioco_clean.geojson"
 PATH_TEATRI_CLEAN = "../Data/Clean/Punti_di_interesse/teatri_clean.geojson"
 PATH_CINEMA_CLEAN = "../Data/Clean/Punti_di_interesse/cinema_milano.geojson"
-PATH_MUSEI_CLEAN = "..\Data\Clean\Punti_di_interesse\musei_milano.geojson"
+PATH_MUSEI_CLEAN = "../Data/Clean/Punti_di_interesse/musei_milano.geojson"
+PATH_OSPEDALI_CLEAN = '../Data/Clean/Punti_di_interesse/ospedali_clean.geojson'
+PATH_CASE_ACQUA_CLEAN = "../Data/Clean/Punti_di_interesse/case_acqua_clean.geojson"
 
 #-----------------------------------------------------------------------------------------------#
 
@@ -63,3 +67,7 @@ PATH_STRADE_URBANE_RAW = "../Data/Raw/Strade_urbane/avgLST_Milan_UrbanAtlas/avgL
 PATH_STRADE_URBANE_CLEAN = "../Data/Clean/Strade_urbane/strade-urbane_clean.geojson"
 
 #-----------------------------------------------------------------------------------------------#
+
+
+CRS_GRAD = "EPSG:4326"  # Lat-Long
+CRS_METR = "EPSG:32632" # Metri
