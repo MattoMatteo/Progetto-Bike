@@ -3,4 +3,5 @@ Sport e tempo libero:           Parchi, impianti sportivi, aree gioco
 Cultura e spettacolo:           Cinema, Teatri e musei
 Sanità:                         Farmacie, Ospedali (da prendere), Pronto soccorso(), Guardia medica()
 Qualità ciclabili:              Bikemi stazioni, fontanelle, case dell'acqua.
+
 Filtro finale:                  Inquinamento, incidenti

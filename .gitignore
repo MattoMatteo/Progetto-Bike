@@ -1,6 +1,8 @@
 .venv/
 Scripts/__pycache__/
-Scripts/cache
+Scripts/cache/
 Google_api_credentials/
-Data/Staging
+Data/Staging/Analisi/strade_e_ciclabili.geojson
 Mappe/mappa_situazione_graph.json
+Data/Staging/Analisi/completo.geojson
+Data/Staging/Info_bici/strade_ciclabili.geojson

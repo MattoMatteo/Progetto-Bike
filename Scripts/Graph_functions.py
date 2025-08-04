@@ -7,7 +7,10 @@ import numpy as np
 
 from my_paths import CRS_GRAD, CRS_METR
 
-def geojson_to_graph(gdf: gpd.GeoDataFrame) -> nx.MultiDiGraph:
+def calcola_moltiplicatore_peso_strade(highway: str = None) -> float:
+    return 2 # al momento
+
+def geojson_to_graph(gdf: gpd.GeoDataFrame, weight_moltiplicator:float = 1.0, **attr) -> nx.MultiDiGraph:
     """
     Dato un geojson caricato come GeoDataFrame avente geometry di tipo LineString, lo converte in un MultiDiGraph, prendendo come
     nodi, ogni Point delle LineString e come archi, ogni Point con quello successivo (p[x], p[x+1]) di ogni LineString.
@@ -20,7 +23,6 @@ def geojson_to_graph(gdf: gpd.GeoDataFrame) -> nx.MultiDiGraph:
     for _, row in gdf.iterrows():
         geom = row.geometry
         coords = list(geom.coords)
-
         for i in range(len(coords) - 1):
             u_coord = coords[i]
             v_coord = coords[i + 1]
@@ -36,13 +38,14 @@ def geojson_to_graph(gdf: gpd.GeoDataFrame) -> nx.MultiDiGraph:
             v = coord_to_node[v_coord]
 
             length = gpd.GeoDataFrame([LineString([u_coord, v_coord])], columns=["geometry"], crs=CRS_GRAD).to_crs(CRS_METR)["geometry"][0].length
-            G.add_edge(u, v, weight=length, geometry=LineString([u_coord, v_coord]))
+            column = row.drop("geometry").to_dict()
+            G.add_edge(u, v, distance=length, weight = length * weight_moltiplicator, geometry=LineString([u_coord, v_coord]), **column, **attr)
     
     # Aggiunge crs
     G.graph['crs'] = gdf.crs
     return G
 
-def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5) -> nx.MultiDiGraph:
+def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5, weight_moltiplicator:float = 1.0, **attr) -> nx.MultiDiGraph:
     """
     Aggiunge Archi ad un MultiDiGraph a partire dalla Geometry di tipo LineString di un GeoDataFrame.
     distance è la distanza in metri dei nodi. Se non specificato è 5 metri
@@ -74,10 +77,10 @@ def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5) -> nx.MultiDiGraph:
             point_v_grad = gdf_nodes_GRAD.iloc[j].geometry
             geometry = LineString([point_u_grad, point_v_grad])
 
-            G.add_edge(node_u, node_v, geometry=geometry, artificial=True, weight=length)
+            G.add_edge(node_u, node_v, geometry=geometry, distance=length, weight = length * weight_moltiplicator, **attr)
     return G
 
-def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame) -> nx.MultiDiGraph:
+def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame, weight_moltiplicator:float = 1.0, **attr) -> nx.MultiDiGraph:
 
     # Esplodiamo i Multypoligon se presenti
     exploded_rows = []
@@ -125,7 +128,7 @@ def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame) ->
         nearest_node = node_ids[idx[0]]
 
         # Aggiungiamo il nodo POI
-        G.add_node(poi_node_start_id, x=lon, y=lat, poi=True, poi_type="parco", name=f"POI_{poi_idx}")
+        G.add_node(poi_node_start_id, x=lon, y=lat, **poi_gdf.iloc[poi_idx].drop("geometry").to_dict())
 
         # Calcoliamo la lunghezza dell'arco
         point_nearest = gdf_nodes.loc[nearest_node].geometry
@@ -136,8 +139,16 @@ def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame) ->
         geom_line = LineString([Point(lon, lat), point_nearest])
 
         # Aggiungiamo arco di collegamento (può essere bidirezionale)
-        G.add_edge(poi_node_start_id, nearest_node, weight=distance, connection_poi=True, artificial=True, geometry=geom_line)
-        G.add_edge(nearest_node, poi_node_start_id, weight=distance, connection_poi=True, artificial=True, geometry=geom_line)
+        G.add_edge(poi_node_start_id,
+                   nearest_node,
+                   distance=distance,
+                   weight = distance * weight_moltiplicator,
+                   geometry=geom_line, **attr)
+        G.add_edge(nearest_node,
+                   poi_node_start_id,
+                   distance=distance,
+                   weight = distance * weight_moltiplicator,
+                   geometry=geom_line, **attr)
 
         poi_node_start_id += 1
 
