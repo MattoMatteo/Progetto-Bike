@@ -2,3 +2,5 @@
 Scripts/__pycache__/
 Scripts/cache
 Google_api_credentials/
+Data/Staging
+Mappe/mappa_situazione_graph.json

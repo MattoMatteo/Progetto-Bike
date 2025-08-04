@@ -1,5 +1,5 @@
 import geopandas as gpd
-from shapely import LineString
+from shapely import Point, LineString, MultiPolygon, Polygon
 import networkx as nx
 import osmnx as ox
 from scipy.spatial import cKDTree
@@ -56,6 +56,7 @@ def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5) -> nx.MultiDiGraph:
     node_ids = gdf_nodes.index.to_list()
 
     tree = cKDTree(coords)
+    # .query_pairs -> Trova le coppie di nodi vicine alla distanza data
     pairs = tree.query_pairs(r=distance)  # distanza massima in metri
 
     for i, j in pairs:
@@ -74,4 +75,70 @@ def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5) -> nx.MultiDiGraph:
             geometry = LineString([point_u_grad, point_v_grad])
 
             G.add_edge(node_u, node_v, geometry=geometry, artificial=True, weight=length)
+    return G
+
+def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame) -> nx.MultiDiGraph:
+
+    # Esplodiamo i Multypoligon se presenti
+    exploded_rows = []
+    for idx, row in poi_gdf.iterrows():
+        geometry = row["geometry"]
+        if isinstance(geometry, MultiPolygon):
+            for polygon in geometry.geoms:
+                new_row = row.copy()
+                new_row["geometry"] = polygon
+                exploded_rows.append(new_row)
+        else:
+            exploded_rows.append(row)
+    poi_gdf = gpd.GeoDataFrame(exploded_rows, crs=poi_gdf.crs)
+    # Raccogliamo i Point
+    poi_nodes = {}
+    for idx, row in poi_gdf.iterrows():
+        geometry = row["geometry"]
+        if isinstance(geometry, Polygon):
+            poi_nodes[idx] = (geometry.centroid.x, geometry.centroid.y)
+        elif isinstance(geometry, Point):
+            poi_nodes[idx] = (geometry.x, geometry.y)
+        else:
+            print(f"[WARNING] Geometria non valida (id={idx}): {type(geometry)} — ignorata.")
+
+    print(len(poi_nodes))
+    # Estraiamo i nodi dal grafo, prendiamo le coordinate in metri e creiamo "tree" per poter fare le query
+    gdf_nodes = ox.graph_to_gdfs(G, nodes=True, edges=False)
+    coords = np.array([[geom.x, geom.y] for geom in gdf_nodes.to_crs(CRS_METR).geometry])
+    tree = cKDTree(coords)
+    # Teniamo anche gli indici del gdf dei vari nodi
+    node_ids = gdf_nodes.index.to_list()
+    # ID di partenza per i nuovi nodi
+    poi_node_start_id = max(G.nodes) + 1  
+
+    # Iniziamo inserimento dei nuovi nodi
+    for poi_idx, (lon, lat) in poi_nodes.items():
+
+        # Conversione dei punti in metri per eseguire la query
+        point = gpd.GeoSeries([Point(lon, lat)], crs=poi_gdf.crs).to_crs(CRS_METR).iloc[0]
+        poi_coord_metr = np.array([[point.x, point.y]])
+
+        #.query -> trova i punti più vicini (k=1) alle coordinate date all'albero generato con i nodi del grafo.
+        # Restituisce la distanza in metri (perché abbiamo dato tutto in metri) e l'INDICE del nodo
+        dist, idx = tree.query(poi_coord_metr, k=1)
+        nearest_node = node_ids[idx[0]]
+
+        # Aggiungiamo il nodo POI
+        G.add_node(poi_node_start_id, x=lon, y=lat, poi=True, poi_type="parco", name=f"POI_{poi_idx}")
+
+        # Calcoliamo la lunghezza dell'arco
+        point_nearest = gdf_nodes.loc[nearest_node].geometry
+        point_nearest_metr = gpd.GeoSeries([point_nearest], crs=poi_gdf.crs).to_crs(CRS_METR).iloc[0]
+        distance = point.distance(point_nearest_metr)
+
+        # LineString geometria in EPSG:4326
+        geom_line = LineString([Point(lon, lat), point_nearest])
+
+        # Aggiungiamo arco di collegamento (può essere bidirezionale)
+        G.add_edge(poi_node_start_id, nearest_node, weight=distance, connection_poi=True, artificial=True, geometry=geom_line)
+        G.add_edge(nearest_node, poi_node_start_id, weight=distance, connection_poi=True, artificial=True, geometry=geom_line)
+
+        poi_node_start_id += 1
+
     return G
