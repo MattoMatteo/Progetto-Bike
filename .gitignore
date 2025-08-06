@@ -2,3 +2,5 @@
 Scripts/__pycache__/
 Scripts/cache/
 Google_api_credentials/
+Data/Clean/Rete_ciclabile_stradale/rete_ciclabile_completa.geojson
+Data/Staging/Rete_ciclabile_stradale/strade_ciclabili.geojson
