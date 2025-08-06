@@ -1,5 +1,5 @@
-Istrutizone:                    Scuole e biblioteche
 Sport e tempo libero:           Parchi, impianti sportivi, aree gioco
+Istrutizone:                    Scuole e biblioteche
 Cultura e spettacolo:           Cinema, Teatri e musei
 Sanità:                         Farmacie, Ospedali (da prendere), Pronto soccorso(), Guardia medica()
 Qualità ciclabili:              Bikemi stazioni, fontanelle, case dell'acqua.
