@@ -69,7 +69,7 @@ PATH_INQUINAMENTO_INGESTION_CLEAN = "../Data/Clean/Inquinamento/Airnet/inquiname
 #-----------------------------------------------------------------------------------------------#
 
 #-------------------------------------- Analisi ----------------------------------------------#
-PATH_SPORT_TEMPO_LIBERO_ANALISI_PICKLE_STAGING = "../Data/Staging/Analisi/sport_tempo_libero_clean.geojson"
+PATH_SPORT_TEMPO_LIBERO_ANALISI_PICKLE_STAGING = "../Data/Staging/Analisi/sport_tempo_libero_clean.pickle"
 PATH_SPORT_TEMPO_LIBERO_ANALISI_CLEAN = "../Data/Clean/Analisi/sport_tempo_libero_clean.geojson"
 
 #-----------------------------------------------------------------------------------------------#

@@ -27,7 +27,7 @@ def _explode_gdf_with_MultiPolygon_to_Polygon(gdf:gpd.GeoDataFrame) -> gpd.GeoDa
                 exploded_rows.append(new_row)
         else:
             exploded_rows.append(row)
-    return gpd.GeoDataFrame(exploded_rows, crs=gdf.crs)
+    return gpd.GeoDataFrame(exploded_rows, crs=gdf.crs).reset_index(drop=True)
 
 def _get_points_of_gdf(gdf:gpd.GeoDataFrame) -> dict:
     """
