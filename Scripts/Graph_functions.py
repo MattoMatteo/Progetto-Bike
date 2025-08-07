@@ -48,20 +48,17 @@ def _get_points_of_gdf(gdf:gpd.GeoDataFrame) -> dict:
 
 def _change_edge_weight_in_gdf(G:nx.MultiDiGraph, gdf:gpd.GeoDataFrame, weight:float=0) -> nx.MultiDiGraph:
     geometry_collection = prep(gdf.union_all())
-    for u, v, k, data in G.edges(keys=True, data=True):
+    for _, __, data in G.edges(data=True):
         geom = data.get("geometry", None)
         if geom is None:
             continue
 
         if geometry_collection.intersects(geom):
-            data["weight"] = 0
+            data["weight"] = weight
 
     return G
 
 # Funzioni Pubbliche
-
-def calcola_moltiplicatore_peso_strade(highway: str = None) -> float:
-    return 2 # al momento
 
 def geojson_to_graph(gdf: gpd.GeoDataFrame, weight_moltiplicator:float = 1.0, **attr) -> nx.MultiDiGraph:
     """
@@ -84,7 +81,7 @@ def geojson_to_graph(gdf: gpd.GeoDataFrame, weight_moltiplicator:float = 1.0, **
                 if coord not in coord_to_node:
                     coord_to_node[coord] = node_id
                     x, y = coord
-                    G.add_node(node_id, x=x, y=y)
+                    G.add_node(node_id, x=x, y=y, **attr)
                     node_id += 1
 
             u = coord_to_node[u_coord]
@@ -92,18 +89,23 @@ def geojson_to_graph(gdf: gpd.GeoDataFrame, weight_moltiplicator:float = 1.0, **
 
             length = gpd.GeoDataFrame([LineString([u_coord, v_coord])], columns=["geometry"], crs=CRS_GRAD).to_crs(CRS_METR)["geometry"][0].length
             column = row.drop("geometry").to_dict()
-            G.add_edge(u, v, distance=length, weight = length * weight_moltiplicator, geometry=LineString([u_coord, v_coord]), **column, **attr)
+            G.add_edge(u, v, length=length, weight_multipler = weight_moltiplicator, weight = length * weight_moltiplicator, geometry=LineString([u_coord, v_coord]), **column, **attr)
     
     # Aggiunge crs
     G.graph['crs'] = gdf.crs
     return G
 
-def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5, weight_moltiplicator:float = 1.0, **attr) -> nx.MultiDiGraph:
+def add_edge_near_nodes(G:nx.MultiDiGraph,
+                        distance:int = 5,
+                        weight_moltiplicator:float = 1.0,
+                        tipo_da_connettere: str = None,
+                        tipo_su_cui_connettere: str = None,
+                        **attr) -> nx.MultiDiGraph:
     """
     Aggiunge Archi ad un MultiDiGraph a partire dalla Geometry di tipo LineString di un GeoDataFrame.
     distance è la distanza in metri dei nodi. Se non specificato è 5 metri
     """
-    gdf_nodes, _ = ox.graph_to_gdfs(G)   # Per farlo ci serve ottenere una lista
+    gdf_nodes = ox.graph_to_gdfs(G, nodes=True, edges=False)   # Per farlo ci serve ottenere una lista
 
     gdf_nodes_METR = gdf_nodes.to_crs(CRS_METR)
     gdf_nodes_GRAD = gdf_nodes.to_crs(CRS_GRAD)
@@ -119,6 +121,16 @@ def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5, weight_moltiplicato
         node_u = node_ids[i]
         node_v = node_ids[j]
 
+        tipo_u = G.nodes[node_u].get("tipo")
+        tipo_v = G.nodes[node_v].get("tipo")
+
+        # Connetti solo se i tipi sono diversi nel modo richiesto
+        if tipo_da_connettere is not None and tipo_su_cui_connettere is not None:
+            if (not ((tipo_u == tipo_da_connettere and tipo_v == tipo_su_cui_connettere) or
+                    (tipo_v == tipo_da_connettere and tipo_u == tipo_su_cui_connettere))):
+                continue
+
+
         if not G.has_edge(node_u, node_v):
             # Calcoliamo la lunghezza in metri
             point_u_metr = gdf_nodes_METR.iloc[i].geometry
@@ -130,7 +142,9 @@ def add_edge_near_nodes(G:nx.MultiDiGraph, distance:int = 5, weight_moltiplicato
             point_v_grad = gdf_nodes_GRAD.iloc[j].geometry
             geometry = LineString([point_u_grad, point_v_grad])
 
-            G.add_edge(node_u, node_v, geometry=geometry, distance=length, weight = length * weight_moltiplicator, **attr)
+            G.add_edge(node_u, node_v, geometry=geometry, length=length,
+                       weight_moltiplicator = weight_moltiplicator,
+                       weight = length * weight_moltiplicator, **attr)
     return G
 
 def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame, **attr) -> nx.MultiDiGraph:
@@ -192,4 +206,48 @@ def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame, **
 
     G = _change_edge_weight_in_gdf(G, poi_gdf, 0)
 
+    return G
+
+def connetti_due_grafi(G1:nx.MultiDiGraph, G2:nx.MultiDiGraph, weight_moltiplicator:float=0, **attr) -> nx.MultiDiGraph:
+    # Connettiamo il 2 al 1
+
+    gdf1_nodes = ox.graph_to_gdfs(G1, nodes=True, edges=False)   # Per farlo ci serve ottenere una lista
+    idx1 = gdf1_nodes.index.to_list()
+    gdf1_nodes_METR = gdf1_nodes.to_crs(CRS_METR)
+    gdf1_nodes_GRAD = gdf1_nodes.to_crs(CRS_GRAD)
+
+    gdf2_nodes = ox.graph_to_gdfs(G2, nodes=True, edges=False)   # Per farlo ci serve ottenere una lista
+    idx2 = gdf2_nodes.index.to_list()
+    gdf2_nodes_METR = gdf2_nodes.to_crs(CRS_METR)
+    gdf2_nodes_GRAD = gdf2_nodes.to_crs(CRS_GRAD)
+
+    m_coords_1 = np.array([[geom.x, geom.y] for geom in gdf1_nodes_METR.geometry])
+    m_coords_2 = np.array([[geom.x, geom.y] for geom in gdf2_nodes_METR.geometry])
+
+    tree_1 = cKDTree(m_coords_1)
+    dists, idxs = tree_1.query(m_coords_2, k=1)
+
+    G = nx.compose(G1, G2)
+    for i, (idx1_match, dist) in enumerate(zip(idxs, dists)):
+        if dist > 50:
+            continue
+        node_G2 = idx2[i]
+        node_G1 = idx1[idx1_match]
+
+        # Coordinate in lat/lon per costruire LineString
+        point_G2 = gdf2_nodes_GRAD.loc[node_G2].geometry
+        point_G1 = gdf1_nodes_GRAD.loc[node_G1].geometry
+        geometry = LineString([point_G2, point_G1])
+
+        # Lunghezza in metri
+        point_G2_m = gdf2_nodes_METR.loc[node_G2].geometry
+        point_G1_m = gdf1_nodes_METR.loc[node_G1].geometry
+        length = point_G2_m.distance(point_G1_m)
+
+        G.add_edge(node_G2, node_G1,
+                   geometry=geometry,
+                   length=length,
+                   weight=length * weight_moltiplicator,
+                   weight_moltiplicator=weight_moltiplicator,
+                   **attr)
     return G
