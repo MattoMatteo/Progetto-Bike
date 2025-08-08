@@ -260,10 +260,19 @@ def connetti_due_grafi(G1:nx.MultiDiGraph, G2:nx.MultiDiGraph, weight_moltiplica
 def auto_analysis_poi(list_gdfs_poi:list[dict],
                       weight_strade:dict,
                       PATH_GEOJSON:str,
-                      PATH_PICKLE:str):
+                      PATH_PICKLE:str = None):
     """
+    Esegue in automatico: Creazione grafo combinato di strade e ciclabili con i pesi dati.
+    Successivamente aggiunge tutti i "poi" dei gdf dati e crea il grafo dei percorsi minimi,
+    salvando nei files. Leggere la descrizione degli attributi per maggiori info.
     Args:
         dict_gdfs_poi (dict): del tipo: [{"gdf": GeoDataFrame, "tipo": str, "attr": dict}, ...]
+        weight_strade (dict): del tipo {"nome_strada": 1.3, "default": 1, ...} è possibile assegnare
+            sempre un "default" che verrà assegnato in caso di mancanza di un nome_strada. Se non viene
+            specificato un "default" verrà assegnato il valore "99", cioè massimo peso.
+        PATH_GEOJSON (str): Il path dove verrà salvato il geoDataFrame convertito dal grafo.
+        PATH_PICKLE (str): Il path dove verrà salvato il Grafo in formato pickle (se dovesse servire usarlo).
+            E' opzionale se non si desidera salvare il pickle.
     """
     with open(PATH_CICLABILI_PICKLE_STAGING, "rb") as f:
         G_ciclabili = pickle.load(f)
@@ -327,8 +336,9 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
     G_sport_tempo_libero = nx.MultiDiGraph(steiner_tree(G_compose, terminal_nodes=poi_nodes, weight='weight')).to_undirected()
 
     # salvataggio risultati
-    with open(PATH_PICKLE, "wb") as f:
-        pickle.dump(G_sport_tempo_libero, f)
+    if PATH_PICKLE:
+        with open(PATH_PICKLE, "wb") as f:
+            pickle.dump(G_sport_tempo_libero, f)
 
     gdf_steiner = ox.graph_to_gdfs(G_sport_tempo_libero, edges=True, nodes=False).reset_index(drop=True)
     gdf_steiner["name"] = gdf_steiner["name"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
