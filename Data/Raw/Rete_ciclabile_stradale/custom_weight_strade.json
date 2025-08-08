@@ -13,7 +13,7 @@
     "secondary_link": 1.1,
     "tertiary_link": 1.25,
     "service": 99,
-    "footway": 1.2,
+    "footway": 1.3,
     "pedestrian": 1.5,
     "steps": 99,
     "platform": 99,

@@ -274,8 +274,6 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
         PATH_PICKLE (str): Il path dove verrà salvato il Grafo in formato pickle (se dovesse servire usarlo).
             E' opzionale se non si desidera salvare il pickle.
     """
-    with open(PATH_CICLABILI_PICKLE_STAGING, "rb") as f:
-        G_ciclabili = pickle.load(f)
     with open(PATH_STRADE_CICLABILI_PICKLE_RAW, "rb") as f:
         G_strade = pickle.load(f)
 
@@ -301,7 +299,8 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
         G_strade[u][v][k]["weight_multipler"] = weight_multipler
         G_strade[u][v][k]['weight'] = data['length'] * weight_multipler # Per ora
         G_strade[u][v][k]["tipo"] = "Strade_ciclabili"
-        G_strade[u][v][k]["artificiale"] = False
+        G_strade[u][v][k]["artificial"] = False
+        G_strade[u][v][k]["poi"] = False
         # ------------ Da capire se tenere ----------------
         G_strade[u][v][k]["maxspeed"] = data.get("maxspeed", None)
         G_strade[u][v][k]["tunnel"] = data.get("tunnel", None)
@@ -311,25 +310,16 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
         G_strade[u][v][k]["geometry"] = data.get("geometry", LineString([(G_strade.nodes[u]["x"], G_strade.nodes[u]["y"]),
                                             (G_strade.nodes[v]["x"], G_strade.nodes[v]["y"])]))
     nx.set_node_attributes(G_strade, "Strade_ciclabili", "tipo")
-    G_strade = G_strade.to_undirected()
-
-    G_compose = connetti_due_grafi(G_strade, G_ciclabili, weight_moltiplicator=1,
-                                                tipo = "Join_ciclabile_strade",
-                                                artificiale=True)
-    
+    G_compose = G_strade.to_undirected()
 
     for dict_gdf in list_gdfs_poi:
         gdf = dict_gdf["gdf"]
         tipo = dict_gdf["tipo"]
         attr = dict_gdf.get("attr", None)
-        kwargs = {}
+        kwargs = {"tipo": tipo, "poi": True, "artificial": True}
         if attr:
             kwargs.update(attr)
-        G_compose = connect_poi_nodes_to_graph(G_compose, gdf,
-                                            tipo = tipo,
-                                            poi = True,
-                                            artificial=True,
-                                            **kwargs)
+        G_compose = connect_poi_nodes_to_graph(G_compose, gdf, **kwargs)
     
     # uso di algoritmo
     poi_nodes = [n for n, d in G_compose.nodes(data=True) if d.get("poi") == True]
@@ -341,8 +331,8 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
             pickle.dump(G_sport_tempo_libero, f)
 
     gdf_steiner = ox.graph_to_gdfs(G_sport_tempo_libero, edges=True, nodes=False).reset_index(drop=True)
-    gdf_steiner["name"] = gdf_steiner["name"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
-    gdf_steiner["highway"] = gdf_steiner["highway"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
-    gdf_steiner["access"] = gdf_steiner["access"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
+    colonne_da_esplodere = ["name", "highway", "access", "tunnel"]
+    for colonna in colonne_da_esplodere:
+        gdf_steiner[colonna] = gdf_steiner[colonna].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
 
     gdf_steiner.to_file(PATH_GEOJSON, driver="GeoJSON")
