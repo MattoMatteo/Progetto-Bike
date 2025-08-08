@@ -1,12 +1,15 @@
+import pickle
+
 import geopandas as gpd
 from shapely import Point, LineString, MultiPolygon, Polygon, GeometryCollection
 from shapely.prepared import prep
 import networkx as nx
+from networkx.algorithms.approximation import steiner_tree
 import osmnx as ox
 from scipy.spatial import cKDTree
 import numpy as np
 
-from my_paths import CRS_GRAD, CRS_METR
+from my_paths import *
 
 # Funzioni Private
 
@@ -251,3 +254,85 @@ def connetti_due_grafi(G1:nx.MultiDiGraph, G2:nx.MultiDiGraph, weight_moltiplica
                    weight_moltiplicator=weight_moltiplicator,
                    **attr)
     return G
+
+# Funzione generazione percorsi automatica
+
+def auto_analysis_poi(list_gdfs_poi:list[dict],
+                      weight_strade:dict,
+                      PATH_GEOJSON:str,
+                      PATH_PICKLE:str):
+    """
+    Args:
+        dict_gdfs_poi (dict): del tipo: [{"gdf": GeoDataFrame, "tipo": str, "attr": dict}, ...]
+    """
+    with open(PATH_CICLABILI_PICKLE_STAGING, "rb") as f:
+        G_ciclabili = pickle.load(f)
+    with open(PATH_STRADE_CICLABILI_PICKLE_RAW, "rb") as f:
+        G_strade = pickle.load(f)
+
+    for u, v, k, data in G_strade.edges(data=True, keys=True):
+        # Copio i data ed elimino tutto il dizionario.
+        data = data.copy()
+        G_strade[u][v][k].clear()
+        # Scelgo gli attributi da mantenere
+        G_strade[u][v][k]['length'] = data['length']
+        G_strade[u][v][k]['name'] = data.get('name', None)
+        G_strade[u][v][k]['highway'] = data["highway"]
+
+        # Calcolo pesi
+        if isinstance(data["highway"], str):
+            highway = [data["highway"]]
+        max_weight = 99
+        for h in highway:
+            new_weight = weight_strade.get(h, weight_strade.get("default", 99))
+            if new_weight < max_weight:
+                max_weight = new_weight
+        weight_multipler = max_weight
+
+        G_strade[u][v][k]["weight_multipler"] = weight_multipler
+        G_strade[u][v][k]['weight'] = data['length'] * weight_multipler # Per ora
+        G_strade[u][v][k]["tipo"] = "Strade_ciclabili"
+        G_strade[u][v][k]["artificiale"] = False
+        # ------------ Da capire se tenere ----------------
+        G_strade[u][v][k]["maxspeed"] = data.get("maxspeed", None)
+        G_strade[u][v][k]["tunnel"] = data.get("tunnel", None)
+        G_strade[u][v][k]["access"] = data.get("access", None)
+        G_strade[u][v][k]["service"] = data.get("service", None)
+        # ------------------------------------------------
+        G_strade[u][v][k]["geometry"] = data.get("geometry", LineString([(G_strade.nodes[u]["x"], G_strade.nodes[u]["y"]),
+                                            (G_strade.nodes[v]["x"], G_strade.nodes[v]["y"])]))
+    nx.set_node_attributes(G_strade, "Strade_ciclabili", "tipo")
+    G_strade = G_strade.to_undirected()
+
+    G_compose = connetti_due_grafi(G_strade, G_ciclabili, weight_moltiplicator=1,
+                                                tipo = "Join_ciclabile_strade",
+                                                artificiale=True)
+    
+
+    for dict_gdf in list_gdfs_poi:
+        gdf = dict_gdf["gdf"]
+        tipo = dict_gdf["tipo"]
+        attr = dict_gdf.get("attr", None)
+        kwargs = {}
+        if attr:
+            kwargs.update(attr)
+        G_compose = connect_poi_nodes_to_graph(G_compose, gdf,
+                                            tipo = tipo,
+                                            poi = True,
+                                            artificial=True,
+                                            **kwargs)
+    
+    # uso di algoritmo
+    poi_nodes = [n for n, d in G_compose.nodes(data=True) if d.get("poi") == True]
+    G_sport_tempo_libero = nx.MultiDiGraph(steiner_tree(G_compose, terminal_nodes=poi_nodes, weight='weight')).to_undirected()
+
+    # salvataggio risultati
+    with open(PATH_PICKLE, "wb") as f:
+        pickle.dump(G_sport_tempo_libero, f)
+
+    gdf_steiner = ox.graph_to_gdfs(G_sport_tempo_libero, edges=True, nodes=False).reset_index(drop=True)
+    gdf_steiner["name"] = gdf_steiner["name"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
+    gdf_steiner["highway"] = gdf_steiner["highway"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
+    gdf_steiner["access"] = gdf_steiner["access"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
+
+    gdf_steiner.to_file(PATH_GEOJSON, driver="GeoJSON")

@@ -3,6 +3,7 @@
 # RAW
 PATH_CICLABILI_RAW = "../Data/Raw/Rete_ciclabile_stradale/bike_ciclabili_raw.geojson"
 PATH_STRADE_CICLABILI_PICKLE_RAW = "../Data/Raw/Rete_ciclabile_stradale/strade_ciclabili.pickle"
+PATH_CUSTOM_WEIGHTS_STRADE_RAW = "../Data/Raw/Rete_ciclabile_stradale/custom_weight_strade.json"
 
 # STAGING
         #Ciclabili
