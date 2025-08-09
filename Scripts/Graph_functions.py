@@ -1,4 +1,5 @@
 import pickle
+import json
 
 import geopandas as gpd
 from shapely import Point, LineString, MultiPolygon, Polygon, GeometryCollection
@@ -255,28 +256,38 @@ def connetti_due_grafi(G1:nx.MultiDiGraph, G2:nx.MultiDiGraph, weight_moltiplica
                    **attr)
     return G
 
-# Funzione generazione percorsi automatica
-
-def auto_analysis_poi(list_gdfs_poi:list[dict],
-                      weight_strade:dict,
-                      PATH_GEOJSON:str,
-                      PATH_PICKLE:str = None):
+def etl_strade_ciclabili(custom_weights:dict = None) -> nx.MultiDiGraph:
     """
-    Esegue in automatico: Creazione grafo combinato di strade e ciclabili con i pesi dati.
-    Successivamente aggiunge tutti i "poi" dei gdf dati e crea il grafo dei percorsi minimi,
-    salvando nei files. Leggere la descrizione degli attributi per maggiori info.
+    Processo di ETL sul Grafo Raw scaricato da openstreet maps.
+    Il proceso comprende:
+    - Selezione attributi da mantenere: name, highway, lenght, maxspeed, tunnel, access, service, geometry
+    - Aggiunta di attributi custom:
+        - weight_multipler: Un moltiplicatore che verrà applicato a weigth in base a "highway" tramite
+        il parametro "custom_weights", oppure da file se non specificato.
+        N.B: di base cycleway dovrebbe assumere valore: 0, per dare massima priorità nel calcolo dei percorsi.
+        - weight: Sarà di base: length * weight_multipler.
+        - tipo: Un tag che viene assegnato a tutti i grafi del progetto. In questo caso assumerà valore "Strade_ciclabili".
+        - artificial: Un tag che viene assegnato a tutit i grafi del progetto. Essendo questi archi reali: False
+        - poi: Un tag che viene assegnato a tutti i grafi del progetto. Essendo queste le strade: False
+    - Se Geometria non presente, aggiungiamo una LineString "dritta" tra i due nodi
+    (può capitare che non ci sia tra nodi molto vicini).
+    - Infine il grafo viene reso bidirezionale senza ridondanza di archi tra due punti.
+
     Args:
-        dict_gdfs_poi (dict): del tipo: [{"gdf": GeoDataFrame, "tipo": str, "attr": dict}, ...]
-        weight_strade (dict): del tipo {"nome_strada": 1.3, "default": 1, ...} è possibile assegnare
+        custom_weights (dict): del tipo {"nome_strada": 1.3, "default": 1, ...} è possibile assegnare
             sempre un "default" che verrà assegnato in caso di mancanza di un nome_strada. Se non viene
             specificato un "default" verrà assegnato il valore "99", cioè massimo peso.
-        PATH_GEOJSON (str): Il path dove verrà salvato il geoDataFrame convertito dal grafo.
-        PATH_PICKLE (str): Il path dove verrà salvato il Grafo in formato pickle (se dovesse servire usarlo).
-            E' opzionale se non si desidera salvare il pickle.
     """
+    # Carichiamo grafo raw
     with open(PATH_STRADE_CICLABILI_PICKLE_RAW, "rb") as f:
         G_strade = pickle.load(f)
 
+    # Se non specificato, carica da file i pesi delle highway
+    if not custom_weights:
+        with open(PATH_CUSTOM_WEIGHTS_STRADE_RAW, 'r') as f:
+            custom_weights = json.load(f)
+
+    # Iniziamo manipolazione dei "data" degli archi del grafo
     for u, v, k, data in G_strade.edges(data=True, keys=True):
         # Copio i data ed elimino tutto il dizionario.
         data = data.copy()
@@ -285,33 +296,62 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
         G_strade[u][v][k]['length'] = data['length']
         G_strade[u][v][k]['name'] = data.get('name', None)
         G_strade[u][v][k]['highway'] = data["highway"]
-
-        # Calcolo pesi
-        if isinstance(data["highway"], str):
-            highway = [data["highway"]]
-        max_weight = 99
-        for h in highway:
-            new_weight = weight_strade.get(h, weight_strade.get("default", 99))
-            if new_weight < max_weight:
-                max_weight = new_weight
-        weight_multipler = max_weight
-
-        G_strade[u][v][k]["weight_multipler"] = weight_multipler
-        G_strade[u][v][k]['weight'] = data['length'] * weight_multipler # Per ora
-        G_strade[u][v][k]["tipo"] = "Strade_ciclabili"
-        G_strade[u][v][k]["artificial"] = False
-        G_strade[u][v][k]["poi"] = False
         # ------------ Da capire se tenere ----------------
         G_strade[u][v][k]["maxspeed"] = data.get("maxspeed", None)
         G_strade[u][v][k]["tunnel"] = data.get("tunnel", None)
         G_strade[u][v][k]["access"] = data.get("access", None)
         G_strade[u][v][k]["service"] = data.get("service", None)
         # ------------------------------------------------
+        # Calcolo pesi
+        if isinstance(data["highway"], str):
+            highway = [data["highway"]]
+        max_weight = 99
+        for h in highway:
+            new_weight = custom_weights.get(h, custom_weights.get("default", 99))
+            if new_weight < max_weight:
+                max_weight = new_weight
+        weight_multipler = max_weight
+        # Aggiungo gli attributi custom
+        G_strade[u][v][k]["weight_multipler"] = weight_multipler
+        G_strade[u][v][k]['weight'] = data['length'] * weight_multipler # Per ora
+        G_strade[u][v][k]["tipo"] = "Strade_ciclabili"
+        G_strade[u][v][k]["artificial"] = False
+        G_strade[u][v][k]["poi"] = False
+        # Conversione geometry in Linestring
         G_strade[u][v][k]["geometry"] = data.get("geometry", LineString([(G_strade.nodes[u]["x"], G_strade.nodes[u]["y"]),
                                             (G_strade.nodes[v]["x"], G_strade.nodes[v]["y"])]))
     nx.set_node_attributes(G_strade, "Strade_ciclabili", "tipo")
-    G_compose = G_strade.to_undirected()
+    return G_strade.to_undirected()
 
+# Funzione generazione percorsi automatica
+
+def auto_analysis_poi(list_gdfs_poi:list[dict],
+                      custom_weights:dict = None,
+                      PATH_GEOJSON:str = None,
+                      PATH_PICKLE:str = None):
+    """
+    Esegue in automatico: Creazione grafo combinato di strade e ciclabili con i pesi dati.
+    Successivamente aggiunge tutti i "poi" dei gdf dati e crea il grafo dei percorsi minimi,
+    salvando nei files. Leggere la descrizione degli attributi per maggiori info.
+    Args:
+        dict_gdfs_poi (dict): del tipo: [{"gdf": GeoDataFrame, "tipo": str, "attr": dict}, ...]
+        custom_weights (dict): del tipo {"nome_strada": 1.3, "default": 1, ...} è possibile assegnare
+            sempre un "default" che verrà assegnato in caso di mancanza di un nome_strada. Se non viene
+            specificato un "default" verrà assegnato il valore "99", cioè massimo peso.
+            Se non viene assegnato nessun custom_weights, verrà usato il grafo staging salvato su pickle
+            (Operazione molto più veloce).
+        PATH_GEOJSON (str): Il path dove verrà salvato il geoDataFrame convertito dal grafo.
+        PATH_PICKLE (str): Il path dove verrà salvato il Grafo in formato pickle (se dovesse servire usarlo).
+            E' opzionale se non si desidera salvare il pickle.
+    """
+    # Caricamento Grafo strade
+    if custom_weights:   # Se necessario ricreare il grafo strade con i nuovi pesi
+        G_strade = etl_strade_ciclabili(custom_weights)
+    else:               # Se è possibile riutilizzare quello standard salvato su file
+        with open(PATH_STRADE_CICLABILI_PICKLE_STAGING, "rb") as f:
+            G_strade = pickle.load(f)
+
+    # Aggiunta dei "poi" al grafo delle strade
     for dict_gdf in list_gdfs_poi:
         gdf = dict_gdf["gdf"]
         tipo = dict_gdf["tipo"]
@@ -319,20 +359,25 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
         kwargs = {"tipo": tipo, "poi": True, "artificial": True}
         if attr:
             kwargs.update(attr)
-        G_compose = connect_poi_nodes_to_graph(G_compose, gdf, **kwargs)
+        G_compose = connect_poi_nodes_to_graph(G_strade, gdf, **kwargs)
     
-    # uso di algoritmo
+    # uso di algoritmo per trovare i percorsi minimi tra i poi
     poi_nodes = [n for n, d in G_compose.nodes(data=True) if d.get("poi") == True]
     G_sport_tempo_libero = nx.MultiDiGraph(steiner_tree(G_compose, terminal_nodes=poi_nodes, weight='weight')).to_undirected()
 
     # salvataggio risultati
-    if PATH_PICKLE:
+    if PATH_PICKLE: # Il grafo in pickle se richiesto
         with open(PATH_PICKLE, "wb") as f:
             pickle.dump(G_sport_tempo_libero, f)
 
-    gdf_steiner = ox.graph_to_gdfs(G_sport_tempo_libero, edges=True, nodes=False).reset_index(drop=True)
-    colonne_da_esplodere = ["name", "highway", "access", "tunnel"]
-    for colonna in colonne_da_esplodere:
-        gdf_steiner[colonna] = gdf_steiner[colonna].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
-
-    gdf_steiner.to_file(PATH_GEOJSON, driver="GeoJSON")
+    if PATH_GEOJSON: # In geodataframe in geojson se richiesto
+        gdf_steiner = ox.graph_to_gdfs(G_sport_tempo_libero, edges=True, nodes=False).reset_index(drop=True)
+        # formato geojson non supporta "liste" come valori possibili nelle colonne quindi li convertiamo in stringhe
+        colonne_da_esplodere = ["name", "highway", "access", "tunnel"]
+        for colonna in colonne_da_esplodere:
+            gdf_steiner[colonna] = gdf_steiner[colonna].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
+        gdf_steiner["maxspeed"] = gdf_steiner["maxspeed"].fillna(0)
+        gdf_steiner["maxspeed"] = gdf_steiner["maxspeed"].apply(lambda x: max([int(y) for y in x]) if isinstance(x, list) else int(x))
+        gdf_steiner["maxspeed"] = gdf_steiner["maxspeed"].where(gdf_steiner["maxspeed"]!=0, None)
+        # salva su file
+        gdf_steiner.to_file(PATH_GEOJSON, driver="GeoJSON")
