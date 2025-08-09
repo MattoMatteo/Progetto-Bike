@@ -1,5 +1,6 @@
 import pickle
 import json
+import math
 
 import geopandas as gpd
 from shapely import Point, LineString, MultiPolygon, Polygon, GeometryCollection
@@ -61,6 +62,35 @@ def _change_edge_weight_in_gdf(G:nx.MultiDiGraph, gdf:gpd.GeoDataFrame, weight:f
             data["weight"] = weight
 
     return G
+
+def _custom_graph_to_gdf(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
+    gdf_edges = ox.graph_to_gdfs(G, edges=True, nodes=False).reset_index().drop(["u", "v", "key"], axis=1)
+    # formato geojson non supporta "liste" come valori possibili nelle colonne quindi li convertiamo in stringhe
+    colonne_da_esplodere = ["name", "highway", "access", "tunnel", "service"]
+    for colonna in colonne_da_esplodere:    
+        gdf_edges[colonna] = gdf_edges[colonna].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
+    
+    def convert_maxspeed(x):
+        response = None
+        if x is None or (isinstance(x, float) and math.isnan(x)):
+            return None
+        elif isinstance(x, list):
+            max_speed_list = []
+            for y in x:
+                if isinstance(y, str):
+                    if y == "IT:urban":
+                        y = 50
+                max_speed_list.append(int(y))
+            return max(max_speed_list)
+        elif isinstance(x, str):
+            if x == "IT:urban":
+                return 50
+            else:
+                return int(x)
+        return int(x)
+
+    gdf_edges["maxspeed"] = gdf_edges["maxspeed"].apply(convert_maxspeed)
+    return gdf_edges
 
 # Funzioni Pubbliche
 
@@ -371,13 +401,4 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
             pickle.dump(G_sport_tempo_libero, f)
 
     if PATH_GEOJSON: # In geodataframe in geojson se richiesto
-        gdf_steiner = ox.graph_to_gdfs(G_sport_tempo_libero, edges=True, nodes=False).reset_index(drop=True)
-        # formato geojson non supporta "liste" come valori possibili nelle colonne quindi li convertiamo in stringhe
-        colonne_da_esplodere = ["name", "highway", "access", "tunnel"]
-        for colonna in colonne_da_esplodere:
-            gdf_steiner[colonna] = gdf_steiner[colonna].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
-        gdf_steiner["maxspeed"] = gdf_steiner["maxspeed"].fillna(0)
-        gdf_steiner["maxspeed"] = gdf_steiner["maxspeed"].apply(lambda x: max([int(y) for y in x]) if isinstance(x, list) else int(x))
-        gdf_steiner["maxspeed"] = gdf_steiner["maxspeed"].where(gdf_steiner["maxspeed"]!=0, None)
-        # salva su file
-        gdf_steiner.to_file(PATH_GEOJSON, driver="GeoJSON")
+        _custom_graph_to_gdf(G_sport_tempo_libero).to_file(PATH_GEOJSON, driver="GeoJSON")
