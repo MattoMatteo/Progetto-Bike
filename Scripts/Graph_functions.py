@@ -225,13 +225,13 @@ def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame, **
         # Aggiungiamo arco di collegamento (può essere bidirezionale)
         G.add_edge(poi_node_start_id,
                 nearest_node,
-                distance=dist[0],
+                length=dist[0],
                 weight = 0,
                 geometry=geom_line,
                 **attr)
         G.add_edge(nearest_node,
                 poi_node_start_id,
-                distance=dist[0],
+                length=dist[0],
                 weight = 0,
                 geometry=geom_line,
                 **attr)
