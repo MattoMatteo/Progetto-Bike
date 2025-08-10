@@ -72,7 +72,11 @@ PATH_INQUINAMENTO_INGESTION_CLEAN = "../Data/Clean/Inquinamento/Airnet/inquiname
 #-------------------------------------- Analisi ----------------------------------------------#
 PATH_SPORT_TEMPO_LIBERO_ANALISI_PICKLE_STAGING = "../Data/Staging/Analisi/sport_tempo_libero_clean.pickle"
 PATH_SPORT_TEMPO_LIBERO_ANALISI_CLEAN = "../Data/Clean/Analisi/sport_tempo_libero_clean.geojson"
-
+PATH_EXTENDED_CICLABILI_CLEAN = "../Data/Clean/Analisi/extended_ciclabili_clean.geojson"
+PATH_ISTRUZIONE_CLEAN = "../Data/Clean/Analisi/istruzione_clean.geojson"
+PATH_CULTURA_SPETTACOLO_CLEAN = "../Data/Clean/Analisi/cultura_spettacolo_clean.geojson"
+PATH_SANITA_CLEAN = "../Data/Clean/Analisi/sanita_clean.geojson"
+PATH_SCORE_X_MUNICIPI = "../Data/Clean/Analisi/score_x_municipi_clean.geojson"
 #-----------------------------------------------------------------------------------------------#
 
 #----------------------------- CRS (lo so non sono dei path) ----------------------------------------#
