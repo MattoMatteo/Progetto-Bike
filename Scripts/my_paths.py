@@ -66,6 +66,7 @@ PATH_INQUINAMENTO_INGESTION_RAW = "../Data/Raw/Inquinamento/Airnet/inquinamento-
 
 # CLEAN
 PATH_INQUINAMENTO_INGESTION_CLEAN = "../Data/Clean/Inquinamento/Airnet/inquinamento-airnet_ingestion_clean.geojson"
+PATH_INQUINAMENTO_MEDIA_MUNICIPI_CLEAN = "../Data/Clean/Inquinamento/Airnet/inquinamento-airnet_media_municipi_clean.geojson"
 
 #-----------------------------------------------------------------------------------------------#
 
