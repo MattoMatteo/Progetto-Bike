@@ -342,8 +342,12 @@ def etl_strade_ciclabili(custom_weights:dict = None) -> nx.MultiDiGraph:
                 max_weight = new_weight
         weight_multipler = max_weight
         # Aggiungo gli attributi custom
+        if "cycleway" in data["highway"]:
+            G_strade[u][v][k]["ciclabile"] = True
+        else:
+            G_strade[u][v][k]["ciclabile"] = False
         G_strade[u][v][k]["weight_multipler"] = weight_multipler
-        G_strade[u][v][k]['weight'] = data['length'] * weight_multipler # Per ora
+        G_strade[u][v][k]['weight'] = data['length'] * weight_multipler
         G_strade[u][v][k]["tipo"] = "Strade_ciclabili"
         G_strade[u][v][k]["artificial"] = False
         G_strade[u][v][k]["poi"] = False
