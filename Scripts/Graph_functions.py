@@ -91,7 +91,31 @@ def _custom_graph_to_gdf(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
         return int(x)
 
     gdf_edges["maxspeed"] = gdf_edges["maxspeed"].apply(convert_maxspeed)
-    return gdf_edges
+
+    gdf_municipi = gpd.read_file(PATH_MUNICIPI_CLEAN)
+
+    segmenti = []
+    for _, sport_row in gdf_edges.iterrows():
+        geom = sport_row["geometry"]
+        municipi_intersectati = []
+
+        # Trova municipi intersecati
+        for _, muni_row in gdf_municipi.iterrows():
+            muni_geom = muni_row["geometry"]
+            if muni_geom.intersects(geom):
+                municipi_intersectati.append((muni_row["MUNICIPIO"], muni_geom))
+
+        # Spezza geometria per ogni municipio
+        for municipio, muni_geom in municipi_intersectati:
+            parte = muni_geom.intersection(geom)
+            nuova_riga = sport_row.copy()
+            nuova_riga["geometry"] = parte
+            nuova_riga["MUNICIPIO"] = municipio
+            segmenti.append(nuova_riga)
+
+    gdf_segmenti = gpd.GeoDataFrame(segmenti, crs=CRS_GRAD, geometry="geometry")
+    gdf_segmenti["length"] = gdf_segmenti.to_crs(CRS_METR).length
+    return gdf_segmenti
 
 def _get_proportional_reduce_n_pois(poi_group:list[str], max_pois:int):
     """
