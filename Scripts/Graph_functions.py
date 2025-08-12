@@ -1,6 +1,7 @@
 import pickle
 import json
 import math
+from collections import defaultdict
 
 import geopandas as gpd
 from shapely import Point, LineString, MultiPolygon, Polygon, GeometryCollection
@@ -91,6 +92,47 @@ def _custom_graph_to_gdf(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
 
     gdf_edges["maxspeed"] = gdf_edges["maxspeed"].apply(convert_maxspeed)
     return gdf_edges
+
+def _get_proportional_reduce_n_pois(poi_group:list[str], max_pois:int):
+    """
+    Dato un gruppo di "poi" e un numero massimo di poi da "tenere", 
+    restituisce un dataframe con i nuovi valori, proporzionalmente ridotti per ogni categoria.
+    """
+    # Carichiamo da file il gdf dei conteggi di tutti i poi che abbiamo, ragruppati per Municipio
+    gdf_conteggi = gpd.read_file(PATH_SCORE_X_MUNICIPI)
+    gdf_conteggi_gruppo = gdf_conteggi[poi_group].copy()
+    gdf_conteggi_gruppo["Totale"] = gdf_conteggi_gruppo.sum(axis=1)
+    gdf_conteggi_gruppo["geometry"] = gdf_conteggi["geometry"].to_numpy()
+    def converti_totale(row:gpd.GeoSeries, tot_poi:int, max_poi:int):
+        """
+        Funzione da usare in ".apply" per ottenere i valori risultanti dalla
+        proporzione, avendo il nuovo max_poi:
+        x = numero_colonna * numero_massimo_poi / numero_totale
+        """
+        # Da inserire nella formula anche le variabili di:
+        # Inquinamento e incidenti
+        if max_poi > tot_poi:
+            max_poi = tot_poi
+        risultato = int(row["Totale"]*max_poi/tot_poi)
+        # Almeno 1 per tipo
+        if risultato == 0:
+            return 1
+        return risultato
+
+    totale_poi_gdf = int(gdf_conteggi_gruppo["Totale"].sum())   # Da dare alla funzinoe
+    gdf_conteggi_gruppo["nuovo_totale"] = gdf_conteggi_gruppo.apply(lambda row: converti_totale(row, totale_poi_gdf, max_pois), axis=1)
+    gdf_conteggi_gruppo["MUNICIPIO"] = gdf_conteggi_gruppo.index +1
+
+    # Formula per aggiungere il resto se il totale non è divisibile equamente.
+    # Verrà utilizzato l'ordine di indice delle colonne per distribuire equamente il resto
+    for idx, row in gdf_conteggi_gruppo.iterrows():
+        divisione = int(row["nuovo_totale"] / len(poi_group))
+        for i in range(len(poi_group)):
+            gdf_conteggi_gruppo.iloc[idx, i] = divisione
+        resto = row["nuovo_totale"] % len(poi_group)
+        for i in range(resto):
+            gdf_conteggi_gruppo.iloc[idx, i] += 1
+    return gdf_conteggi_gruppo
 
 # Funzioni Pubbliche
 
@@ -406,3 +448,89 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
 
     if PATH_GEOJSON: # In geodataframe in geojson se richiesto
         _custom_graph_to_gdf(G_sport_tempo_libero).to_file(PATH_GEOJSON, driver="GeoJSON")
+
+def auto_filter_poi(G_percorsi:nx.MultiDiGraph, max_pois:int,
+                    custom_weights:dict = None,
+                      PATH_GEOJSON:str = None,
+                      PATH_PICKLE:str = None):
+    """
+    Dato un grafo ottenuto da "auto_analysis_poi" (recuperare da file pickle in staging), crea
+    un nuovo grafo (come auto_analysis_poi) filtratro con un massimo di pois dato in input.
+    I pois verranno ridotti proporzionalmente per ogni municipio e mantenuti un minimo di 1 per "tipo".
+    Verranno poi scelti i più vicini ad una ciclabile per ogni categoria.
+    Scelti i punti verrà generato un nuovo grafo di percorsi utilizzando solo quei punti.
+    Per maggiori info sui parametri, guardare auto_analysis_poi.
+    Args:
+        G_percorsi (nx.MultiDiGraph): Il grafo risultante da "auto_analysis_poi" che si vuole filtrare.
+            Eseguire "auto_analysis_poi" specificando: tipo e priorità (valori crescenti hanno meno priorità).
+        max_pois (int): Il numero massimo di pois in totale tra tutti i municipi di cui si vogliono ottenere
+            i percorsi.
+        custom_weights (dict): Parametro di "auto_analysis_poi", dizionario dei pesi delle strade.
+        PATH_GEOJSON (str): Parametro di "auto_analysis_poi", percorso in cui salvare il gdf.
+        PATH_PICKLE (str): Parametro di "auto_analysis_poi", percorso in cui salvare il grafo.
+    """
+    # Otteniamo il numero di poi ridotto proporzionalmente per ogni gruppo in base
+    # al massimo ricevuto come parametro, tramite la funzione: _get_proportional_reduce_n_pois
+    colonne = {}
+    for _, data in G_percorsi.nodes.items():
+        colonne[data["tipo"]] = data.get("priorita", 99)
+    colonne.pop("Strade_ciclabili")
+    colonne_sorted = sorted(colonne, key=lambda x: colonne[x])
+    gdf_n_pois = _get_proportional_reduce_n_pois(colonne_sorted, max_pois)
+
+    # Facciamo un municipio alla volta creando il sotto grafo
+    selected_poi = []
+    for idx, row in gdf_n_pois.iterrows():
+        municipio:int = row["MUNICIPIO"]
+        # Creiamo il sub grafo del municipio e prendiamo i nodi dei poi
+        poligono_municipio:Polygon = row["geometry"]
+
+        poi_nodes_municipio_categoria = defaultdict(list)
+        nodes_in_municipio = []
+        for n, data in G_percorsi.nodes(data=True):
+            if poligono_municipio.contains(Point(data["x"], data["y"])):
+                nodes_in_municipio.append(n)
+                if data.get("poi", False):
+                    poi_nodes_municipio_categoria[data["tipo"]].append(n)
+        G_sub_grafo_municipio = G_percorsi.subgraph(nodes_in_municipio).copy()
+
+        # Troviamo i nodi che hanno un arco "ciclabile" -> Quindi nodi di ciclabile
+        ciclabile_nodes = set() 
+        for u, v, k, data in G_sub_grafo_municipio.edges(keys=True, data=True):
+            if data.get("ciclabile", False):
+                ciclabile_nodes.add(u)
+                ciclabile_nodes.add(v)
+        ciclabile_nodes = list(ciclabile_nodes)
+        distances = nx.multi_source_dijkstra_path_length(G_sub_grafo_municipio, sources=ciclabile_nodes, weight="length")
+
+        
+        for tipo, nodes in poi_nodes_municipio_categoria.items():
+            nodes_sorted = sorted(nodes, key=lambda n: distances.get(n, float("inf")))
+            max_num = int(gdf_n_pois.loc[idx, tipo])
+            selected_poi.extend(nodes_sorted[:max_num])
+
+    new_gdf_filtrato = defaultdict(list)
+    for node in selected_poi:
+        row = G_percorsi.nodes[node].copy()
+        priorita = G_percorsi.nodes[node]["priorita"]
+        tipo = G_percorsi.nodes[node]["tipo"]
+        geometria = Point(G_percorsi.nodes[node]["x"], G_percorsi.nodes[node]["y"])
+        row.pop("priorita")
+        row.pop("tipo")
+        row.pop("x")
+        row.pop("y")
+        row.pop("poi")
+        row.pop("artificial")
+        row["geometry"] = geometria
+        new_gdf_filtrato[(tipo, priorita)].append(row)
+
+    final_gdf = []
+    for (tipo, priorita), v in new_gdf_filtrato.items():
+        final_gdf.append({"gdf": gpd.GeoDataFrame(v, crs=CRS_GRAD),
+                         "tipo": tipo,
+                         "priorita": priorita
+                         })
+    auto_analysis_poi(list_gdfs_poi=final_gdf,
+                      custom_weights=custom_weights,
+                      PATH_GEOJSON=PATH_GEOJSON,
+                      PATH_PICKLE=PATH_PICKLE)
