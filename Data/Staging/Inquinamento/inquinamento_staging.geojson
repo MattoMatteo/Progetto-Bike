@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "inquinamento-airnet_ingestion_clean",
+"name": "inquinamento_staging",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "id": 74863, "longitudine": 9.206, "latitudine": 45.426, "name": "Via Federico Chopin, Milan, Italy", "pm10": 25.151728594507269, "pm25": 16.324098625707357 }, "geometry": { "type": "Point", "coordinates": [ 9.206, 45.426 ] } },

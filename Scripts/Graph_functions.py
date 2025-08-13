@@ -117,16 +117,21 @@ def _custom_graph_to_gdf(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
     gdf_segmenti["length"] = gdf_segmenti.to_crs(CRS_METR).length
     return gdf_segmenti
 
-def _get_proportional_reduce_n_pois(poi_group:list[str], max_pois:int):
+def _get_proportional_reduce_n_pois(poi_group:list[str],
+                                    max_pois:int,
+                                    peso_inquinamento_vs_incidenti:float = 0.5,
+                                    peso_fattori_esterni_vs_distribuzione_poi:float = 0.5):
     """
     Dato un gruppo di "poi" e un numero massimo di poi da "tenere", 
-    restituisce un dataframe con i nuovi valori, proporzionalmente ridotti per ogni categoria.
+    restituisce un dataframe con i nuovi valori, ridotti in base ai pesi assegnati, per ogni categoria e municipio.
     """
     # Carichiamo da file il gdf dei conteggi di tutti i poi che abbiamo, ragruppati per Municipio
     gdf_conteggi = gpd.read_file(PATH_SCORE_X_MUNICIPI)
+    # Calcoliamo i totali sommando per riga tutte le colonne dei "poi"
     gdf_conteggi_gruppo = gdf_conteggi[poi_group].copy()
     gdf_conteggi_gruppo["Totale"] = gdf_conteggi_gruppo.sum(axis=1)
     gdf_conteggi_gruppo["geometry"] = gdf_conteggi["geometry"].to_numpy()
+    
     def converti_totale(row:gpd.GeoSeries, tot_poi:int, max_poi:int):
         """
         Funzione da usare in ".apply" per ottenere i valori risultanti dalla
@@ -137,23 +142,58 @@ def _get_proportional_reduce_n_pois(poi_group:list[str], max_pois:int):
         # Inquinamento e incidenti
         if max_poi > tot_poi:
             max_poi = tot_poi
-        risultato = int(row["Totale"]*max_poi/tot_poi)
+        risultato = int(round((row["Totale"]*max_poi/tot_poi)))
         # Almeno 1 per tipo
         if risultato == 0:
             return 1
         return risultato
 
-    totale_poi_gdf = int(gdf_conteggi_gruppo["Totale"].sum())   # Da dare alla funzinoe
+    # Riduciamo proporzionalmente i totali di ogni municipio, creando "nuovo_totale"
+    totale_poi_gdf = int(gdf_conteggi_gruppo["Totale"].sum())   # Da dare alla funzione
     gdf_conteggi_gruppo["nuovo_totale"] = gdf_conteggi_gruppo.apply(lambda row: converti_totale(row, totale_poi_gdf, max_pois), axis=1)
     gdf_conteggi_gruppo["MUNICIPIO"] = gdf_conteggi_gruppo.index +1
 
-    # Formula per aggiungere il resto se il totale non è divisibile equamente.
-    # Verrà utilizzato l'ordine di indice delle colonne per distribuire equamente il resto
+    # -------------------------------------------------------------#
+    # ---       Con i nuovi totali possiamo ridistribuire       ----
+    # ---   in base a inquinamento e incidenti i nuovi totali   ----
+
+    # Uniamo le colonne dei dataframe che tanto hanno lo stesso numero di righe ordinate per municipio:
+    # conteggi + incidenti + inquinamento
+    gdf_conteggi_gruppo["pm25"] = gpd.read_file(PATH_INQUINAMENTO_CLEAN)["pm25"]
+    gdf_conteggi_gruppo["Incidenti"] = gpd.read_file(PATH_INCIDENTI_CLEAN)["Incidenti"]
+    # Normalizziamo i valori di incidenti e inquinamento -> in % rispetto al valore massimo in tabella
+    gdf_conteggi_gruppo['pm25_norm'] = gdf_conteggi_gruppo['pm25'] / gdf_conteggi_gruppo['pm25'].max()
+    gdf_conteggi_gruppo['incidenti_norm'] = gdf_conteggi_gruppo['Incidenti'] / gdf_conteggi_gruppo['Incidenti'].max()
+    # Unifichiamo i 2 fattori in un solo "indice_priorità" utilizzando i rispettivi pesi
+    w_pm = peso_inquinamento_vs_incidenti # peso dell’inquinamento
+    w_inc = 1 - peso_inquinamento_vs_incidenti  # peso degli incidenti
+    gdf_conteggi_gruppo['indice_priorita'] = w_pm * gdf_conteggi_gruppo['pm25_norm'] + w_inc * gdf_conteggi_gruppo['incidenti_norm']
+    
+    # Rispetto ai propri totali, calcoliamo le percentuali per ogni municipio
+    #  sia per il fattore "territorio" (incidenti + inquinamenti) che per quello "base" (distribuzione poi)
+    gdf_conteggi_gruppo['peso_territorio'] = gdf_conteggi_gruppo['indice_priorita'] / gdf_conteggi_gruppo['indice_priorita'].sum()
+    gdf_conteggi_gruppo['peso_base'] = gdf_conteggi_gruppo['nuovo_totale'] / gdf_conteggi_gruppo['nuovo_totale'].sum()
+
+    # Uniamo i 2 pesi dei 2 fattori in uno unico "peso finale"
+    peso_fattori_esterni = peso_fattori_esterni_vs_distribuzione_poi
+    peso_distribuzione_poi = 1 - peso_fattori_esterni_vs_distribuzione_poi
+    gdf_conteggi_gruppo['peso_finale'] = peso_distribuzione_poi * gdf_conteggi_gruppo['peso_base'] + peso_fattori_esterni * gdf_conteggi_gruppo['peso_territorio']
+    
+    # Calcoliamo grazie al peso finale il nuovo totale per ogni municipio
+    totale_poi = gdf_conteggi_gruppo["nuovo_totale"].sum()
+    gdf_conteggi_gruppo['poi_finali'] = (totale_poi * gdf_conteggi_gruppo['peso_finale']).round().astype(int)
+
+    # --------------------------------------------------------------------------------#
+    # ----      Basandoci sui nuovi totali ridistributi per municipio,      -----------
+    # ---- settiamo i singoli valori per ogni "tipo" di poi per municipio   -----------
     for idx, row in gdf_conteggi_gruppo.iterrows():
-        divisione = int(row["nuovo_totale"] / len(poi_group))
+        divisione = int(row["poi_finali"] / len(poi_group))
         for i in range(len(poi_group)):
             gdf_conteggi_gruppo.iloc[idx, i] = divisione
-        resto = row["nuovo_totale"] % len(poi_group)
+        
+        # Quando la divisione da resto, distribuiamo il resto equamento in ordine di indice di colonna
+        # che rappresenta la "priorità" che è stata data a monte.
+        resto = row["poi_finali"] % len(poi_group)
         for i in range(resto):
             gdf_conteggi_gruppo.iloc[idx, i] += 1
     return gdf_conteggi_gruppo
@@ -474,6 +514,8 @@ def auto_analysis_poi(list_gdfs_poi:list[dict],
         _custom_graph_to_gdf(G_sport_tempo_libero).to_file(PATH_GEOJSON, driver="GeoJSON")
 
 def auto_filter_poi(G_percorsi:nx.MultiDiGraph, max_pois:int,
+                    peso_inquinamento_vs_incidenti:float = 0.5,
+                    peso_fattori_esterni_vs_distribuzione_poi:float = 0.5,
                     custom_weights:dict = None,
                       PATH_GEOJSON:str = None,
                       PATH_PICKLE:str = None):
@@ -489,6 +531,14 @@ def auto_filter_poi(G_percorsi:nx.MultiDiGraph, max_pois:int,
             Eseguire "auto_analysis_poi" specificando: tipo e priorità (valori crescenti hanno meno priorità).
         max_pois (int): Il numero massimo di pois in totale tra tutti i municipi di cui si vogliono ottenere
             i percorsi.
+        peso_inquinamento_vs_incidenti (float): Un numero da 0 a 1 che andrà ad influenzare la quantità di "poi"
+            che verranno assegnati per ogni Municipio.
+            Si riferisce al peso dato all'inquinamento, rispetto a quello degli incidenti (quindi incidenti sarà
+            calcolato da: 1 - inquinamento). Nell'insieme questi fattori saranno identificati come: "pesi fattori esterni".
+        peso_fattori_esterni_vs_distribuzione_poi (float): Un numero da 0 a 1 che influenzare la quantità di "poi" che
+            verranno assegnati per ogni Municipio.
+            Questi fattori sono l'insieme di fattori esterni (incidenti e inquinamento) che andrà a contrapporsi
+            con la normale distribuzione dei "poi" nel territorio (proporzionalmente al max pois).
         custom_weights (dict): Parametro di "auto_analysis_poi", dizionario dei pesi delle strade.
         PATH_GEOJSON (str): Parametro di "auto_analysis_poi", percorso in cui salvare il gdf.
         PATH_PICKLE (str): Parametro di "auto_analysis_poi", percorso in cui salvare il grafo.
@@ -500,7 +550,10 @@ def auto_filter_poi(G_percorsi:nx.MultiDiGraph, max_pois:int,
         colonne[data["tipo"]] = data.get("priorita", 99)
     colonne.pop("Strade_ciclabili")
     colonne_sorted = sorted(colonne, key=lambda x: colonne[x])
-    gdf_n_pois = _get_proportional_reduce_n_pois(colonne_sorted, max_pois)
+    gdf_n_pois = _get_proportional_reduce_n_pois(poi_group=colonne_sorted,
+                                                 max_pois=max_pois,
+                                                 peso_inquinamento_vs_incidenti=peso_inquinamento_vs_incidenti,
+                                                 peso_fattori_esterni_vs_distribuzione_poi=peso_fattori_esterni_vs_distribuzione_poi)
 
     # Facciamo un municipio alla volta creando il sotto grafo
     selected_poi = []

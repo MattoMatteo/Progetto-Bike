@@ -62,13 +62,20 @@ PATH_CASE_ACQUA_CLEAN = "../Data/Clean/Punti_di_interesse/case_acqua_clean.geojs
 #--------------------------------------- Inquinamento ------------------------------------------#
 
 # RAW
-PATH_INQUINAMENTO_INGESTION_RAW = "../Data/Raw/Inquinamento/Airnet/inquinamento-airnet_media_raw.geojson"
+PATH_INQUINAMENTO_RAW = "../Data/Raw/Inquinamento/inquinamento_raw.geojson"
+
+# STAGING
+PATH_INQUINAMENTO_STAGING = "../Data/Staging/Inquinamento/inquinamento_staging.geojson"
 
 # CLEAN
-PATH_INQUINAMENTO_INGESTION_CLEAN = "../Data/Clean/Inquinamento/Airnet/inquinamento-airnet_ingestion_clean.geojson"
-PATH_INQUINAMENTO_MEDIA_MUNICIPI_CLEAN = "../Data/Clean/Inquinamento/Airnet/inquinamento-airnet_media_municipi_clean.geojson"
+PATH_INQUINAMENTO_CLEAN = "../Data/Clean/Inquinamento/inquinamento_clean.geojson"
 
-#-----------------------------------------------------------------------------------------------#
+#-------------------------------------- Incidenti -------------------------------------------------#
+# RAW
+PATH_INCIDENTI_RAW = "../Data/Raw/Incidenti/incidenti_mese_municipio.csv"
+
+# CLEAN
+PATH_INCIDENTI_CLEAN = "../Data/Clean/Incidenti/incidenti_clean.geojson"
 
 #-------------------------------------- Analisi ----------------------------------------------#
 PATH_SPORT_TEMPO_LIBERO_ANALISI_PICKLE_STAGING = "../Data/Staging/Analisi/sport_tempo_libero_clean.pickle"
