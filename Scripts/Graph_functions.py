@@ -599,7 +599,6 @@ def auto_filter_poi(G_percorsi:nx.MultiDiGraph, max_pois:int,
         ciclabile_nodes = list(ciclabile_nodes)
         distances = nx.multi_source_dijkstra_path_length(G_sub_grafo_municipio, sources=ciclabile_nodes, weight="length")
 
-        
         for tipo, nodes in poi_nodes_municipio_categoria.items():
             nodes_sorted = sorted(nodes, key=lambda n: distances.get(n, float("inf")))
             max_num = int(gdf_n_pois.loc[idx, tipo])
