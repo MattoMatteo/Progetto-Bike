@@ -44,7 +44,7 @@ def _get_points_of_gdf(gdf:gpd.GeoDataFrame) -> dict:
     poi_nodes = {}
     for idx, row in gdf.iterrows():
         geometry = row["geometry"]
-        if isinstance(geometry, Polygon):
+        if isinstance(geometry, Polygon) or isinstance(geometry, MultiPolygon):
             poi_nodes[idx] = (geometry.centroid.x, geometry.centroid.y)
         elif isinstance(geometry, Point):
             poi_nodes[idx] = (geometry.x, geometry.y)
@@ -314,7 +314,7 @@ def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame, **
     presa in considerazione il loro "centroid".
     """
     # Convertiamo eventuali MultiPolygon
-    poi_gdf = _explode_gdf_with_MultiPolygon_to_Polygon(poi_gdf)
+    #poi_gdf = _explode_gdf_with_MultiPolygon_to_Polygon(poi_gdf)
 
     # Raccogliamo i Point
     poi_nodes = _get_points_of_gdf(poi_gdf)
