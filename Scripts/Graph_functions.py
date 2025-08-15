@@ -4,7 +4,7 @@ import math
 from collections import defaultdict
 
 import geopandas as gpd
-from shapely import Point, LineString, MultiPolygon, Polygon, GeometryCollection
+from shapely import Point, LineString, MultiLineString, MultiPolygon, Polygon, GeometryCollection
 from shapely.prepared import prep
 import networkx as nx
 from networkx.algorithms.approximation import steiner_tree
@@ -72,7 +72,6 @@ def _custom_graph_to_gdf(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
         gdf_edges[colonna] = gdf_edges[colonna].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
     
     def convert_maxspeed(x):
-        response = None
         if x is None or (isinstance(x, float) and math.isnan(x)):
             return None
         elif isinstance(x, list):
@@ -104,14 +103,22 @@ def _custom_graph_to_gdf(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
             muni_geom = muni_row["geometry"]
             if muni_geom.intersects(geom):
                 municipi_intersectati.append((muni_row["MUNICIPIO"], muni_geom))
-
         # Spezza geometria per ogni municipio
         for municipio, muni_geom in municipi_intersectati:
             parte = muni_geom.intersection(geom)
+
+        if isinstance(parte, LineString):
             nuova_riga = sport_row.copy()
             nuova_riga["geometry"] = parte
             nuova_riga["MUNICIPIO"] = municipio
             segmenti.append(nuova_riga)
+
+        elif isinstance(parte, MultiLineString):
+            for subgeom in parte.geoms:
+                nuova_riga = sport_row.copy()
+                nuova_riga["geometry"] = subgeom
+                nuova_riga["MUNICIPIO"] = municipio
+                segmenti.append(nuova_riga)
 
     gdf_segmenti = gpd.GeoDataFrame(segmenti, crs=CRS_GRAD, geometry="geometry")
     gdf_segmenti["length"] = gdf_segmenti.to_crs(CRS_METR).length
@@ -181,26 +188,38 @@ def _get_proportional_reduce_n_pois(poi_group:list[str],
     
     # Calcoliamo grazie al peso finale il nuovo totale per ogni municipio
     totale_poi = gdf_conteggi_gruppo["nuovo_totale"].sum()
-    gdf_conteggi_gruppo['poi_finali'] = (totale_poi * gdf_conteggi_gruppo['peso_finale']).round().astype(int)
+    gdf_conteggi_gruppo['poi_teorico'] = (totale_poi * gdf_conteggi_gruppo['peso_finale']).round().astype(int)
+    gdf_conteggi_gruppo.sort_values("poi_teorico", ascending=False, inplace=True)
+
+    # Sistema per non eccede con i valori di attribuzione per ogni municipio
+    gdf_conteggi_gruppo['poi_finali'] = 0
+    accumulo = 0
+    for idx, row in gdf_conteggi_gruppo.iterrows():
+        if row["Totale"] - row["poi_teorico"] > 0:
+            gdf_conteggi_gruppo.loc[idx, "poi_finali"] = row["poi_teorico"]
+        else:
+            gdf_conteggi_gruppo.loc[idx, "poi_finali"] = row["Totale"]
+            accumulo += row["poi_teorico"] - row["Totale"]
+    for idx, row in gdf_conteggi_gruppo.iterrows():
+        if row["poi_finali"] < row["Totale"]:
+            if row["Totale"] - row["poi_finali"] > accumulo:
+                gdf_conteggi_gruppo.loc[idx, "poi_finali"] += accumulo
+                break
+            else:
+                accumulo -= row["Totale"] - row["poi_finali"]
+                gdf_conteggi_gruppo.loc[idx, "poi_finali"] = row["Totale"]
 
     # --------------------------------------------------------------------------------#
     # ----      Basandoci sui nuovi totali ridistributi per municipio,      -----------
     # ---- settiamo i singoli valori per ogni "tipo" di poi per municipio   -----------
     for idx, row in gdf_conteggi_gruppo.iterrows():
-        divisione = int(row["poi_finali"] / len(poi_group))
-        for i in range(len(poi_group)):
-            gdf_conteggi_gruppo.iloc[idx, i] = divisione
-        
-        # Quando la divisione da resto, distribuiamo il resto equamento in ordine di indice di colonna
-        # che rappresenta la "priorità" che è stata data a monte.
-        resto = row["poi_finali"] % len(poi_group)
-        for i in range(resto):
-            gdf_conteggi_gruppo.iloc[idx, i] += 1
+        for colonna in poi_group:
+            gdf_conteggi_gruppo.loc[idx, colonna] = round(row[colonna] / row["Totale"] * row["poi_finali"])
     return gdf_conteggi_gruppo
 
 # Funzioni Pubbliche
 
-def geojson_to_graph(gdf: gpd.GeoDataFrame, weight_moltiplicator:float = 1.0, **attr) -> nx.MultiDiGraph:
+def geojson_to_graph(gdf: gpd.GeoDataFrame, **attr) -> nx.MultiDiGraph:
     """
     Dato un geojson caricato come GeoDataFrame avente geometry di tipo LineString, lo converte in un MultiDiGraph, prendendo come
     nodi, ogni Point delle LineString e come archi, ogni Point con quello successivo (p[x], p[x+1]) di ogni LineString.
@@ -228,8 +247,9 @@ def geojson_to_graph(gdf: gpd.GeoDataFrame, weight_moltiplicator:float = 1.0, **
             v = coord_to_node[v_coord]
 
             length = gpd.GeoDataFrame([LineString([u_coord, v_coord])], columns=["geometry"], crs=CRS_GRAD).to_crs(CRS_METR)["geometry"][0].length
-            column = row.drop("geometry").to_dict()
-            G.add_edge(u, v, length=length, weight_multipler = weight_moltiplicator, weight = length * weight_moltiplicator, geometry=LineString([u_coord, v_coord]), **column, **attr)
+            weight_multipler = row["weight_multipler"]
+            column = row.drop(["geometry", "weight_multipler", "weight", "length"]).to_dict()
+            G.add_edge(u, v, length=length, weight_multipler = weight_multipler, weight = length * weight_multipler, geometry=LineString([u_coord, v_coord]), **column, **attr)
     
     # Aggiunge crs
     G.graph['crs'] = gdf.crs
@@ -558,7 +578,6 @@ def auto_filter_poi(G_percorsi:nx.MultiDiGraph, max_pois:int,
     # Facciamo un municipio alla volta creando il sotto grafo
     selected_poi = []
     for idx, row in gdf_n_pois.iterrows():
-        municipio:int = row["MUNICIPIO"]
         # Creiamo il sub grafo del municipio e prendiamo i nodi dei poi
         poligono_municipio:Polygon = row["geometry"]
 
