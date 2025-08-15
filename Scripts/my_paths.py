@@ -1,21 +1,14 @@
 ##--------------- Info bici --------------------------------------------#
 
 # RAW
-PATH_CICLABILI_RAW = "../Data/Raw/Rete_ciclabile_stradale/bike_ciclabili_raw.geojson"
-PATH_STRADE_CICLABILI_PICKLE_RAW = "../Data/Raw/Rete_ciclabile_stradale/strade_ciclabili.pickle"
-PATH_CUSTOM_WEIGHTS_STRADE_RAW = "../Data/Raw/Rete_ciclabile_stradale/custom_weight_strade.json"
+PATH_STRADE_CICLABILI_PICKLE_RAW = "../Data/Raw/Rete_ciclabile_stradale/strade_ciclabili_raw.pickle"
 
 # STAGING
-        #Ciclabili
-PATH_CICLABILI_PICKLE_STAGING = "../Data/Staging/Rete_ciclabile_stradale/ciclabile.pickle"
-PATH_CICLABILI_GEOJSON_STAGING = "../Data/Staging/Rete_ciclabile_stradale/ciclabile.geojson"
-        #Strade
-PATH_STRADE_CICLABILI_PICKLE_STAGING = "../Data/Staging/Rete_ciclabile_stradale/strade_ciclabili.pickle"
-PATH_STRADE_CICLABILI_GEOJSON_STAGING = "../Data/Staging/Rete_ciclabile_stradale/strade_ciclabili.geojson"
+PATH_STRADE_CICLABILI_PICKLE_STAGING = "../Data/Staging/Rete_ciclabile_stradale/strade_ciclabili_staging.pickle"
 
 # CLEAN
-PATH_RETE_CICLABILE_COMPLETA_PICKLE_CLEAN = "../Data/Clean/Rete_ciclabile_stradale/rete_ciclabile_completa.pickle"
-PATH_RETE_CICLABILE_COMPLETA_GEOJSON_CLEAN = "../Data/Clean/Rete_ciclabile_stradale/rete_ciclabile_completa.geojson"
+PATH_CUSTOM_WEIGHTS_STRADE_CLEAN = "../Data/Clean/Rete_ciclabile_stradale/custom_weight_strade_clean.json"
+PATH_STRADE_CICLABILI_GEOJSON_CLEAN = "../Data/Clean/Rete_ciclabile_stradale/strade_ciclabili_clean.geojson"
 
 #------------------------------------------------------------------------
 
@@ -78,13 +71,30 @@ PATH_INCIDENTI_RAW = "../Data/Raw/Incidenti/incidenti_mese_municipio.csv"
 PATH_INCIDENTI_CLEAN = "../Data/Clean/Incidenti/incidenti_clean.geojson"
 
 #-------------------------------------- Analisi ----------------------------------------------#
-PATH_SPORT_TEMPO_LIBERO_ANALISI_PICKLE_STAGING = "../Data/Staging/Analisi/sport_tempo_libero_clean.pickle"
-PATH_SPORT_TEMPO_LIBERO_ANALISI_CLEAN = "../Data/Clean/Analisi/sport_tempo_libero_clean.geojson"
+
+# STAING (pickle)
+PATH_SPORT_TEMPO_LIBERO_PICKLE_STAGING = "../Data/Staging/Analisi/sport_tempo_libero_staging.pickle"
+PATH_EXTENDED_CICLABILI_PICKLE_STAGING = "../Data/Staging/Analisi/extended_ciclabili_staging.pickle"
+PATH_ISTRUZIONE_PICKLE_STAGING = "../Data/Staging/Analisi/istruzione_staging.pickle"
+PATH_CULTURA_SPETTACOLO_PICKLE_STAGING = "../Data/Staging/Analisi/cultura_spettacolo_staging.pickle"
+PATH_SANITA_PICKLE_STAGING = "../Data/Staging/Analisi/sanita_staging.pickle"
+
+# CLEAN "statistiche"
+PATH_SCORE_X_MUNICIPI = "../Data/Clean/Analisi/score_x_municipi_clean.geojson"
+
+# CLEAN "completi" (geojson)
+PATH_SPORT_TEMPO_LIBERO_CLEAN = "../Data/Clean/Analisi/sport_tempo_libero_clean.geojson"
 PATH_EXTENDED_CICLABILI_CLEAN = "../Data/Clean/Analisi/extended_ciclabili_clean.geojson"
 PATH_ISTRUZIONE_CLEAN = "../Data/Clean/Analisi/istruzione_clean.geojson"
 PATH_CULTURA_SPETTACOLO_CLEAN = "../Data/Clean/Analisi/cultura_spettacolo_clean.geojson"
 PATH_SANITA_CLEAN = "../Data/Clean/Analisi/sanita_clean.geojson"
-PATH_SCORE_X_MUNICIPI = "../Data/Clean/Analisi/score_x_municipi_clean.geojson"
+
+# CLEAN "filtrati e limitati" (geojson)
+PATH_SPORT_TEMPO_LIBERO_FILTRATO_CLEAN = "../Data/Clean/Analisi/sport_tempo_libero_filtrato_clean.geojson"
+PATH_EXTENDED_CICLABILI_FILTRATO_CLEAN = "../Data/Clean/Analisi/extended_ciclabili_filtrato_clean.geojson"
+PATH_ISTRUZIONE_FILTRATO_CLEAN = "../Data/Clean/Analisi/istruzione_filtrato_clean.geojson"
+PATH_CULTURA_SPETTACOLO_FILTRATO_CLEAN = "../Data/Clean/Analisi/cultura_spettacolo_filtrato_clean.geojson"
+PATH_SANITA_FILTRATO_CLEAN = "../Data/Clean/Analisi/sanita_filtrato_clean.geojson"
 #-----------------------------------------------------------------------------------------------#
 
 #----------------------------- CRS (lo so non sono dei path) ----------------------------------------#

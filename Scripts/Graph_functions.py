@@ -440,7 +440,7 @@ def etl_strade_ciclabili(custom_weights:dict = None) -> nx.MultiDiGraph:
 
     # Se non specificato, carica da file i pesi delle highway
     if not custom_weights:
-        with open(PATH_CUSTOM_WEIGHTS_STRADE_RAW, 'r') as f:
+        with open(PATH_CUSTOM_WEIGHTS_STRADE_CLEAN, 'r') as f:
             custom_weights = json.load(f)
 
     # Iniziamo manipolazione dei "data" degli archi del grafo
