@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "sport_tempo_libero_filtrato_clean",
+"name": "sport_tempo_libero_filtrato_incidenti_clean",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "length": 6.3732983249121915, "name": null, "highway": "footway", "maxspeed": null, "tunnel": null, "access": null, "service": null, "ciclabile": "False", "weight_multipler": 1.3, "weight": 8.2880441547510539, "tipo": "Strade_ciclabili", "artificial": false, "poi": false, "MUNICIPIO": 2 }, "geometry": { "type": "LineString", "coordinates": [ [ 9.2213434, 45.4952655 ], [ 9.2213287, 45.4952887 ], [ 9.2213102, 45.4953179 ] ] } },
