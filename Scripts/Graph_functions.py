@@ -124,6 +124,11 @@ def _custom_graph_to_gdf(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
     gdf_segmenti["length"] = gdf_segmenti.to_crs(CRS_METR).length
     return gdf_segmenti
 
+def get_gdf_POI_from_graph(G:nx.MultiDiGraph) -> gpd.GeoDataFrame:
+    gdf_nodes = ox.graph_to_gdfs(G, edges=False, nodes=True).reset_index()
+    gdf_nodes = gdf_nodes[gdf_nodes["poi"] == True][["MUNICIPIO","tipo", "geometry"]]
+    return gdf_nodes
+
 def _get_proportional_reduce_n_pois(poi_group:list[str],
                                     max_pois:int,
                                     peso_inquinamento_vs_incidenti:float = 0.5,
@@ -346,7 +351,13 @@ def connect_poi_nodes_to_graph(G: nx.MultiDiGraph, poi_gdf: gpd.GeoDataFrame, **
 
         # LineString geometria in EPSG:4326
         nearest_node = node_ids[idx[0]]
-        geom_line = LineString([Point(lon, lat), gdf_nodes.loc[nearest_node].geometry])
+        p0 = Point(lon, lat)
+        p1 = gdf_nodes.loc[nearest_node].geometry
+
+        if p0.distance(p1) < 1e-9:  # tolleranza in gradi (~0.1 mm)
+            p1 = Point(p1.x + 1e-6, p1.y + 1e-6)
+
+        geom_line = LineString([p0, p1])
 
         # Aggiungiamo arco di collegamento (può essere bidirezionale)
         G.add_edge(poi_node_start_id,

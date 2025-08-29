@@ -71,34 +71,73 @@ PATH_INCIDENTI_RAW = "../Data/Raw/Incidenti/incidenti_mese_municipio.csv"
 PATH_INCIDENTI_CLEAN = "../Data/Clean/Incidenti/incidenti_clean.geojson"
 
 #-------------------------------------- Analisi ----------------------------------------------#
-
-# STAING (pickle)
-PATH_SPORT_TEMPO_LIBERO_PICKLE_STAGING = "../Data/Staging/Analisi/sport_tempo_libero_staging.pickle"
-PATH_EXTENDED_CICLABILI_PICKLE_STAGING = "../Data/Staging/Analisi/extended_ciclabili_staging.pickle"
-PATH_ISTRUZIONE_PICKLE_STAGING = "../Data/Staging/Analisi/istruzione_staging.pickle"
-PATH_CULTURA_SPETTACOLO_PICKLE_STAGING = "../Data/Staging/Analisi/cultura_spettacolo_staging.pickle"
-PATH_SANITA_PICKLE_STAGING = "../Data/Staging/Analisi/sanita_staging.pickle"
-
-# CLEAN "statistiche"
 PATH_SCORE_X_MUNICIPI = "../Data/Clean/Analisi/score_x_municipi_clean.geojson"
 
-# CLEAN "completi" (geojson)
-PATH_SPORT_TEMPO_LIBERO_CLEAN = "../Data/Clean/Analisi/sport_tempo_libero_clean.geojson"
-PATH_EXTENDED_CICLABILI_CLEAN = "../Data/Clean/Analisi/extended_ciclabili_clean.geojson"
-PATH_ISTRUZIONE_CLEAN = "../Data/Clean/Analisi/istruzione_clean.geojson"
-PATH_CULTURA_SPETTACOLO_CLEAN = "../Data/Clean/Analisi/cultura_spettacolo_clean.geojson"
-PATH_SANITA_CLEAN = "../Data/Clean/Analisi/sanita_clean.geojson"
+# STAING (pickle)
+PATH_EXTENDED_CICLABILI_COMPLETO_PICKLE_STAGING = "../Data/Staging/Analisi/Extended_ciclabili/extended_ciclabili_completo_staging.pickle"
 
-# CLEAN "filtrati e limitati" (geojson)
-PATH_SPORT_TEMPO_LIBERO_FILTRATO_CLEAN = "../Data/Clean/Analisi/sport_tempo_libero_filtrato_clean.geojson"
-PATH_EXTENDED_CICLABILI_FILTRATO_CLEAN = "../Data/Clean/Analisi/extended_ciclabili_filtrato_clean.geojson"
-PATH_ISTRUZIONE_FILTRATO_CLEAN = "../Data/Clean/Analisi/istruzione_filtrato_clean.geojson"
-PATH_CULTURA_SPETTACOLO_FILTRATO_CLEAN = "../Data/Clean/Analisi/cultura_spettacolo_filtrato_clean.geojson"
-PATH_SANITA_FILTRATO_CLEAN = "../Data/Clean/Analisi/sanita_filtrato_clean.geojson"
+PATH_SPORT_TEMPO_LIBERO_COMPLETO_PICKLE_STAGING = "../Data/Staging/Analisi/Sport_tempo_libero/sport_tempo_libero_completo_staging.pickle"
+PATH_SPORT_TEMPO_LIBERO_INQUINAMENTO_PICKLE_STAGING = "../Data/Staging/Analisi/Sport_tempo_libero/sport_tempo_libero_inquinamento_staging.pickle"
+PATH_SPORT_TEMPO_LIBERO_INCIDENTI_PICKLE_STAGING = "../Data/Staging/Analisi/Sport_tempo_libero/sport_tempo_libero_incidenti_staging.pickle"
+
+PATH_ISTRUZIONE_COMPLETO_PICKLE_STAGING = "../Data/Staging/Analisi/Istruzione/istruzione_completo_staging.pickle"
+PATH_ISTRUZIONE_INQUINAMENTO_PICKLE_STAGING = "../Data/Staging/Analisi/Istruzione/istruzione_inquinamento_staging.pickle"
+PATH_ISTRUZIONE_INCIDENTI_PICKLE_STAGING = "../Data/Staging/Analisi/Istruzione/istruzione_incidenti_staging.pickle"
+
+PATH_CULTURA_SPETTACOLO_COMPLETO_PICKLE_STAGING = "../Data/Staging/Analisi/Cultura_spettacolo/cultura_spettacolo_completo_staging.pickle"
+PATH_CULTURA_SPETTACOLO_INQUINAMENTO_PICKLE_STAGING = "../Data/Staging/Analisi/Cultura_spettacolo/cultura_spettacolo_inquinamento_staging.pickle"
+PATH_CULTURA_SPETTACOLO_INCIDENTI_PICKLE_STAGING = "../Data/Staging/Analisi/Cultura_spettacolo/cultura_spettacolo_incidenti_staging.pickle"
+
+PATH_SANITA_COMPLETO_PICKLE_STAGING = "../Data/Staging/Analisi/Sanita/sanita_completo_staging.pickle"
+PATH_SANITA_INQUINAMENTO_PICKLE_STAGING = "../Data/Staging/Analisi/Sanita/sanita_inquinamento_staging.pickle"
+PATH_SANITA_INCIDENTI_PICKLE_STAGING = "../Data/Staging/Analisi/Sanita/sanita_incidenti_staging.pickle"
+
+# CLEAN "completi" (geojson)
+PATH_SPORT_TEMPO_LIBERO_COMPLETO_CLEAN = "../Data/Clean/Analisi/Sport_tempo_libero/sport_tempo_libero_completo_clean.geojson"
+PATH_EXTENDED_CICLABILI_COMPLETO_CLEAN = "../Data/Clean/Analisi/Extended_ciclabili/extended_ciclabili_completo_clean.geojson"
+PATH_ISTRUZIONE_COMPLETO_CLEAN = "../Data/Clean/Analisi/Istruzione/istruzione_completo_clean.geojson"
+PATH_CULTURA_SPETTACOLO_COMPLETO_CLEAN = "../Data/Clean/Analisi/Cultura_spettacolo/cultura_spettacolo_completo_clean.geojson"
+PATH_SANITA_COMPLETO_CLEAN = "../Data/Clean/Analisi/Sanita/sanita_completo_clean.geojson"
+
+# CLEAN "filtrati" (geojson)
+PATH_EXTENDED_CICLABILI_INCIDENTI_CLEAN = "../Data/Clean/Analisi/Extended_ciclabili/extended_ciclabili_filtrato_incidenti_clean.geojson"
+PATH_EXTENDED_CICLABILI_INQUINAMENTO_CLEAN = "../Data/Clean/Analisi/Extended_ciclabili/extended_ciclabili_filtrato_inquinamento_clean.geojson"
+
+PATH_CULTURA_SPETTACOLO_INCIDENTI_CLEAN = "../Data/Clean/Analisi/Cultura_spettacolo/cultura_spettacolo_filtrato_incidenti_clean.geojson"
+PATH_CULTURA_SPETTACOLO_INQUINAMENTO_CLEAN = "../Data/Clean/Analisi/Cultura_spettacolo/cultura_spettacolo_filtrato_inquinamento_clean.geojson"
+
+PATH_ISTRUZIONE_INCIDENTI_CLEAN = "../Data/Clean/Analisi/Istruzione/istruzione_filtrato_incidenti_clean.geojson"
+PATH_ISTRUZIONE_INQUINAMENTO_CLEAN = "../Data/Clean/Analisi/Istruzione/istruzione_filtrato_inquinamento_clean.geojson"
+
+PATH_SANITA_INCIDENTI_CLEAN = "../Data/Clean/Analisi/Sanita/sanita_filtrato_incidenti_clean.geojson"
+PATH_SANITA_INQUINAMENTO_CLEAN = "../Data/Clean/Analisi/Sanita/sanita_filtrato_inquinamento_clean.geojson"
+
+PATH_SPORT_TEMPO_LIBERO_INCIDENTI_CLEAN = "../Data/Clean/Analisi/Sport_tempo_libero/sport_tempo_libero_filtrato_incidenti_clean.geojson"
+PATH_SPORT_TEMPO_LIBERO_INQUINAMENTO_CLEAN = "../Data/Clean/Analisi/Sport_tempo_libero/sport_tempo_libero_filtrato_inquinamento_clean.geojson"
+
+# CLEAN "uniti"
+PATH_EXTENDED_CICLABILI_UNITI_CLEAN = "../Data/Clean/Analisi/Extended_ciclabili/extended_ciclabili_unito_clean.geojson"
+
+PATH_CULTURA_SPETTACOLO_UNITI_CLEAN = "../Data/Clean/Analisi/Cultura_spettacolo/cultura_spettacolo_unito_clean.geojson"
+PATH_CULTURA_SPETTACOLO_POI_UNITI_CLEAN = "../Data/Clean/Analisi/Cultura_spettacolo/cultura_spettacolo_POI_unito_clean.geojson"
+
+PATH_ISTRUZIONE_UNITI_CLEAN = "../Data/Clean/Analisi/Istruzione/istruzione_unito_clean.geojson"
+PATH_ISTRUZIONE_POI_UNITI_CLEAN = "../Data/Clean/Analisi/Istruzione/istruzione_POI_unito_clean.geojson"
+
+PATH_SANITA_UNITI_CLEAN = "../Data/Clean/Analisi/Sanita/sanita_unito_clean.geojson"
+PATH_SANITA_POI_UNITI_CLEAN = "../Data/Clean/Analisi/Sanita/sanit_POI_unito_clean.geojson"
+
+PATH_SPORT_TEMPO_LIBERO_UNITI_CLEAN = "../Data/Clean/Analisi/Sport_tempo_libero/sport_tempo_libero_unito_clean.geojson"
+PATH_SPORT_TEMPO_LIBERO_POI_UNITI_CLEAN = "../Data/Clean/Analisi/Sport_tempo_libero/sport_tempo_libero_POI_unito_clean.geojson"
+#-----------------------------------------------------------------------------------------------#
+
+#----------------------------- Data Visualization ----------------------------------------#
+
+PATH_GRUPPI_ANALISI_UNITI_CLEAN = "../Data/Clean/Visualization/gruppi_analisi_uniti_clean.geojson"
+PATH_POI_GRUPPI_ANALISI_UNITI_CLEAN = "../Data/Clean/Visualization/poi_gruppi_analisi_uniti_clean.geojson"
+
 #-----------------------------------------------------------------------------------------------#
 
 #----------------------------- CRS (lo so non sono dei path) ----------------------------------------#
-
-
 CRS_GRAD = "EPSG:4326"  # Lat-Long
 CRS_METR = "EPSG:32632" # Metri
