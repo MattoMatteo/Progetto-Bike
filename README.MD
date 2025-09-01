@@ -2,26 +2,51 @@
 
 ## Struttura repository
 ```
-📦 Progetto  
-├──── 📁 Data  
-│      ├──── 📁 Clean  
-│      │     ├──── 📁 Incidenti  
-│      │     ├──── 📁 Info_bici  
-│      │     ├──── 📁 Inquinamento  
-│      │     └──── 📁 Punti_di_interesse  
-│      │  
-│      ├──── 📁 Raw  
-│      │     ├──── 📁 Incidenti  
-│      │     ├──── 📁 Info_bici  
-│      │     ├──── 📁 Inquinamento  
-│      │     └──── 📁 Punti_di_interesse  
-│      │           ├──── 📁 Municipi  
-│      │           └──── 📁 Parchi  
-│      │  
-│      └──── 📁 Staging  
-│            └──── 📁 Inquinamento  
-│  
-└──── 📁 Scripts  
+📦 Progetto
+├── 📁 Data
+│   ├── 📁 Clean
+│   │   ├── 📁 Analisi
+│   │   │   ├── 📁 Cultura_spettacolo
+│   │   │   ├── 📁 Extended_ciclabili
+│   │   │   ├── 📁 Istruzione
+│   │   │   ├── 📁 Sanita
+│   │   │   └── 📁 Sport_tempo_libero
+│   │   ├── 📁 Incidenti
+│   │   ├── 📁 Inquinamento
+│   │   ├── 📁 Punti_di_interesse
+│   │   ├── 📁 Rete_ciclabile_stradale
+│   │   └── 📁 Visualization
+│   │
+│   ├── 📁 Raw
+│   │   ├── 📁 Incidenti
+│   │   ├── 📁 Inquinamento
+│   │   ├── 📁 Istruzione
+│   │   ├── 📁 Punti_di_interesse
+│   │   └── 📁 Rete_ciclabile_stradale
+│   │
+│   └── 📁 Staging
+│       ├── 📁 Analisi
+│       │   ├── 📁 Cultura_spettacolo
+│       │   ├── 📁 Extended_ciclabili
+│       │   ├── 📁 Istruzione
+│       │   ├── 📁 Sanita
+│       │   └── 📁 Sport_tempo_libero
+│       ├── 📁 Inquinamento
+│       └── 📁 Rete_ciclabile_stradale
+│
+├── 📁 Scripts
+│   ├── 📓 Analisi.ipynb
+│   ├── 📓 Git.ipynb
+│   ├── 🐍 Graph_functions.py
+│   ├── 📓 Incidenti.ipynb
+│   ├── 📓 Inquinamento.ipynb
+│   ├── 🐍 my_paths.py
+│   ├── 📓 Punti_di_interesse.ipynb
+│   ├── 📓 Rete_ciclabile_stradale.ipynb
+│   └── 📓 Visualization.ipynb
+│
+└── 📁 Tableau
+    └── 📊 project.twb
 ```
 ### Consiglio di utilizzare questo schema per i nomi dei file:
 **{**<span style="color:yellow">categoria</span>**}`_`{**<span style="color:yellow">nome_file</span>}`_`{<span style="color:yellow">cartella destinazione</span>}`.`{<span style="color:yellow">estensione</span>}  
