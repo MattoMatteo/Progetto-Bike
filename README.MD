@@ -6,11 +6,6 @@
 ├── 📁 Data
 │   ├── 📁 Clean
 │   │   ├── 📁 Analisi
-│   │   │   ├── 📁 Cultura_spettacolo
-│   │   │   ├── 📁 Extended_ciclabili
-│   │   │   ├── 📁 Istruzione
-│   │   │   ├── 📁 Sanita
-│   │   │   └── 📁 Sport_tempo_libero
 │   │   ├── 📁 Incidenti
 │   │   ├── 📁 Inquinamento
 │   │   ├── 📁 Punti_di_interesse
@@ -26,11 +21,6 @@
 │   │
 │   └── 📁 Staging
 │       ├── 📁 Analisi
-│       │   ├── 📁 Cultura_spettacolo
-│       │   ├── 📁 Extended_ciclabili
-│       │   ├── 📁 Istruzione
-│       │   ├── 📁 Sanita
-│       │   └── 📁 Sport_tempo_libero
 │       ├── 📁 Inquinamento
 │       └── 📁 Rete_ciclabile_stradale
 │
