@@ -5,24 +5,8 @@
 📦 Progetto
 ├── 📁 Data
 │   ├── 📁 Clean
-│   │   ├── 📁 Analisi
-│   │   ├── 📁 Incidenti
-│   │   ├── 📁 Inquinamento
-│   │   ├── 📁 Punti_di_interesse
-│   │   ├── 📁 Rete_ciclabile_stradale
-│   │   └── 📁 Visualization
-│   │
 │   ├── 📁 Raw
-│   │   ├── 📁 Incidenti
-│   │   ├── 📁 Inquinamento
-│   │   ├── 📁 Istruzione
-│   │   ├── 📁 Punti_di_interesse
-│   │   └── 📁 Rete_ciclabile_stradale
-│   │
 │   └── 📁 Staging
-│       ├── 📁 Analisi
-│       ├── 📁 Inquinamento
-│       └── 📁 Rete_ciclabile_stradale
 │
 ├── 📁 Scripts
 │   ├── 📓 Analisi.ipynb
